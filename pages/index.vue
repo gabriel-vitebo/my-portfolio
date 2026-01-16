@@ -1,4 +1,7 @@
 <template>
-  <SectionsHero />
-  <SectionsIntro />
+  <SectionHero />
+  <SectionIntro />
+  <SectionProjects />
+  <SectionFeedback />
+  <SectionAbout />
 </template>
