@@ -14,3 +14,17 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text-primary);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 400ms ease,
+    transform 400ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
