@@ -1,0 +1,16 @@
+:root {
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-primary: #0891b2;
+
+  --color-text-primary: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+
+  --color-border: #1f2933;
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}

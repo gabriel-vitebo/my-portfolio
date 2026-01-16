@@ -8,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "nuxt": "^4.0.0"
   },
   "devDependencies": {
