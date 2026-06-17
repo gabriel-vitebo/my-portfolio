@@ -3,6 +3,9 @@ import profileImage from '~/assets/images/profile/my-photo.png'
 import curriculoAiHomePageImage from '~/assets/images/projects/curriculo-ai/home-page.png'
 import curriculoAiResultsPageImage from '~/assets/images/projects/curriculo-ai/result-page.png'
 import curriculoAiCoverImage from '~/assets/images/projects/curriculo-ai/cover.png'
+import checknumbersHomePageImage from '~/assets/images/projects/check-numbers/home-page.png'
+import checknumbersCoverImage from '~/assets/images/projects/check-numbers/cover.png'
+const githubUrl = 'https://github.com/gabriel-vitebo'
 
 export const portfolio: PortfolioData = {
   hero: {
@@ -16,7 +19,7 @@ export const portfolio: PortfolioData = {
   socials: [
     {
       label: 'GitHub',
-      url: 'https://github.com/gabriel-vitebo',
+      url: githubUrl,
     },
     {
       label: 'LinkedIn',
@@ -51,23 +54,21 @@ export const portfolio: PortfolioData = {
         curriculoAiHomePageImage,
         curriculoAiResultsPageImage,
       ],
-      githubUrl: 'https://github.com/gabriel-vitebo/curriculoAi',
+      githubUrl: `${githubUrl}/curriculo-ai`,
       demoUrl: 'https://curriculo-ai-sepia.vercel.app',
       technologies: ['Nuxt', 'TypeScript', 'Tailwind CSS', 'OpenAI API'],
     },
     {
-      slug: 'site-institucional',
-      title: 'Site Institucional',
-      shortDescription: 'Site responsivo para apresentar uma marca e seus principais serviços.',
+      slug: 'check-numbers',
+      title: 'Check Numbers',
+      shortDescription: 'Plataforma para verificar números e validar jogos como mega da virada.',
       description:
         'Projeto de exemplo com foco em arquitetura de páginas, conteúdo centralizado e navegação simples.',
-      image: '/images/projects/site-institucional/cover.png',
-      images: [
-        '/images/projects/site-institucional/cover.png',
-        '/images/projects/site-institucional/mobile.png',
-      ],
-      githubUrl: 'https://github.com/gabriel-vitebo/site-institucional',
-      technologies: ['Vue', 'Nuxt', 'Tailwind CSS'],
+      image: checknumbersCoverImage,
+      images: [checknumbersHomePageImage],
+      githubUrl: `${githubUrl}/checkNumbers`,
+      demoUrl: 'https://gabriel-vitebo.github.io/checkNumbers/',
+      technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
     },
     {
       slug: 'plataforma-saas',
