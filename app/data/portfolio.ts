@@ -1,4 +1,5 @@
 import type { PortfolioData } from '~/types/portfolio'
+import profileImage from '~/assets/images/profile/my-photo.png'
 
 export const portfolio: PortfolioData = {
   hero: {
@@ -7,7 +8,7 @@ export const portfolio: PortfolioData = {
     role: 'Desenvolvedor Full Stack',
     description:
       'Construo produtos digitais com foco em interfaces precisas, performance, acessibilidade e arquitetura sustentável.',
-    image: '/images/profile/avatar-placeholder.png',
+    image: profileImage,
   },
   socials: [
     {
