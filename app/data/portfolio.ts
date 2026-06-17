@@ -5,6 +5,12 @@ import curriculoAiResultsPageImage from '~/assets/images/projects/curriculo-ai/r
 import curriculoAiCoverImage from '~/assets/images/projects/curriculo-ai/cover.png'
 import checknumbersHomePageImage from '~/assets/images/projects/check-numbers/home-page.png'
 import checknumbersCoverImage from '~/assets/images/projects/check-numbers/cover.png'
+import foodExplorerHomePageImage from '~/assets/images/projects/food-explorer/home.png'
+import foodExplorerContentImage from '~/assets/images/projects/food-explorer/content.png'
+import foodExplorerCreateImage from '~/assets/images/projects/food-explorer/create-page.png'
+import foodExplorerEditPageImage from '~/assets/images/projects/food-explorer/edit-page.png'
+import foodExplorerSearchPageImage from '~/assets/images/projects/food-explorer/search.png'
+import foodExplorerCoverImage from '~/assets/images/projects/food-explorer/cover.png'
 const githubUrl = 'https://github.com/gabriel-vitebo'
 
 export const portfolio: PortfolioData = {
@@ -71,19 +77,21 @@ export const portfolio: PortfolioData = {
       technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
     },
     {
-      slug: 'plataforma-saas',
-      title: 'Plataforma SaaS',
-      shortDescription: 'Área autenticada para gestão de clientes, planos e relatórios.',
+      slug: 'food-explorer',
+      title: 'Food Explorer',
+      shortDescription: 'Plataforma para descobrir e explorar restaurantes e pratos deliciosos.',
       description:
         'Aplicação de exemplo para demonstrar fluxos de dashboard, organização de módulos e padrões de UI para produtos SaaS.',
-      image: '/images/projects/plataforma-saas/cover.png',
+      image: foodExplorerCoverImage,
       images: [
-        '/images/projects/plataforma-saas/cover.png',
-        '/images/projects/plataforma-saas/customers.png',
+        foodExplorerHomePageImage,
+        foodExplorerContentImage,
+        foodExplorerCreateImage,
+        foodExplorerEditPageImage,
+        foodExplorerSearchPageImage,
       ],
-      githubUrl: 'https://github.com/gabriel-vitebo/plataforma-saas',
-      demoUrl: 'https://exemplo.com/plataforma-saas',
-      technologies: ['Nuxt', 'TypeScript', 'Node.js'],
+      githubUrl: 'https://github.com/gabriel-vitebo/food-explorer',
+      technologies: ['React', 'MySql', 'Node.js', 'Express', 'JWT', 'Styled Components'],
     },
     {
       slug: 'commerce-headless',
