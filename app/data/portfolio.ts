@@ -1,5 +1,8 @@
 import type { PortfolioData } from '~/types/portfolio'
 import profileImage from '~/assets/images/profile/my-photo.png'
+import curriculoAiHomePageImage from '~/assets/images/projects/curriculo-ai/home-page.png'
+import curriculoAiResultsPageImage from '~/assets/images/projects/curriculo-ai/result-page.png'
+import curriculoAiCoverImage from '~/assets/images/projects/curriculo-ai/cover.png'
 
 export const portfolio: PortfolioData = {
   hero: {
@@ -38,19 +41,19 @@ export const portfolio: PortfolioData = {
   },
   projects: [
     {
-      slug: 'dashboard-analitico',
-      title: 'Dashboard Analítico',
-      shortDescription: 'Painel para visualização de métricas e indicadores de produto.',
+      slug: 'curriculo-ai',
+      title: 'Currículo AI',
+      shortDescription: 'Plataforma para analisar curriculos em PDF com IA.',
       description:
-        'Projeto de exemplo para apresentar organização de dados, filtros e componentes reutilizáveis em uma aplicação web.',
-      image: '/images/projects/dashboard-analitico/cover.png',
+        'Projeto realizado na faculdade, onde desenvolvi uma aplicação que utiliza inteligência artificial para extrair e analisar informações de currículos em formato PDF, retornando feedback sobre a qualidade do currículo.',
+      image: curriculoAiCoverImage,
       images: [
-        '/images/projects/dashboard-analitico/cover.png',
-        '/images/projects/dashboard-analitico/details.png',
+        curriculoAiHomePageImage,
+        curriculoAiResultsPageImage,
       ],
-      githubUrl: 'https://github.com/gabriel-vitebo/dashboard-analitico',
-      demoUrl: 'https://exemplo.com/dashboard-analitico',
-      technologies: ['Nuxt', 'TypeScript', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/gabriel-vitebo/curriculoAi',
+      demoUrl: 'https://curriculo-ai-sepia.vercel.app',
+      technologies: ['Nuxt', 'TypeScript', 'Tailwind CSS', 'OpenAI API'],
     },
     {
       slug: 'site-institucional',
