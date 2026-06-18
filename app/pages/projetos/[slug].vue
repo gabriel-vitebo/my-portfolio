@@ -46,27 +46,66 @@
             </div>
           </div>
 
-          <img
-            class="aspect-video w-full rounded-3xl border border-border bg-surface object-cover shadow-lg"
-            :src="project.image"
-            :alt="project.title"
+          <button
+            class="group block w-full rounded-3xl border border-border bg-surface shadow-lg transition duration-300 hover:border-primary/50"
+            type="button"
+            :aria-label="`Abrir imagem principal de ${project.title}`"
+            @click="openImage(project.image, project.title)"
           >
+            <img
+              class="aspect-video w-full rounded-3xl object-cover"
+              :src="project.image"
+              :alt="project.title"
+            >
+          </button>
         </div>
 
         <section class="mt-14" aria-labelledby="project-gallery-title">
           <h2 id="project-gallery-title" class="text-2xl font-semibold text-primary">Galeria</h2>
           <div class="mt-6 grid gap-4 md:grid-cols-2">
-            <img
+            <button
               v-for="image in project.images"
               :key="image"
-              class="aspect-video w-full rounded-2xl border border-border bg-surface object-cover transition duration-300 hover:scale-[1.02]"
-              :src="image"
-              :alt="`${project.title} - imagem do projeto`"
+              class="block w-full rounded-2xl border border-border bg-surface transition duration-300 hover:scale-[1.02] hover:border-primary/50"
+              type="button"
+              :aria-label="`Abrir imagem da galeria de ${project.title}`"
+              @click="openImage(image, `${project.title} - imagem do projeto`)"
             >
+              <img
+                class="aspect-video w-full rounded-2xl object-cover"
+                :src="image"
+                :alt="`${project.title} - imagem do projeto`"
+              >
+            </button>
           </div>
         </section>
       </article>
     </main>
+
+    <Teleport to="body">
+      <div
+        v-if="selectedImage"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm"
+        role="dialog"
+        aria-modal="true"
+        @click.self="closeImage"
+      >
+        <button
+          class="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/60 text-2xl leading-none text-white transition duration-300 hover:border-primary hover:text-accent"
+          type="button"
+          aria-label="Fechar imagem"
+          @click="closeImage"
+        >
+          ×
+        </button>
+
+        <img
+          class="max-h-[90vh] max-w-[92vw] rounded-2xl border border-white/10 bg-surface object-contain shadow-lg"
+          :src="selectedImage.src"
+          :alt="selectedImage.alt"
+        >
+      </div>
+    </Teleport>
   </div>
 </template>
 
@@ -78,6 +117,21 @@ const route = useRoute()
 const slug = route.params.slug
 
 const project = portfolio.projects.find((item) => item.slug === slug)
+const selectedImage = ref<{ src: string, alt: string } | null>(null)
+
+const openImage = (src: string, alt: string) => {
+  selectedImage.value = { src, alt }
+}
+
+const closeImage = () => {
+  selectedImage.value = null
+}
+
+const handleKeydown = (event: KeyboardEvent) => {
+  if (event.key === 'Escape') {
+    closeImage()
+  }
+}
 
 if (!project) {
   throw createError({
@@ -85,4 +139,19 @@ if (!project) {
     statusMessage: 'Projeto não encontrado',
   })
 }
+
+watch(selectedImage, (image) => {
+  if (!import.meta.client) return
+
+  document.body.style.overflow = image ? 'hidden' : ''
+})
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown)
+})
+
+onBeforeUnmount(() => {
+  document.body.style.overflow = ''
+  window.removeEventListener('keydown', handleKeydown)
+})
 </script>

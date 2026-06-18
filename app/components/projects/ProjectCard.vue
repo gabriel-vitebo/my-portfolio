@@ -2,7 +2,7 @@
   <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50">
     <NuxtLink class="flex h-full flex-col" :aria-label="`Abrir projeto ${project.title}`" :to="`/projetos/${project.slug}`">
       <img
-        class="aspect-[16/9] w-full object-cover"
+        class="aspect-[16/9] w-full bg-surface object-cover"
         :src="project.image"
         :alt="project.title"
       >
