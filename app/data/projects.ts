@@ -36,11 +36,11 @@ export const projects: Project[] = [
     description:
       'Projeto realizado na faculdade, onde desenvolvi uma aplicação que utiliza inteligência artificial para extrair e analisar informações de currículos em formato PDF, retornando feedback sobre a qualidade do currículo.',
     image: curriculoAiCoverImage,
-    images: [
-      curriculoAiHomePageImage,
-      curriculoAiResultsPageImage,
+    gallery: [
+      { type: 'image', src: curriculoAiHomePageImage },
+      { type: 'image', src: curriculoAiResultsPageImage },
     ],
-    githubUrl: `${githubUrl}/curriculo-ai`,
+    githubLinks: [{ url: `${githubUrl}/curriculo-ai` }],
     demoUrl: 'https://curriculo-ai-sepia.vercel.app',
     technologies: ['Nuxt', 'TypeScript', 'Tailwind CSS', 'OpenAI API'],
   },
@@ -51,8 +51,8 @@ export const projects: Project[] = [
     description:
       'Projeto de exemplo com foco em arquitetura de páginas, conteúdo centralizado e navegação simples.',
     image: checknumbersCoverImage,
-    images: [checknumbersHomePageImage],
-    githubUrl: `${githubUrl}/checkNumbers`,
+    gallery: [{ type: 'image', src: checknumbersHomePageImage }],
+    githubLinks: [{ url: `${githubUrl}/checkNumbers` }],
     demoUrl: 'https://gabriel-vitebo.github.io/checkNumbers/',
     technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
   },
@@ -63,14 +63,15 @@ export const projects: Project[] = [
     description:
       'Aplicação de exemplo para demonstrar fluxos de dashboard, organização de módulos e padrões de UI para produtos SaaS.',
     image: foodExplorerCoverImage,
-    images: [
-      foodExplorerHomePageImage,
-      foodExplorerContentImage,
-      foodExplorerCreateImage,
-      foodExplorerEditPageImage,
-      foodExplorerSearchPageImage,
+    gallery: [
+      { type: 'image', src: foodExplorerHomePageImage },
+      { type: 'image', src: foodExplorerContentImage },
+      { type: 'image', src: foodExplorerCreateImage },
+      { type: 'image', src: foodExplorerEditPageImage },
+      { type: 'image', src: foodExplorerSearchPageImage },
+      { type: 'youtube', url: 'https://youtu.be/q3YN-PIgiAs', title: 'Demonstração do Food Explorer' },
     ],
-    githubUrl: `${githubUrl}/food-explorer`,
+    githubLinks: [{ label: 'Front-end', url: `${githubUrl}/food-explorer` }, { label: 'Back-end', url: `${githubUrl}/api-food-explorer` }],
     technologies: ['React', 'MySql', 'Node.js', 'Express', 'JWT', 'Styled Components'],
   },
   {
@@ -80,8 +81,8 @@ export const projects: Project[] = [
     description:
       'Projeto de exemplo com foco em performance, navegação fluida e componentes reutilizáveis para e-commerce.',
     image: rocketPayCoverImage,
-    images: [rocketPayProductImage],
-    githubUrl: `${githubUrl}/Rocketpay`,
+    gallery: [{ type: 'image', src: rocketPayProductImage }],
+    githubLinks: [{ url: `${githubUrl}/Rocketpay` }],
     demoUrl: 'https://rocketpay-swart.vercel.app/',
     technologies: ['HTML', 'CSS', 'Regex', 'JavaScript'],
   },
@@ -92,11 +93,11 @@ export const projects: Project[] = [
     description:
       'Projeto de exemplo com foco em arquitetura de componentes, estados e interações para aplicações modernas.',
     image: focusTimerCoverImage,
-    images: [
-      focusTimerPreviewDarkModeImage,
-      focusTimerPreviewLightModeImage,
+    gallery: [
+      { type: 'image', src: focusTimerPreviewDarkModeImage },
+      { type: 'image', src: focusTimerPreviewLightModeImage },
     ],
-    githubUrl: `${githubUrl}/Desafio-focus-timer-2.0`,
+    githubLinks: [{ url: `${githubUrl}/Desafio-focus-timer-2.0` }],
     demoUrl: 'https://gabriel-vitebo.github.io/Desafio-focus-timer-2.0/',
     technologies: ['JavaScript', 'CSS', 'HTML'],
   },
@@ -107,13 +108,14 @@ export const projects: Project[] = [
     description:
       'Back-end de exemplo para organizar conteúdo, expor endpoints públicos e preparar integrações futuras.',
     image: questLogCoverImage,
-    images: [
-      questLogLoginPageImage,
-      questLogMissionPageImage,
-      questLogPainelPageImage,
-      questLogProfilePageImage,
+    gallery: [
+      { type: 'image', src: questLogLoginPageImage },
+      { type: 'image', src: questLogMissionPageImage },
+      { type: 'image', src: questLogPainelPageImage },
+      { type: 'image', src: questLogProfilePageImage },
+      { type: 'youtube', url: 'https://youtube.com/shorts/YtVXiPXary0?feature=share', title: 'Demonstração do Quest Log' },
     ],
-    githubUrl: `${githubUrl}/questlog`,
+    githubLinks: [{ url: `${githubUrl}/questlog` }],
     technologies: ['React Native', 'TypeScript', 'Firebase'],
   },
 ]

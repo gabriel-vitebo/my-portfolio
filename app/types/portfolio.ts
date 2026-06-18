@@ -11,14 +11,31 @@ export interface SocialLink {
   url: string
 }
 
+export interface ProjectGithubLink {
+  label?: string
+  url: string
+}
+
+export type ProjectGalleryItem =
+  | {
+      type: 'image'
+      src: string
+      alt?: string
+    }
+  | {
+      type: 'youtube'
+      url: string
+      title: string
+    }
+
 export interface Project {
   slug: string
   title: string
   shortDescription: string
   description: string
   image: string
-  images: string[]
-  githubUrl: string
+  gallery: ProjectGalleryItem[]
+  githubLinks: ProjectGithubLink[]
   demoUrl?: string
   technologies: string[]
 }
