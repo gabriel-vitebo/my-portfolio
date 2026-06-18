@@ -16,6 +16,11 @@ import rocketPayCoverImage from '~/assets/images/projects/rocket-pay/cover.png'
 import focusTimerCoverImage from '~/assets/images/projects/focus-timer/cover.png'
 import focusTimerPreviewDarkModeImage from '~/assets/images/projects/focus-timer/preview-darkmode.png'
 import focusTimerPreviewLightModeImage from '~/assets/images/projects/focus-timer/preview-lightmode.png'
+import questLogCoverImage from '~/assets/images/projects/quest-log/cover.png'
+import questLogLoginPageImage from '~/assets/images/projects/quest-log/login-page.jpeg'
+import questLogMissionPageImage from '~/assets/images/projects/quest-log/mission-page.jpeg'
+import questLogPainelPageImage from '~/assets/images/projects/quest-log/painel-page.jpeg'
+import questLogProfilePageImage from '~/assets/images/projects/quest-log/profile-page.jpeg'
 
 
 export const projectsSection: ProjectsData = {
@@ -65,7 +70,7 @@ export const projects: Project[] = [
       foodExplorerEditPageImage,
       foodExplorerSearchPageImage,
     ],
-    githubUrl: 'https://github.com/gabriel-vitebo/food-explorer',
+    githubUrl: `${githubUrl}/food-explorer`,
     technologies: ['React', 'MySql', 'Node.js', 'Express', 'JWT', 'Styled Components'],
   },
   {
@@ -91,22 +96,24 @@ export const projects: Project[] = [
       focusTimerPreviewDarkModeImage,
       focusTimerPreviewLightModeImage,
     ],
-    githubUrl: 'https://github.com/gabriel-vitebo/Desafio-focus-timer-2.0',
+    githubUrl: `${githubUrl}/Desafio-focus-timer-2.0`,
     demoUrl: 'https://gabriel-vitebo.github.io/Desafio-focus-timer-2.0/',
     technologies: ['JavaScript', 'CSS', 'HTML'],
   },
   {
-    slug: 'api-portfolio',
-    title: 'API Portfolio',
+    slug: 'quest-log',
+    title: 'Quest Log',
     shortDescription: 'API para centralizar projetos, métricas e conteúdo público.',
     description:
       'Back-end de exemplo para organizar conteúdo, expor endpoints públicos e preparar integrações futuras.',
-    image: '/images/projects/api-portfolio/cover.png',
+    image: questLogCoverImage,
     images: [
-      '/images/projects/api-portfolio/cover.png',
-      '/images/projects/api-portfolio/docs.png',
+      questLogLoginPageImage,
+      questLogMissionPageImage,
+      questLogPainelPageImage,
+      questLogProfilePageImage,
     ],
-    githubUrl: 'https://github.com/gabriel-vitebo/api-portfolio',
-    technologies: ['Node.js', 'TypeScript', 'PostgreSQL'],
+    githubUrl: `${githubUrl}/questlog`,
+    technologies: ['React Native', 'TypeScript', 'Firebase'],
   },
 ]
