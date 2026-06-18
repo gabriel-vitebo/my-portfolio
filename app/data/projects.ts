@@ -13,6 +13,10 @@ import foodExplorerSearchPageImage from '~/assets/images/projects/food-explorer/
 import foodExplorerCoverImage from '~/assets/images/projects/food-explorer/cover.png'
 import rocketPayProductImage from '~/assets/images/projects/rocket-pay/home.png'
 import rocketPayCoverImage from '~/assets/images/projects/rocket-pay/cover.png'
+import focusTimerCoverImage from '~/assets/images/projects/focus-timer/cover.png'
+import focusTimerPreviewDarkModeImage from '~/assets/images/projects/focus-timer/preview-darkmode.png'
+import focusTimerPreviewLightModeImage from '~/assets/images/projects/focus-timer/preview-lightmode.png'
+
 
 export const projectsSection: ProjectsData = {
   title: 'Projetos',
@@ -82,13 +86,13 @@ export const projects: Project[] = [
     shortDescription: 'Aplicação de temporizador para foco e produtividade.',
     description:
       'Projeto de exemplo com foco em arquitetura de componentes, estados e interações para aplicações modernas.',
-    image: '/images/projects/focus-timer/cover.png',
+    image: focusTimerCoverImage,
     images: [
-      '/images/projects/focus-timer/cover.png',
-      '/images/projects/focus-timer/components.png',
+      focusTimerPreviewDarkModeImage,
+      focusTimerPreviewLightModeImage,
     ],
-    githubUrl: 'https://github.com/gabriel-vitebo/focus-timer',
-    demoUrl: 'https://exemplo.com/focus-timer',
+    githubUrl: 'https://github.com/gabriel-vitebo/Desafio-focus-timer-2.0',
+    demoUrl: 'https://gabriel-vitebo.github.io/Desafio-focus-timer-2.0/',
     technologies: ['JavaScript', 'CSS', 'HTML'],
   },
   {
