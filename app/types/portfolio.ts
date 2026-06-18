@@ -40,10 +40,16 @@ export interface Project {
   technologies: string[]
 }
 
+export interface Highlight {
+  slug: string
+  title: string
+  link: string
+}
+
 export interface AboutData {
   title: string
   paragraphs: string[]
-  highlights: string[]
+  highlights: Highlight[]
 }
 
 export interface ProjectsData {

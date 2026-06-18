@@ -26,13 +26,16 @@
       </div>
 
       <div class="grid content-center gap-4 sm:grid-cols-2">
-        <article
+        <a
           v-for="highlight in about.highlights"
-          :key="highlight"
+          :key="highlight.slug"
           class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50"
+          :href="highlight.link"
+          rel="noreferrer"
+          target="_blank"
         >
-          <h3 class="text-lg font-semibold text-primary">{{ highlight }}</h3>
-        </article>
+          <h3 class="text-lg font-semibold text-primary">{{ highlight.title }}</h3>
+        </a>
       </div>
     </div>
   </section>

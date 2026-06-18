@@ -33,13 +33,45 @@ export const about: AboutData = {
     'Participei do desenvolvimento de marketplaces, checkouts, páginas com foco em SEO e ferramentas internas, sempre buscando equilibrar qualidade técnica, experiência do usuário e impacto no negócio.',
   ],
   highlights: [
-    'Nuxt',
-    'Vue',
-    'React',
-    'TypeScript',
-    'Node.js',
-    'Ruby on Rails',
-    'SEO',
-    'Performance',
+    {
+      slug: 'nuxt',
+      title: 'Nuxt',
+      link: 'https://nuxt.com/',
+    },
+    {
+      slug: 'vue',
+      title: 'Vue',
+      link: 'https://vuejs.org/',
+    },
+    {
+      slug: 'react',
+      title: 'React',
+      link: 'https://react.dev/',
+    },
+    {
+      slug: 'typescript',
+      title: 'TypeScript',
+      link: 'https://www.typescriptlang.org/',
+    },
+    {
+      slug: 'nodejs',
+      title: 'Node.js',
+      link: 'https://nodejs.org/pt-br',
+    },
+    {
+      slug: 'ruby-on-rails',
+      title: 'Ruby on Rails',
+      link: 'https://rubyonrails.org/',
+    },
+    {
+      slug: 'seo',
+      title: 'SEO',
+      link: 'https://developer.mozilla.org/pt-BR/docs/Glossary/SEO',
+    },
+    {
+      slug: 'performance',
+      title: 'Performance',
+      link: 'https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/What_is_web_performance',
+    },
   ],
 }
