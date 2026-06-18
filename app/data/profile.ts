@@ -7,7 +7,7 @@ export const hero: HeroData = {
   name: 'Gabriel Vitebo',
   role: 'Desenvolvedor Full Stack',
   description:
-    'Construo produtos digitais com foco em interfaces precisas, performance, acessibilidade e arquitetura sustentável.',
+    'Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.',
   image: profileImage,
 }
 
@@ -18,19 +18,28 @@ export const socials: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/gabriel-vitebo',
+    url: 'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
   },
   {
     label: 'E-mail',
-    url: 'mailto:contato@gabrielvitebo.com',
+    url: 'mailto:gabrielvitebo@gmail.com',
   },
 ]
 
 export const about: AboutData = {
   title: 'Sobre mim',
   paragraphs: [
-    'Sou desenvolvedor com atenção especial à qualidade da experiência, à clareza do código e à evolução saudável de produtos digitais.',
-    'Trabalho conectando estratégia, design e engenharia para entregar interfaces rápidas, acessíveis e preparadas para crescer.',
+    'Sou desenvolvedor Full Stack com experiência na construção e evolução de produtos digitais, atuando principalmente com Vue, Nuxt, React e TypeScript.',
+    'Participei do desenvolvimento de marketplaces, checkouts, páginas com foco em SEO e ferramentas internas, sempre buscando equilibrar qualidade técnica, experiência do usuário e impacto no negócio.',
   ],
-  highlights: ['Nuxt', 'Vue', 'React', 'TypeScript', 'Node', 'Rails', 'SEO', 'Performance'],
+  highlights: [
+    'Nuxt',
+    'Vue',
+    'React',
+    'TypeScript',
+    'Node.js',
+    'Ruby on Rails',
+    'SEO',
+    'Performance',
+  ],
 }
