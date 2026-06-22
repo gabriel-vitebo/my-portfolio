@@ -20,12 +20,14 @@
           <NuxtLink
             class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:bg-primary-hover"
             to="#projects"
+            @click.prevent="scrollToSection('projects')"
           >
             Ver projetos
           </NuxtLink>
           <NuxtLink
             class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-primary transition duration-300 hover:border-primary hover:text-accent"
             to="#about"
+            @click.prevent="scrollToSection('about')"
           >
             Sobre mim
           </NuxtLink>
@@ -50,4 +52,6 @@ import type { HeroData } from '~/types/portfolio'
 defineProps<{
   hero: HeroData
 }>()
+
+const { scrollToSection } = useSectionNavigation()
 </script>

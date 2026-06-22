@@ -1,19 +1,23 @@
 <template>
   <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-      <NuxtLink class="text-[15px] font-semibold text-primary transition duration-300 hover:text-accent" to="/#hero">
+      <NuxtLink
+        class="text-[15px] font-semibold text-primary transition duration-300 hover:text-accent"
+        to="/#hero"
+        @click.prevent="scrollToSection('hero')"
+      >
         {{ name }}
       </NuxtLink>
 
       <ul class="flex items-center gap-3 text-[13px] text-secondary sm:gap-6 sm:text-[15px]">
         <li>
-          <NuxtLink :class="navLinkClass('hero')" to="/#hero">Início</NuxtLink>
+          <NuxtLink :class="navLinkClass('hero')" to="/#hero" @click.prevent="scrollToSection('hero')">Início</NuxtLink>
         </li>
         <li>
-          <NuxtLink :class="navLinkClass('projects')" to="/#projects">Projetos</NuxtLink>
+          <NuxtLink :class="navLinkClass('projects')" to="/#projects" @click.prevent="scrollToSection('projects')">Projetos</NuxtLink>
         </li>
         <li>
-          <NuxtLink :class="navLinkClass('about')" to="/#about">Sobre</NuxtLink>
+          <NuxtLink :class="navLinkClass('about')" to="/#about" @click.prevent="scrollToSection('about')">Sobre</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -26,6 +30,7 @@ defineProps<{
 }>()
 
 const route = useRoute()
+const { scrollToSection } = useSectionNavigation()
 const activeSection = ref('hero')
 const sectionIds = ['hero', 'projects', 'about']
 let sectionObserver: IntersectionObserver | null = null
