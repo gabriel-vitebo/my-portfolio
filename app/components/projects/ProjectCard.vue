@@ -9,7 +9,7 @@
 
       <div class="flex flex-1 flex-col p-4">
         <h3 class="text-base font-semibold text-primary">{{ project.title }}</h3>
-        <p v-if="project.shortDescription" class="mt-2 line-clamp-2 text-sm leading-6 text-secondary">
+        <p v-if="project.shortDescription" class="mt-2 line-clamp-3 text-sm leading-6 text-secondary">
           {{ project.shortDescription }}
         </p>
       </div>
