@@ -36,11 +36,18 @@
 
       <div class="relative mx-auto w-full max-w-sm rounded-3xl border border-border bg-surface p-3 shadow-lg transition duration-300 hover:scale-[1.02] lg:max-w-md">
         <div class="absolute inset-0 -z-10 rounded-3xl shadow-glow" />
-        <img
+        <NuxtImg
           class="aspect-[4/5] w-full rounded-2xl object-cover"
           :src="hero.image"
           :alt="hero.name"
-        >
+          width="1024"
+          height="1280"
+          sizes="(max-width: 1023px) 384px, 448px"
+          format="avif"
+          quality="82"
+          preload
+          fetchpriority="high"
+        />
       </div>
     </div>
   </section>

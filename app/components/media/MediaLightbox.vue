@@ -21,12 +21,16 @@
         ×
       </button>
 
-      <img
+      <NuxtImg
         v-if="media.type === 'image'"
         class="max-h-[90vh] max-w-[92vw] rounded-2xl border border-white/10 bg-surface object-contain shadow-lg"
         :src="media.src"
         :alt="media.alt || fallbackTitle"
-      >
+        width="1600"
+        height="1200"
+        sizes="92vw"
+        format="webp"
+      />
       <iframe
         v-else
         class="aspect-video w-[92vw] max-w-5xl rounded-2xl border border-white/10 bg-surface shadow-lg"

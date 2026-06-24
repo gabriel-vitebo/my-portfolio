@@ -10,14 +10,18 @@
         :aria-label="getMediaLabel(media)"
         @click="$emit('open-media', media)"
       >
-        <img
+        <NuxtImg
           v-if="media.type === 'image'"
           class="aspect-video w-full rounded-2xl object-cover"
           loading="lazy"
           decoding="async"
           :src="media.src"
           :alt="media.alt || `${projectTitle} - imagem do projeto`"
-        >
+          width="1280"
+          height="720"
+          sizes="(max-width: 767px) 100vw, 576px"
+          format="avif"
+        />
         <template v-else>
           <img
             class="aspect-video w-full rounded-2xl object-cover"
@@ -25,6 +29,8 @@
             decoding="async"
             :src="getYoutubeThumbnail(media.url)"
             :alt="media.title"
+            width="1280"
+            height="720"
           >
           <span class="absolute inset-0 grid place-items-center bg-black/20 transition duration-300 group-hover:bg-black/10" aria-hidden="true">
             <span class="grid h-14 w-14 place-items-center rounded-full border border-white/30 bg-black/65">

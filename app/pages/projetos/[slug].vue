@@ -13,13 +13,17 @@
       </article>
     </main>
 
-    <MediaLightbox :fallback-title="project.title" :media="selectedMedia" @close="closeMedia" />
+    <LazyMediaLightbox
+      v-if="selectedMedia"
+      :fallback-title="project.title"
+      :media="selectedMedia"
+      @close="closeMedia"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppNavbar from '~/components/layout/AppNavbar.vue'
-import MediaLightbox from '~/components/media/MediaLightbox.vue'
 import ProjectGallery from '~/components/projects/ProjectGallery.vue'
 import ProjectHero from '~/components/projects/ProjectHero.vue'
 import { portfolio } from '~/data/portfolio'
@@ -45,4 +49,13 @@ if (!project) {
     statusMessage: 'Projeto não encontrado',
   })
 }
+
+useSeoMeta({
+  title: `${project.title} | ${portfolio.hero.name}`,
+  description: project.shortDescription,
+  ogTitle: `${project.title} | ${portfolio.hero.name}`,
+  ogDescription: project.shortDescription,
+  ogType: 'article',
+  twitterCard: 'summary_large_image',
+})
 </script>

@@ -19,4 +19,13 @@ import AboutSection from '~/components/sections/AboutSection.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ProjectsSection from '~/components/sections/ProjectsSection.vue'
 import { portfolio } from '~/data/portfolio'
+
+useSeoMeta({
+  title: `${portfolio.hero.name} | ${portfolio.hero.role}`,
+  description: portfolio.hero.description,
+  ogTitle: `${portfolio.hero.name} | ${portfolio.hero.role}`,
+  ogDescription: portfolio.hero.description,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
 </script>
