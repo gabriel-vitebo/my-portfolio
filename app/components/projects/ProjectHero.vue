@@ -33,12 +33,17 @@
       :aria-label="`Abrir imagem principal de ${project.title}`"
       @click="$emit('open-media', { type: 'image', src: project.image, alt: project.title })"
     >
-      <img
+      <NuxtImg
         class="aspect-video w-full rounded-3xl object-cover"
         fetchpriority="high"
         :src="project.image"
         :alt="project.title"
-      >
+        width="1280"
+        height="720"
+        sizes="(max-width: 1023px) 100vw, 640px"
+        format="avif"
+        preload
+      />
     </button>
   </div>
 </template>

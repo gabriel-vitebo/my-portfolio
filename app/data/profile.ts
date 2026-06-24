@@ -1,6 +1,5 @@
 import type { AboutData, HeroData, SocialLink } from '~/types/portfolio'
 import { githubUrl } from './constants'
-import profileImage from '~/assets/images/profile/my-photo.png'
 
 export const hero: HeroData = {
   greeting: 'Olá, eu sou',
@@ -8,7 +7,7 @@ export const hero: HeroData = {
   role: 'Desenvolvedor Full Stack',
   description:
     'Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.',
-  image: profileImage,
+  image: '/images/profile/my-photo.png',
 }
 
 export const socials: SocialLink[] = [

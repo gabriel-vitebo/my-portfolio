@@ -13,13 +13,17 @@
       </article>
     </main>
 
-    <MediaLightbox :fallback-title="project.title" :media="selectedMedia" @close="closeMedia" />
+    <LazyMediaLightbox
+      v-if="selectedMedia"
+      :fallback-title="project.title"
+      :media="selectedMedia"
+      @close="closeMedia"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppNavbar from '~/components/layout/AppNavbar.vue'
-import MediaLightbox from '~/components/media/MediaLightbox.vue'
 import ProjectGallery from '~/components/projects/ProjectGallery.vue'
 import ProjectHero from '~/components/projects/ProjectHero.vue'
 import { portfolio } from '~/data/portfolio'
@@ -30,6 +34,9 @@ const slug = route.params.slug
 
 const project = portfolio.projects.find((item) => item.slug === slug)
 const selectedMedia = ref<ProjectGalleryItem | null>(null)
+const siteUrl = 'https://gabriel-vitebo.vercel.app'
+const canonicalUrl = `${siteUrl}/projetos/${project?.slug}`
+const socialImage = `${siteUrl}/images/social-cover.jpg`
 
 const openMedia = (media: ProjectGalleryItem) => {
   selectedMedia.value = media
@@ -45,4 +52,29 @@ if (!project) {
     statusMessage: 'Projeto não encontrado',
   })
 }
+
+useSeoMeta({
+  title: `${project.title} | ${portfolio.hero.name}`,
+  description: project.shortDescription,
+  ogTitle: `${project.title} | ${portfolio.hero.name}`,
+  ogDescription: project.shortDescription,
+  ogType: 'article',
+  ogUrl: canonicalUrl,
+  ogImage: socialImage,
+  ogImageAlt: `${portfolio.hero.name} — ${portfolio.hero.role}`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/jpeg',
+  twitterCard: 'summary_large_image',
+  twitterTitle: `${project.title} | ${portfolio.hero.name}`,
+  twitterDescription: project.shortDescription,
+  twitterImage: socialImage,
+  twitterImageAlt: `${portfolio.hero.name} — ${portfolio.hero.role}`,
+})
+
+useHead({
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
+})
 </script>
