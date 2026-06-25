@@ -1,11 +1,11 @@
 <template>
   <section
     id="hero"
-    class="relative grid min-h-screen snap-start place-items-center overflow-hidden bg-background px-4 py-24 sm:px-6"
+    class="relative grid min-h-screen place-items-center overflow-hidden bg-background px-4 py-14 sm:px-6 sm:py-20 md:snap-start md:py-24"
   >
     <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.10),transparent_68%)] blur-2xl" />
 
-    <div class="relative mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+    <div class="relative mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
       <div class="text-center lg:text-left">
         <p class="text-sm font-medium uppercase tracking-widest text-tertiary">{{ hero.greeting }}</p>
         <h1 class="heading-hero mt-5 text-primary">
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="relative mx-auto w-full max-w-sm rounded-3xl border border-border bg-surface p-3 shadow-lg transition duration-300 hover:scale-[1.02] lg:max-w-md">
+      <div class="relative mx-auto w-full max-w-[17rem] rounded-3xl border border-border bg-surface p-3 shadow-lg transition duration-300 hover:scale-[1.02] sm:max-w-sm lg:max-w-md">
         <div class="absolute inset-0 -z-10 rounded-3xl shadow-glow" />
         <NuxtImg
           class="aspect-[4/5] w-full rounded-2xl object-cover"
