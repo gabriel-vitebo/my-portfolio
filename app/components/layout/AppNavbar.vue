@@ -44,7 +44,7 @@ const syncActiveSection = () => {
   if (route.path !== '/') return
 
   const viewportCenter = window.innerHeight / 2
-  const closestSection = sectionIds
+  const sections = sectionIds
     .map((id) => {
       const element = document.getElementById(id)
       if (!element) return null
@@ -53,11 +53,19 @@ const syncActiveSection = () => {
 
       return {
         id,
+        containsViewportCenter: rect.top <= viewportCenter && rect.bottom >= viewportCenter,
         distance: Math.abs(rect.top + rect.height / 2 - viewportCenter),
       }
     })
-    .filter((section): section is { id: string, distance: number } => Boolean(section))
-    .sort((sectionA, sectionB) => sectionA.distance - sectionB.distance)[0]
+    .filter((section): section is {
+      id: string
+      containsViewportCenter: boolean
+      distance: number
+    } => Boolean(section))
+
+  const activeViewportSection = sections.find(section => section.containsViewportCenter)
+  const closestSection = activeViewportSection
+    ?? sections.sort((sectionA, sectionB) => sectionA.distance - sectionB.distance)[0]
 
   if (closestSection) {
     activeSection.value = closestSection.id
@@ -77,11 +85,13 @@ onMounted(() => {
     if (section) sectionObserver?.observe(section)
   })
 
+  window.addEventListener('scroll', syncActiveSection, { passive: true })
   window.addEventListener('resize', syncActiveSection)
 })
 
 onBeforeUnmount(() => {
   sectionObserver?.disconnect()
+  window.removeEventListener('scroll', syncActiveSection)
   window.removeEventListener('resize', syncActiveSection)
 })
 

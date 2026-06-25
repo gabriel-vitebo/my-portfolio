@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen min-h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth bg-background text-primary">
+  <div class="min-h-screen scroll-smooth bg-background text-primary md:h-screen md:snap-y md:snap-mandatory md:overflow-y-auto">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
       <HeroSection :hero="portfolio.hero" />
