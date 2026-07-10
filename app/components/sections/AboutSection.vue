@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:snap-start md:py-24">
+  <section id="about" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24">
     <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[0.95fr_1.05fr]">
       <div>
         <p class="text-sm font-medium uppercase tracking-widest text-tertiary">Profile</p>

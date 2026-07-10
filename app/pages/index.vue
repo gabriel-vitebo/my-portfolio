@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen scroll-smooth bg-background text-primary md:h-screen md:snap-y md:snap-mandatory md:overflow-y-auto">
+  <div class="min-h-screen scroll-smooth bg-background text-primary">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
       <HeroSection :hero="portfolio.hero" />
@@ -10,10 +10,12 @@
       />
       <AboutSection :about="portfolio.about" :socials="portfolio.socials" />
     </main>
+    <AppFooter :name="portfolio.hero.name" />
   </div>
 </template>
 
 <script setup lang="ts">
+import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import AboutSection from '~/components/sections/AboutSection.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'

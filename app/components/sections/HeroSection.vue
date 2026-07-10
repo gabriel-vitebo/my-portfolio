@@ -1,7 +1,7 @@
 <template>
   <section
     id="hero"
-    class="relative grid min-h-screen place-items-center overflow-hidden bg-background px-4 py-14 sm:px-6 sm:py-20 md:snap-start md:py-24"
+    class="relative grid min-h-screen place-items-center overflow-hidden bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24"
   >
     <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.10),transparent_68%)] blur-2xl" />
 
