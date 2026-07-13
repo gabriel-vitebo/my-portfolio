@@ -16,6 +16,13 @@ export default defineNuxtConfig({
   routeRules: {
     '/**': { prerender: true },
   },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'markdown-it',
+      ],
+    },
+  },
   runtimeConfig: {
     public: {
       appVersion: pkg.version,

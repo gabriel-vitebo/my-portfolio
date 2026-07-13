@@ -7,7 +7,7 @@
         <p class="text-sm font-medium uppercase tracking-widest text-tertiary">Release notes</p>
         <h1 class="mt-4 text-4xl font-bold text-primary sm:text-5xl">Changelog</h1>
         <p class="mt-5 max-w-2xl text-base leading-8 text-secondary">
-          Histórico de versões gerado a partir dos commits do projeto, seguindo Semantic Versioning e Conventional Commits.
+          Histórico de versões publicado manualmente com Changesets.
         </p>
       </header>
 

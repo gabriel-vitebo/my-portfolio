@@ -1,62 +1,67 @@
-# Convenção de commits
+# Changesets
 
-Este projeto usa Conventional Commits para calcular automaticamente a próxima versão com Semantic Versioning.
+Este projeto não usa commits para calcular versões automaticamente.
 
-## Formato
+Commits comuns podem ter qualquer formato e nunca criam release por si só. Uma alteração só entra em uma futura release quando um changeset é criado manualmente.
 
-```text
-tipo(escopo opcional): mensagem curta no imperativo
-```
-
-Exemplos:
+## Criar uma alteração publicável
 
 ```text
-feat(projects): adiciona novo projeto
-fix(header): corrige navegação mobile
-docs(readme): atualiza instalação
-refactor(footer): simplifica estrutura
-chore(deps): atualiza dependências
+pnpm changeset
 ```
 
-## Tipos aceitos
+Ao criar o changeset:
 
-| Tipo | Versão | Uso |
-| --- | --- | --- |
-| `feat` | minor | Nova funcionalidade |
-| `fix` | patch | Correção de bug |
-| `perf` | patch | Melhoria de performance |
-| `refactor` | patch | Refatoração sem mudança de comportamento |
-| `docs` | patch | Documentação |
-| `style` | patch | Formatação ou estilos sem mudança funcional |
-| `test` | patch | Testes |
-| `chore` | patch | Tarefas de manutenção |
-| `ci` | patch | Integração contínua |
-| `build` | patch | Build, empacotamento ou dependências de build |
+- escolha manualmente `patch`, `minor` ou `major`;
+- escreva a descrição pública que deve aparecer no `CHANGELOG.md`;
+- commite o arquivo `.changeset/*.md` junto com a alteração.
 
-Commits com `!` ou rodapé `BREAKING CHANGE:` geram uma versão major.
+Exemplo:
 
-```text
-feat!: altera a estrutura principal do projeto
+```md
+---
+"my-portfolio": minor
+---
+
+✨ Feature: adiciona uma página pública de changelog.
 ```
 
-```text
-feat(api): muda contrato público
+## Padrão visual das descrições
 
-BREAKING CHANGE: remove suporte ao formato antigo de resposta.
-```
+Use o ícone como parte manual da descrição do changeset:
+
+- ✨ Feature: nova funcionalidade
+- 🐛 Correção: correção de bug
+- ⚡ Performance: melhoria de performance
+- ♻️ Refatoração: reorganização interna
+- 📝 Documentação: documentação
+- 💄 Interface: ajuste visual
+- ✅ Testes: cobertura ou ajuste de testes
+- 🔧 Manutenção: configuração ou manutenção
+- 👷 CI: integração contínua
+- 📦 Build: build ou empacotamento
+- 💥 Breaking change: mudança incompatível
 
 ## Fluxo de versionamento
 
 ```mermaid
 flowchart TD
 
-    A["Novo Commit"] --> B{"Tipo do commit?"}
+    A["Alteração publicável"] --> B["pnpm changeset"]
 
-    B -->|"feat"| C["Minor<br/>1.2.3 → 1.3.0"]
+    B --> C{"Escolha manual"}
 
-    B -->|"fix / perf / docs / refactor / style / test / chore / ci / build"| D["Patch<br/>1.2.3 → 1.2.4"]
+    C -->|"patch"| D["1.2.3 → 1.2.4"]
 
-    B -->|"tipo!"| E["Major<br/>1.2.3 → 2.0.0"]
+    C -->|"minor"| E["1.2.3 → 1.3.0"]
 
-    B -->|"BREAKING CHANGE"| E
+    C -->|"major"| F["1.2.3 → 2.0.0"]
+
+    D --> G["Version Packages PR"]
+
+    E --> G
+
+    F --> G
+
+    G --> H["Merge manual para lançar"]
 ```

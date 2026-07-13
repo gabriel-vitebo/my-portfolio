@@ -7,34 +7,38 @@ flowchart LR
         C["GitHub Releases"]
     end
 
-    subgraph semantic-release
-        D["Analisar commits"]
-        E["Atualizar versão"]
+    subgraph Changesets
+        D[".changeset/*.md"]
+        E["Version Packages PR"]
+        F["changeset publish"]
     end
 
     subgraph Repository
-        F["package.json"]
-        G["CHANGELOG.md"]
+        G["package.json"]
+        H["CHANGELOG.md"]
     end
 
     subgraph Nuxt
-        H["runtimeConfig"]
-        I["Footer"]
-        J["/changelog"]
+        I["runtimeConfig"]
+        J["Footer"]
+        K["/changelog"]
     end
 
     A --> D
 
     D --> E
 
-    E --> F
     E --> G
-    E --> B
-    E --> C
+    E --> H
 
-    F --> H
+    G --> F
 
-    H --> I
+    F --> B
+    F --> C
 
-    G --> J
+    G --> I
+
+    I --> J
+
+    H --> K
 ```

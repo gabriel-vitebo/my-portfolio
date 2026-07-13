@@ -3,41 +3,56 @@
 ```mermaid
 flowchart TD
 
-    A["👨‍💻 Desenvolvedor<br/>git commit"] --> B["📤 Push para main"]
+    A["👨‍💻 Desenvolvimento normal"] --> B["📤 Commit e push"]
 
-    B --> C["⚙️ GitHub Actions"]
+    B --> C{"Alteração publicável?"}
 
-    C --> D["🔍 semantic-release<br/>Analisa os commits"]
+    C -->|"Não"| D["Sem release"]
 
-    D --> E["📈 Determina versão<br/>Major / Minor / Patch"]
+    C -->|"Sim"| E["pnpm changeset"]
 
-    E --> F["📝 Atualiza CHANGELOG.md"]
+    E --> F["Escolher patch / minor / major"]
 
-    E --> G["📦 Atualiza package.json<br/>version"]
+    F --> G["Escrever descrição pública"]
 
-    E --> H["🏷️ Cria Tag Git<br/>vX.Y.Z"]
+    G --> H["Commitar .changeset/*.md"]
 
-    E --> I["🚀 Cria GitHub Release"]
+    H --> I["Merge na main"]
 
-    F --> J["🌐 Build Nuxt"]
+    I --> J["Changesets Action"]
 
-    G --> J
+    J --> K["Cria ou atualiza PR<br/>Version Packages"]
 
-    J --> K["📤 Deploy"]
+    K --> L{"Decisão manual<br/>de lançar?"}
 
-    K --> L["👤 Usuário acessa o site"]
+    L -->|"Aguardar"| M["Acumular novos changesets<br/>na mesma PR"]
 
-    L --> M["Footer<br/>V1.4.0"]
+    M --> I
 
-    M --> N["Página /changelog"]
+    L -->|"Merge da PR"| N["package.json e CHANGELOG.md<br/>atualizados na main"]
 
-    N --> O["Renderiza CHANGELOG.md"]
+    N --> O["changeset publish<br/>sem npm publish"]
+
+    O --> P["🏷️ Tag Git<br/>vX.Y.Z"]
+
+    O --> Q["🚀 GitHub Release<br/>vX.Y.Z"]
+
+    N --> R["🌐 Build Nuxt"]
+
+    R --> S["Footer<br/>Vx.y.z"]
+
+    S --> T["Página /changelog"]
+
+    T --> U["Renderiza CHANGELOG.md"]
 ```
 
 ## Implementação
 
-- `release.config.cjs` define as regras de Semantic Versioning, o formato do changelog e os plugins do semantic-release.
-- `.github/workflows/release.yml` executa o release em pushes para `main`, com `fetch-depth: 0` para preservar histórico e tags.
+- `.changeset/config.json` define o Changesets como fonte do versionamento manual.
+- `.github/workflows/release.yml` usa `changesets/action` para manter a PR `Version Packages`.
+- `pnpm changeset` cria um arquivo `.changeset/*.md` com o tipo de versão e a descrição pública.
+- `pnpm version` executa `changeset version` e atualiza `package.json`, `pnpm-lock.yaml` e `CHANGELOG.md` na PR de versão.
+- `pnpm release` executa `changeset publish`; como o pacote é `private: true`, nada é publicado no npm, mas `privatePackages.tag: true` permite a criação da tag `vX.Y.Z`.
 - `package.json` é a fonte da versão exibida no frontend.
 - `nuxt.config.ts` expõe `package.json.version` em `runtimeConfig.public.appVersion`.
 - `app/components/layout/AppFooter.vue` exibe o link interno `Vx.y.z` para `/changelog`.

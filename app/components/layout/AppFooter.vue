@@ -6,7 +6,6 @@
       <NuxtLink
         class="w-fit font-medium uppercase tracking-wide text-secondary transition duration-300 hover:text-accent"
         to="/changelog"
-        @click.stop.prevent="goToChangelog"
       >
         V{{ version }}
       </NuxtLink>
@@ -21,8 +20,4 @@ defineProps<{
 
 const config = useRuntimeConfig()
 const version = config.public.appVersion
-
-const goToChangelog = () => {
-  return navigateTo('/changelog')
-}
 </script>
