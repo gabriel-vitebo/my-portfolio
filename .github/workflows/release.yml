@@ -42,13 +42,12 @@ jobs:
 
       - name: Create version PR or GitHub Release
         id: changesets
-        uses: changesets/action@v2
+        uses: changesets/action@v1
         with:
-          version-script: pnpm version
-          publish-script: pnpm release
-          commit-message: Version Packages
-          pr-title: Version Packages
-          create-github-releases: true
-          push-git-tags: true
+          version: pnpm version
+          publish: pnpm release
+          commit: Version Packages
+          title: Version Packages
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
