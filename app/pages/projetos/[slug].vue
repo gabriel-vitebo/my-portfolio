@@ -13,6 +13,8 @@
       </article>
     </main>
 
+    <AppFooter :name="portfolio.hero.name" />
+
     <LazyMediaLightbox
       v-if="selectedMedia"
       :fallback-title="project.title"
@@ -23,6 +25,7 @@
 </template>
 
 <script setup lang="ts">
+import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import ProjectGallery from '~/components/projects/ProjectGallery.vue'
 import ProjectHero from '~/components/projects/ProjectHero.vue'

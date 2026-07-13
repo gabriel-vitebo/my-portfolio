@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import pkg from './package.json' with { type: 'json' }
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
@@ -14,9 +16,22 @@ export default defineNuxtConfig({
   routeRules: {
     '/**': { prerender: true },
   },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'markdown-it',
+      ],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      appVersion: pkg.version,
+    },
+  },
   nitro: {
     prerender: {
       routes: [
+        '/changelog',
         '/projetos/curriculo-ai',
         '/projetos/check-numbers',
         '/projetos/food-explorer',

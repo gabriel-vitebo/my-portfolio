@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:snap-start md:py-24">
+  <section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24">
     <div class="mx-auto w-full max-w-6xl">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold text-primary sm:text-4xl">{{ title }}</h2>

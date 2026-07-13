@@ -73,6 +73,8 @@ const syncActiveSection = () => {
 }
 
 onMounted(() => {
+  if (route.path !== '/') return
+
   syncActiveSection()
 
   sectionObserver = new IntersectionObserver(syncActiveSection, {
