@@ -13,29 +13,33 @@
 
         <ul class="mt-8 flex flex-wrap gap-3 text-sm">
           <li v-for="social in socials" :key="social.url">
-            <a
+            <UButton
               class="inline-flex rounded-full border border-border px-4 py-2 text-secondary transition duration-300 hover:border-primary hover:text-accent"
               :href="social.url"
+              color="neutral"
+              variant="outline"
               rel="noreferrer"
               target="_blank"
             >
               {{ social.label }}
-            </a>
+            </UButton>
           </li>
         </ul>
       </div>
 
       <div class="grid content-center gap-4 sm:grid-cols-2">
-        <a
+        <UCard
           v-for="highlight in about.highlights"
           :key="highlight.slug"
+          as="a"
           class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50"
           :href="highlight.link"
           rel="noreferrer"
           target="_blank"
+          :ui="{ body: 'p-0 sm:p-0' }"
         >
           <h3 class="text-lg font-semibold text-primary">{{ highlight.title }}</h3>
-        </a>
+        </UCard>
       </div>
     </div>
   </section>

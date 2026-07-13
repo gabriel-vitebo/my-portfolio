@@ -11,25 +11,29 @@
           {{ project.description }}
         </p>
 
-        <button
+        <UButton
           v-if="canToggleDescription"
           class="mt-3 text-sm font-medium text-accent transition duration-300 hover:text-accent-hover"
           type="button"
+          color="neutral"
+          variant="link"
           :aria-controls="descriptionId"
           :aria-expanded="isDescriptionExpanded"
           @click="isDescriptionExpanded = !isDescriptionExpanded"
         >
           {{ isDescriptionExpanded ? 'Ler menos' : 'Leia mais' }}
-        </button>
+        </UButton>
       </div>
 
       <ProjectTechnologies class="mt-8" :technologies="project.technologies" />
       <ProjectLinks class="mt-8" :demo-url="project.demoUrl" :github-links="project.githubLinks" />
     </div>
 
-    <button
+    <UButton
       class="group block w-full rounded-3xl border border-border bg-surface shadow-lg transition duration-300 hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:sticky lg:top-28"
       type="button"
+      color="neutral"
+      variant="outline"
       :aria-label="`Abrir imagem principal de ${project.title}`"
       @click="$emit('open-media', { type: 'image', src: project.image, alt: project.title })"
     >
@@ -44,7 +48,7 @@
         format="avif"
         preload
       />
-    </button>
+    </UButton>
   </div>
 </template>
 

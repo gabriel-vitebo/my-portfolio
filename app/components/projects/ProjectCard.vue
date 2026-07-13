@@ -1,5 +1,9 @@
 <template>
-  <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50">
+  <UCard
+    as="article"
+    class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"
+    :ui="{ body: 'p-0 sm:p-0' }"
+  >
     <NuxtLink class="flex h-full flex-col" :aria-label="`Abrir projeto ${project.title}`" :to="`/projetos/${project.slug}`">
       <NuxtImg
         class="aspect-[16/9] w-full bg-surface object-cover"
@@ -20,7 +24,7 @@
         </p>
       </div>
     </NuxtLink>
-  </article>
+  </UCard>
 </template>
 
 <script setup lang="ts">
