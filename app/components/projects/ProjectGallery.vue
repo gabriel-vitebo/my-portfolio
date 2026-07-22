@@ -19,10 +19,12 @@
           decoding="async"
           :src="media.src"
           :alt="media.alt || `${projectTitle} - imagem do projeto`"
-          width="1280"
-          height="720"
+          width="768"
+          height="432"
           sizes="(max-width: 767px) 100vw, 576px"
-          format="avif"
+          densities="x1"
+          format="webp"
+          quality="70"
         />
         <template v-else>
           <img

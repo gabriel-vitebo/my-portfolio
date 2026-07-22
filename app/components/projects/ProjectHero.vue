@@ -19,7 +19,7 @@
           variant="link"
           :aria-controls="descriptionId"
           :aria-expanded="isDescriptionExpanded"
-          @click="isDescriptionExpanded = !isDescriptionExpanded"
+          @click="toggleDescription"
         >
           {{ isDescriptionExpanded ? 'Ler menos' : 'Leia mais' }}
         </UButton>
@@ -35,17 +35,20 @@
       color="neutral"
       variant="outline"
       :aria-label="`Abrir imagem principal de ${project.title}`"
-      @click="$emit('open-media', { type: 'image', src: project.image, alt: project.title })"
+      @click="openHeroImage"
     >
       <NuxtImg
         class="aspect-video w-full rounded-3xl object-cover"
         fetchpriority="high"
+        loading="eager"
+        decoding="async"
         :src="project.image"
         :alt="project.title"
         width="1280"
         height="720"
         sizes="(max-width: 1023px) 100vw, 640px"
-        format="avif"
+        format="webp"
+        quality="75"
         preload
       />
     </UButton>
@@ -61,7 +64,7 @@ const props = defineProps<{
   project: Project
 }>()
 
-defineEmits<{
+const emit = defineEmits<{
   'open-media': [media: ProjectGalleryItem]
 }>()
 
@@ -69,4 +72,12 @@ const isDescriptionExpanded = ref(false)
 const descriptionId = computed(() => `project-page-description-${props.project.slug}`)
 const canToggleDescription = computed(() => props.project.description.length > 260)
 const shouldCollapseDescription = computed(() => canToggleDescription.value && !isDescriptionExpanded.value)
+
+function toggleDescription() {
+  isDescriptionExpanded.value = !isDescriptionExpanded.value
+}
+
+function openHeroImage() {
+  emit('open-media', { type: 'image', src: props.project.image, alt: props.project.title })
+}
 </script>

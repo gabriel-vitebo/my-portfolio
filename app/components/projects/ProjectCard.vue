@@ -12,7 +12,9 @@
         width="768"
         height="432"
         sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px"
-        format="avif"
+        densities="x1"
+        format="webp"
+        quality="70"
         loading="lazy"
         decoding="async"
       />
