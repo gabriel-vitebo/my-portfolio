@@ -1,12 +1,15 @@
 <template>
   <ul class="flex flex-wrap gap-2" :aria-label="label">
-    <li
+    <UBadge
       v-for="technology in technologies"
       :key="technology"
+      as="li"
       class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-secondary"
+      color="neutral"
+      variant="outline"
     >
       {{ technology }}
-    </li>
+    </UBadge>
   </ul>
 </template>
 

@@ -11,40 +11,47 @@
           {{ project.description }}
         </p>
 
-        <button
+        <UButton
           v-if="canToggleDescription"
           class="mt-3 text-sm font-medium text-accent transition duration-300 hover:text-accent-hover"
           type="button"
+          color="neutral"
+          variant="link"
           :aria-controls="descriptionId"
           :aria-expanded="isDescriptionExpanded"
-          @click="isDescriptionExpanded = !isDescriptionExpanded"
+          @click="toggleDescription"
         >
           {{ isDescriptionExpanded ? 'Ler menos' : 'Leia mais' }}
-        </button>
+        </UButton>
       </div>
 
       <ProjectTechnologies class="mt-8" :technologies="project.technologies" />
       <ProjectLinks class="mt-8" :demo-url="project.demoUrl" :github-links="project.githubLinks" />
     </div>
 
-    <button
+    <UButton
       class="group block w-full rounded-3xl border border-border bg-surface shadow-lg transition duration-300 hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:sticky lg:top-28"
       type="button"
+      color="neutral"
+      variant="outline"
       :aria-label="`Abrir imagem principal de ${project.title}`"
-      @click="$emit('open-media', { type: 'image', src: project.image, alt: project.title })"
+      @click="openHeroImage"
     >
       <NuxtImg
         class="aspect-video w-full rounded-3xl object-cover"
         fetchpriority="high"
+        loading="eager"
+        decoding="async"
         :src="project.image"
         :alt="project.title"
         width="1280"
         height="720"
         sizes="(max-width: 1023px) 100vw, 640px"
-        format="avif"
+        format="webp"
+        quality="75"
         preload
       />
-    </button>
+    </UButton>
   </div>
 </template>
 
@@ -57,7 +64,7 @@ const props = defineProps<{
   project: Project
 }>()
 
-defineEmits<{
+const emit = defineEmits<{
   'open-media': [media: ProjectGalleryItem]
 }>()
 
@@ -65,4 +72,12 @@ const isDescriptionExpanded = ref(false)
 const descriptionId = computed(() => `project-page-description-${props.project.slug}`)
 const canToggleDescription = computed(() => props.project.description.length > 260)
 const shouldCollapseDescription = computed(() => canToggleDescription.value && !isDescriptionExpanded.value)
+
+function toggleDescription() {
+  isDescriptionExpanded.value = !isDescriptionExpanded.value
+}
+
+function openHeroImage() {
+  emit('open-media', { type: 'image', src: props.project.image, alt: props.project.title })
+}
 </script>
