@@ -1,11 +1,11 @@
 <template>
   <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
     <div>
-      <h1 class="text-4xl font-bold leading-tight text-primary sm:text-6xl">{{ project.title }}</h1>
+      <h1 class="text-4xl font-bold leading-tight text-foreground sm:text-6xl">{{ project.title }}</h1>
       <div class="mt-6 max-w-2xl">
         <p
           :id="descriptionId"
-          class="paragraph-lg text-secondary"
+          class="text-lg leading-8 text-muted"
           :class="{ 'line-clamp-4': shouldCollapseDescription }"
         >
           {{ project.description }}
@@ -13,7 +13,7 @@
 
         <UButton
           v-if="canToggleDescription"
-          class="mt-3 text-sm font-medium text-accent transition duration-300 hover:text-accent-hover"
+          class="mt-3 text-sm font-medium text-primary transition duration-300 hover:text-primary-hover"
           type="button"
           color="neutral"
           variant="link"

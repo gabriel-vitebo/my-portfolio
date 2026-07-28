@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen scroll-smooth bg-background text-primary">
+  <div class="min-h-screen scroll-smooth bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
       <HeroSection :hero="portfolio.hero" />

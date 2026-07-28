@@ -2,14 +2,14 @@
   <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
       <NuxtLink
-        class="text-[15px] font-semibold text-primary transition duration-300 hover:text-accent"
+        class="text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary"
         to="/#hero"
         @click.prevent="scrollToSection('hero')"
       >
         {{ name }}
       </NuxtLink>
 
-      <ul class="flex items-center gap-3 text-[13px] text-secondary sm:gap-6 sm:text-[15px]">
+      <ul class="flex items-center gap-3 text-[13px] text-muted sm:gap-6 sm:text-[15px]">
         <li>
           <NuxtLink :class="navLinkClass('hero')" to="/#hero" @click.prevent="scrollToSection('hero')">Início</NuxtLink>
         </li>
@@ -36,8 +36,8 @@ const sectionIds = ['hero', 'projects', 'about']
 let sectionObserver: IntersectionObserver | null = null
 
 const navLinkClass = (sectionId: string) => [
-  'transition duration-300 hover:text-accent',
-  route.path === '/' && activeSection.value === sectionId ? 'text-accent' : '',
+  'transition duration-300 hover:text-primary',
+  route.path === '/' && activeSection.value === sectionId ? 'text-primary' : '',
 ]
 
 const syncActiveSection = () => {

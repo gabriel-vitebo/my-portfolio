@@ -2,10 +2,10 @@
   <section id="about" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
     <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[0.95fr_1.05fr]">
       <div>
-        <p class="text-sm font-medium uppercase tracking-widest text-tertiary">Profile</p>
-        <h2 class="mt-4 text-3xl font-bold text-primary sm:text-4xl">{{ about.title }}</h2>
+        <p class="text-sm font-medium uppercase tracking-widest text-subtle">Profile</p>
+        <h2 class="mt-4 text-3xl font-bold text-foreground sm:text-4xl">{{ about.title }}</h2>
 
-        <div class="mt-6 space-y-4 text-base leading-8 text-secondary">
+        <div class="mt-6 space-y-4 text-base leading-8 text-muted">
           <p v-for="paragraph in about.paragraphs" :key="paragraph">
             {{ paragraph }}
           </p>
@@ -14,7 +14,7 @@
         <ul class="mt-8 flex flex-wrap gap-3 text-sm">
           <li v-for="social in socials" :key="social.url">
             <UButton
-              class="inline-flex rounded-full border border-border px-4 py-2 text-secondary transition duration-300 hover:border-primary hover:text-accent"
+              class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary"
               :href="social.url"
               color="neutral"
               variant="outline"
@@ -38,7 +38,7 @@
           target="_blank"
           :ui="{ body: 'p-0 sm:p-0' }"
         >
-          <h3 class="text-lg font-semibold text-primary">{{ highlight.title }}</h3>
+          <h3 class="text-lg font-semibold text-foreground">{{ highlight.title }}</h3>
         </UCard>
       </div>
     </div>

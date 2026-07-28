@@ -20,6 +20,9 @@ export default {
         border: withOpacity('--color-border-rgb'),
         primary: withOpacity('--color-primary-rgb'),
         'primary-hover': withOpacity('--color-primary-hover-rgb'),
+        foreground: withOpacity('--color-text-primary-rgb'),
+        muted: withOpacity('--color-text-secondary-rgb'),
+        subtle: withOpacity('--color-text-tertiary-rgb'),
       },
       borderRadius: {
         sm: 'var(--radius-sm)',

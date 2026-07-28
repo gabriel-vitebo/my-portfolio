@@ -20,8 +20,8 @@
       />
 
       <div class="flex flex-1 flex-col p-4">
-        <h3 class="text-base font-semibold text-primary">{{ project.title }}</h3>
-        <p v-if="project.shortDescription" class="mt-2 line-clamp-3 text-sm leading-6 text-secondary">
+        <h3 class="text-base font-semibold text-foreground">{{ project.title }}</h3>
+        <p v-if="project.shortDescription" class="mt-2 line-clamp-3 text-sm leading-6 text-muted">
           {{ project.shortDescription }}
         </p>
       </div>
