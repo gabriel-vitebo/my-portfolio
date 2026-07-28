@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.1
+
+### Patch Changes
+
+- [`779ac1b`](https://github.com/gabriel-vitebo/my-portfolio/commit/779ac1b689eb443a91cb0364bad564be82115fac) - 💄 Interface: migra componentes e estilos para Nuxt UI e utilitários Tailwind.
+
 ## 2.0.0
 
 ### Major Changes
