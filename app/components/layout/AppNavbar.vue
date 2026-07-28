@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
+  <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
       <NuxtLink
         class="text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary"

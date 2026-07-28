@@ -2,6 +2,18 @@
 @config "../../../tailwind.config.ts";
 @import "@nuxt/ui";
 
+@theme inline {
+  --color-background: rgb(var(--color-background-rgb) / 1);
+  --color-surface: rgb(var(--color-surface-rgb) / 1);
+  --color-surface-elevated: rgb(var(--color-surface-elevated-rgb) / 1);
+  --color-border: rgb(var(--color-border-rgb) / 1);
+  --color-primary: rgb(var(--color-primary-rgb) / 1);
+  --color-primary-hover: rgb(var(--color-primary-hover-rgb) / 1);
+  --color-foreground: rgb(var(--color-text-primary-rgb) / 1);
+  --color-muted: rgb(var(--color-text-secondary-rgb) / 1);
+  --color-subtle: rgb(var(--color-text-tertiary-rgb) / 1);
+}
+
 :root {
   --color-background: #09090b;
   --color-surface: #0f0f12;
