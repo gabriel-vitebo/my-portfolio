@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@11.1.1",
@@ -13,7 +13,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "release": "changeset publish",
-    "version": "changeset version"
+    "version": "node --env-file=.env ./node_modules/@changesets/cli/bin.js version"
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
