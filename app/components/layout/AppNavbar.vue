@@ -19,6 +19,9 @@
         <li>
           <NuxtLink :class="navLinkClass('about')" to="/#about" @click.prevent="scrollToSection('about')">Sobre</NuxtLink>
         </li>
+        <li>
+          <NuxtLink :class="routeLinkClass('/changelog')" to="/changelog">Changelog</NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
@@ -38,6 +41,11 @@ let sectionObserver: IntersectionObserver | null = null
 const navLinkClass = (sectionId: string) => [
   'transition duration-300 hover:text-primary',
   route.path === '/' && activeSection.value === sectionId ? 'text-primary' : '',
+]
+
+const routeLinkClass = (path: string) => [
+  'transition duration-300 hover:text-primary',
+  route.path === path ? 'text-primary' : '',
 ]
 
 const syncActiveSection = () => {
