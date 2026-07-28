@@ -4,7 +4,7 @@
       v-for="technology in technologies"
       :key="technology"
       as="li"
-      class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-secondary"
+      class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted"
       color="neutral"
       variant="outline"
     >

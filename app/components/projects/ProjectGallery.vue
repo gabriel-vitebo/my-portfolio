@@ -1,6 +1,6 @@
 <template>
   <section class="mt-14" aria-labelledby="project-gallery-title">
-    <h2 id="project-gallery-title" class="text-2xl font-semibold text-primary">Galeria</h2>
+    <h2 id="project-gallery-title" class="text-2xl font-semibold text-foreground">Galeria</h2>
     <div class="mt-6 grid gap-4 md:grid-cols-2">
       <UButton
         v-for="media in items"

@@ -7,12 +7,12 @@
 
     <div class="relative mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
       <div class="text-center lg:text-left">
-        <p class="text-sm font-medium uppercase tracking-widest text-tertiary">{{ hero.greeting }}</p>
-        <h1 class="heading-hero mt-5 text-primary">
+        <p class="text-sm font-medium uppercase tracking-widest text-subtle">{{ hero.greeting }}</p>
+        <h1 class="mt-5 text-[42px] font-black leading-none text-foreground md:text-[56px] lg:text-7xl">
           <span class="block">{{ hero.name }}</span>
         </h1>
-        <p class="role-hero mt-5 text-secondary">{{ hero.role }}</p>
-        <p class="paragraph-lg mx-auto mt-6 max-w-2xl text-secondary lg:mx-0">
+        <p class="mt-5 text-[22px] font-semibold leading-tight text-muted lg:text-[28px]">{{ hero.role }}</p>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted lg:mx-0">
           {{ hero.description }}
         </p>
 
@@ -27,7 +27,7 @@
             Ver projetos
           </UButton>
           <UButton
-            class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-primary transition duration-300 hover:border-primary hover:text-accent"
+            class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary"
             to="#about"
             color="neutral"
             variant="outline"

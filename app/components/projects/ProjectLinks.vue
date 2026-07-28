@@ -14,7 +14,7 @@
     </UButton>
     <UButton
       v-if="demoUrl"
-      class="inline-flex rounded-full border border-border px-5 py-3 font-semibold text-primary transition duration-300 hover:border-primary hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      class="inline-flex rounded-full border border-border px-5 py-3 font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       :href="demoUrl"
       color="neutral"
       variant="outline"
