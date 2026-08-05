@@ -20,8 +20,8 @@ export const socials: SocialLink[] = [
     url: 'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
   },
   {
-    label: 'E-mail',
-    url: 'mailto:gabrielvitebo@gmail.com',
+    label: 'contact@gabrielvitebo.dev',
+    url: 'mailto:contact@gabrielvitebo.dev',
   },
 ]
 

@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AboutSection > matches the snapshot 1`] = `
+"<section id="about" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
+  <div class="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+    <div>
+      <p class="text-sm font-medium uppercase tracking-widest text-subtle">Profile</p>
+      <h2 class="mt-4 text-3xl font-bold text-foreground sm:text-4xl">Sobre mim</h2>
+      <div class="mt-6 space-y-4 text-base leading-8 text-muted">
+        <p>Sou desenvolvedor Full Stack com experiência na construção e evolução de produtos digitais, atuando principalmente com Vue, Nuxt, React e TypeScript.</p>
+        <p>Participei do desenvolvimento de marketplaces, checkouts, páginas com foco em SEO e ferramentas internas, sempre buscando equilibrar qualidade técnica, experiência do usuário e impacto no negócio.</p>
+      </div>
+      <ul class="mt-8 flex flex-wrap gap-3 text-sm">
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="https://github.com/gabriel-vitebo">GitHub</a></li>
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/">LinkedIn</a></li>
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="mailto:contact@gabrielvitebo.dev">contact@gabrielvitebo.dev</a></li>
+      </ul>
+    </div>
+    <div class="grid content-center gap-4 sm:grid-cols-2"><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://nuxt.com/">
+        <h3 class="text-lg font-semibold text-foreground">Nuxt</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://vuejs.org/">
+        <h3 class="text-lg font-semibold text-foreground">Vue</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://react.dev/">
+        <h3 class="text-lg font-semibold text-foreground">React</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://www.typescriptlang.org/">
+        <h3 class="text-lg font-semibold text-foreground">TypeScript</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://nodejs.org/pt-br">
+        <h3 class="text-lg font-semibold text-foreground">Node.js</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://rubyonrails.org/">
+        <h3 class="text-lg font-semibold text-foreground">Ruby on Rails</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://developer.mozilla.org/pt-BR/docs/Glossary/SEO">
+        <h3 class="text-lg font-semibold text-foreground">SEO</h3>
+      </a><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/What_is_web_performance">
+        <h3 class="text-lg font-semibold text-foreground">Performance</h3>
+      </a></div>
+  </div>
+</section>"
+`;
