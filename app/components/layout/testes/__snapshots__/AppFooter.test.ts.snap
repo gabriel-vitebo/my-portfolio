@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppFooter > matches the snapshot 1`] = `
+"<footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+  <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+    <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+  </div>
+</footer>"
+`;

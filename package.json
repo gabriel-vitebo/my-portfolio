@@ -13,6 +13,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "release": "changeset publish",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "version": "node --env-file=.env ./node_modules/@changesets/cli/bin.js version"
   },
   "dependencies": {
@@ -27,6 +29,11 @@
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
     "@types/markdown-it": "^14.1.2",
-    "markdown-it": "^14.3.0"
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/test-utils": "^2.4.11",
+    "happy-dom": "^20.11.1",
+    "markdown-it": "^14.3.0",
+    "unplugin-auto-import": "^21.1.0",
+    "vitest": "^4.1.10"
   }
 }

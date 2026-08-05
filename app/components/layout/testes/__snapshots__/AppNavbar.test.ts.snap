@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppNavbar > matches the snapshot 1`] = `
+"<header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6"><a class="text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+    <ul class="flex items-center gap-3 text-[13px] text-muted sm:gap-6 sm:text-[15px]">
+      <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
+      <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+      <li><a class="transition duration-300 hover:text-primary" href="/#about">Sobre</a></li>
+      <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+    </ul>
+  </nav>
+</header>"
+`;

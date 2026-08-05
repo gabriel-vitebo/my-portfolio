@@ -1,0 +1,23 @@
+{
+  "extends": "./.nuxt/tsconfig.app.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./app/*"],
+      "#test-nuxt": ["./tests/support/nuxt.ts"],
+      "~/*": ["./app/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "app/components/**/testes/**/*.ts",
+    "app/components/**/*.vue",
+    "app/composables/**/testes/**/*.ts",
+    "app/composables/**/*.ts",
+    "app/data/**/*.ts",
+    "app/pages/**/testes/**/*.ts",
+    "app/pages/**/*.vue",
+    "app/types/**/*.ts",
+    "tests/**/*.ts",
+    "vitest.config.ts"
+  ]
+}

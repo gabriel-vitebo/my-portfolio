@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectCard > matches the snapshot 1`] = `
+"<article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
+    <div class="flex flex-1 flex-col p-4">
+      <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
+      <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+    </div>
+  </a></article>"
+`;

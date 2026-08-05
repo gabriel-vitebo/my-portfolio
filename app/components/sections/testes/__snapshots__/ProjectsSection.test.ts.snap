@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectsSection > matches the snapshot 1`] = `
+"<section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
+  <div class="mx-auto w-full max-w-6xl">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
+      <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Projetos em destaque</p>
+    </div>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+          </div>
+        </a></article>
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
+          </div>
+        </a></article>
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
+          </div>
+        </a></article>
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
+          </div>
+        </a></article>
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
+          </div>
+        </a></article>
+      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
+          <div class="flex flex-1 flex-col p-4">
+            <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
+            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
+          </div>
+        </a></article>
+    </div>
+  </div>
+</section>"
+`;

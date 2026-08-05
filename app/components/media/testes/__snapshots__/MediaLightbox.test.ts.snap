@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaLightbox > matches the snapshot for image media 1`] = `
+"<teleport-stub to="body">
+  <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Imagem de Food Explorer" tabindex="-1"><button class="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/60 text-2xl leading-none text-white transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" type="button" aria-label="Fechar mídia"> × </button><img class="h-auto max-h-[90vh] w-auto max-w-[92vw] rounded-2xl border border-white/10 bg-surface object-contain shadow-lg" src="/images/projects/food-explorer/home.png" alt="Página inicial do Food Explorer" width="1600" height="1200" decoding="async"></div>
+</teleport-stub>"
+`;
