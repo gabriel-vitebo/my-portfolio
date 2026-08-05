@@ -14,6 +14,7 @@
     "postinstall": "nuxt prepare",
     "release": "changeset publish",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
     "version": "node --env-file=.env ./node_modules/@changesets/cli/bin.js version"
   },
@@ -30,6 +31,7 @@
     "@changesets/cli": "^2.29.7",
     "@types/markdown-it": "^14.1.2",
     "@vitejs/plugin-vue": "^6.0.8",
+    "@vitest/coverage-v8": "^4.1.10",
     "@vue/test-utils": "^2.4.11",
     "happy-dom": "^20.11.1",
     "markdown-it": "^14.3.0",

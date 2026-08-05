@@ -32,4 +32,12 @@ describe('useSectionNavigation', () => {
 
     expect(navigateTo).not.toHaveBeenCalled()
   })
+
+  it('updates the hash when already on home but targeting a different section', async () => {
+    route.hash = '#hero'
+
+    await useSectionNavigation().scrollToSection('projects')
+
+    expect(navigateTo).toHaveBeenCalledWith({ path: '/', hash: '#projects' })
+  })
 })

@@ -31,6 +31,20 @@ export default defineConfig({
     },
   },
   test: {
+    coverage: {
+      include: [
+        'app/composables/**/*.ts',
+        'app/data/**/*.ts',
+      ],
+      provider: 'v8',
+      reporter: ['text', 'json-summary', 'html'],
+      thresholds: {
+        branches: 90,
+        functions: 90,
+        lines: 90,
+        statements: 90,
+      },
+    },
     environment: 'happy-dom',
     globals: true,
     include: [
