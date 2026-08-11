@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
 
-    <main class="mx-auto max-w-6xl px-4 pb-20 pt-28 sm:px-6">
+    <main class="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
       <Header
         title="Blog"
         subtitle="Aqui você encontra artigos sobre desenvolvimento web, programação, tecnologia e muito mais."

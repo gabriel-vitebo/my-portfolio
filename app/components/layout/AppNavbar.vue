@@ -1,39 +1,41 @@
 <template>
-  <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
-    <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
-      <nav class="flex items-center justify-between">
-        <div class="min-w-0">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between">
           <NuxtLink
-            class="block truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary"
+            class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary"
             to="/#hero"
             @click.prevent="scrollToSection('hero')"
           >
             {{ name }}
           </NuxtLink>
 
-          <AppBreadcrumb class="mt-2 max-w-[min(80vw,34rem)]" :items="breadcrumbs" />
-        </div>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li>
+              <NuxtLink :class="navLinkClass('hero')" to="/#hero" @click.prevent="scrollToSection('hero')">Início</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :class="navLinkClass('projects')" to="/#projects" @click.prevent="scrollToSection('projects')">Projetos</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :class="navLinkClass('about')" to="/#about" @click.prevent="scrollToSection('about')">Sobre</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :class="routeLinkClass('/blog')" to="/blog">Blog</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :class="routeLinkClass('/changelog')" to="/changelog">Changelog</NuxtLink>
+            </li>
+          </ul>
 
-        <ul class="flex shrink-0 items-center gap-3 text-[13px] text-muted sm:gap-6 sm:text-[15px]">
-          <li>
-            <NuxtLink :class="navLinkClass('hero')" to="/#hero" @click.prevent="scrollToSection('hero')">Início</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :class="navLinkClass('projects')" to="/#projects" @click.prevent="scrollToSection('projects')">Projetos</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :class="navLinkClass('about')" to="/#about" @click.prevent="scrollToSection('about')">Sobre</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :class="routeLinkClass('/blog')" to="/blog">Blog</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :class="routeLinkClass('/changelog')" to="/changelog">Changelog</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+          <AppBreadcrumb class="w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]" :items="breadcrumbs" />
+        </nav>
+      </div>
+    </header>
+
+    <div aria-hidden="true" class="h-36 sm:h-28" />
+  </div>
 </template>
 
 <script setup lang="ts">

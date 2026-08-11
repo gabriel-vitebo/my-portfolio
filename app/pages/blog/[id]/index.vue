@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
 
-    <main class="mx-auto max-w-3xl px-4 pb-20 pt-28 sm:px-6">
+    <main class="mx-auto max-w-3xl px-4 pb-20 sm:px-6">
       <NuxtLink
         class="inline-flex w-fit items-center text-sm font-medium text-muted transition duration-300 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         to="/blog"

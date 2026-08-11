@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`AppBreadcrumb > matches the snapshot 1`] = `
-"<nav aria-label="Caminho da página" class="flex min-w-0 items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm">
-  <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/">Inicio</a><span class="text-border">-&gt;</span><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/projetos">Projetos</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">Portfolio</span>
+"<nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm">
+  <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/">Inicio</a><span class="text-border">-&gt;</span><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/projetos">Projetos</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">Portfolio</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>Inicio</span><span>-&gt;</span><span>Projetos</span><span>-&gt;</span><span>Portfolio</span></span>
 </nav>"
 `;

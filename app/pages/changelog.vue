@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
 
-    <div class="mx-auto max-w-4xl px-4 pb-20 pt-28 sm:px-6">
+    <div class="mx-auto max-w-4xl px-4 pb-20 sm:px-6">
       <Header
         legend="Release notes"
         title="Changelog"

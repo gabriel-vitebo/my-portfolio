@@ -1,22 +1,23 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`AppNavbar > matches the snapshot 1`] = `
-"<header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
-  <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
-    <nav class="flex items-center justify-between">
-      <div class="min-w-0"><a class="block truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
-        <nav aria-label="Caminho da página" class="flex min-w-0 items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm mt-2 max-w-[min(80vw,34rem)]">
-          <!--v-if--><span class="truncate text-foreground">/home</span>
+"<div>
+  <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+    <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+      <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+        <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+          <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
+          <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+          <li><a class="transition duration-300 hover:text-primary" href="/#about">Sobre</a></li>
+          <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
+          <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+        </ul>
+        <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+          <!--v-if--><span class="truncate text-foreground">/home</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span></span>
         </nav>
-      </div>
-      <ul class="flex shrink-0 items-center gap-3 text-[13px] text-muted sm:gap-6 sm:text-[15px]">
-        <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
-        <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
-        <li><a class="transition duration-300 hover:text-primary" href="/#about">Sobre</a></li>
-        <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
-        <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>"
+      </nav>
+    </div>
+  </header>
+  <div aria-hidden="true" class="h-36 sm:h-28"></div>
+</div>"
 `;
