@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > matches the snapshot 1`] = `
+"<header class="border-b border-border pb-10">
+  <p class="text-sm font-medium uppercase tracking-widest text-subtle">Projetos</p>
+  <h1 class="mt-4 text-4xl font-bold text-foreground sm:text-5xl">Projetos selecionados</h1>
+  <p class="mt-5 max-w-2xl text-base leading-8 text-muted">Uma selecao de trabalhos recentes.</p>
+</header>"
+`;
