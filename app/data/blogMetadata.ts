@@ -7,6 +7,7 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
     slug: 'como-eu-construi-meu-portifolio',
     title: 'Como eu construí meu portfólio',
     date: 'Artigo',
+    publishedAt: '13 de agosto de 2026',
     description: 'Um guia prático sobre escolhas semânticas, estados de foco e pequenos cuidados de implementação que melhoram a experiência de leitura e navegação para todas as pessoas.',
     image: blogImage('como-eu-construi-meu-portifolio', 'cover.png'),
   },

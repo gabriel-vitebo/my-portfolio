@@ -12,9 +12,13 @@
 
       <article class="mt-10">
         <Header
-          :legend="article.date"
           :title="article.title"
         />
+
+        <p class="mt-6 text-sm font-medium text-muted">
+          Data de publicação:
+          <time class="text-foreground">{{ article.publishedAt }}</time>
+        </p>
 
         <NuxtImg
           class="mt-8 aspect-[16/9] w-full rounded-2xl border border-border bg-surface object-cover"

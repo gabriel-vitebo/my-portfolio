@@ -7,6 +7,7 @@ const article: BlogArticle = {
   slug: 'interfaces-acessiveis-com-vue',
   title: 'Interfaces acessiveis com Vue',
   date: 'Artigo',
+  publishedAt: '13 de agosto de 2026',
   description: 'Boas escolhas semanticas deixam a leitura e a navegacao mais previsiveis.',
   image: '/images/blog/interfaces-acessiveis-com-vue/cover.png',
   content: 'Conteudo do artigo.',
