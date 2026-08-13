@@ -11,18 +11,12 @@
           {{ project.description }}
         </p>
 
-        <UButton
+        <DescriptionToggleButton
           v-if="canToggleDescription"
-          class="mt-3 text-sm font-medium text-primary transition duration-300 hover:text-primary-hover"
-          type="button"
-          color="neutral"
-          variant="link"
-          :aria-controls="descriptionId"
-          :aria-expanded="isDescriptionExpanded"
-          @click="toggleDescription"
-        >
-          {{ isDescriptionExpanded ? 'Ler menos' : 'Leia mais' }}
-        </UButton>
+          :controls="descriptionId"
+          :expanded="isDescriptionExpanded"
+          @toggle="toggleDescription"
+        />
       </div>
 
       <ProjectTechnologies class="mt-8" :technologies="project.technologies" />
@@ -56,6 +50,7 @@
 </template>
 
 <script setup lang="ts">
+import DescriptionToggleButton from '~/components/DescriptionToggleButton/index.vue'
 import ProjectLinks from '~/components/projects/ProjectLinks.vue'
 import ProjectTechnologies from '~/components/projects/ProjectTechnologies.vue'
 import type { Project, ProjectGalleryItem } from '~/types/portfolio'

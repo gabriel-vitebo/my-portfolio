@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { blogArticleRoutes } from './app/data/blogMetadata'
+import { projectRoutes } from './app/data/projects'
 import pkg from './package.json' with { type: 'json' }
 
 export default defineNuxtConfig({
@@ -32,12 +34,8 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/changelog',
-        '/projetos/curriculo-ai',
-        '/projetos/check-numbers',
-        '/projetos/food-explorer',
-        '/projetos/rocket-pay',
-        '/projetos/desafio-focus-timer',
-        '/projetos/quest-log',
+        ...projectRoutes,
+        ...blogArticleRoutes,
       ],
     },
   },

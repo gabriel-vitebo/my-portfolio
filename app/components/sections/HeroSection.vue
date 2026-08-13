@@ -35,6 +35,14 @@
           >
             Sobre mim
           </UButton>
+          <UButton
+            class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary"
+            to="/blog"
+            color="neutral"
+            variant="outline"
+          >
+            Blog
+          </UButton>
         </div>
       </div>
 

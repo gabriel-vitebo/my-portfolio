@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BlogCard > matches the snapshot 1`] = `
+"<article aria-labelledby="blog-article-interfaces-acessiveis-com-vue" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Interfaces acessiveis com Vue" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/interfaces-acessiveis-com-vue"></a>
+  <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/interfaces-acessiveis-com-vue/cover.png" alt="Interfaces acessiveis com Vue">
+    <div class="flex flex-1 flex-col p-5 pt-1">
+      <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+      <h2 id="blog-article-interfaces-acessiveis-com-vue" class="mt-3 text-xl font-semibold text-foreground">Interfaces acessiveis com Vue</h2>
+      <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Boas escolhas semanticas deixam a leitura e a navegacao mais previsiveis.</p><a aria-label="Ler artigo completo: Interfaces acessiveis com Vue" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/interfaces-acessiveis-com-vue"> Ler artigo completo </a>
+    </div>
+  </div>
+</article>"
+`;

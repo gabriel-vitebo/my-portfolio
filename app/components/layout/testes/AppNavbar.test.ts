@@ -19,6 +19,7 @@ describe('AppNavbar', () => {
     expect(wrapper.get('a[href="/#hero"]').text()).toContain('Gabriel Vitebo')
     expect(wrapper.text()).toContain('Projetos')
     expect(wrapper.text()).toContain('Sobre')
+    expect(wrapper.get('a[href="/blog"]').text()).toBe('Blog')
     expect(wrapper.get('a[href="/changelog"]').text()).toBe('Changelog')
   })
 })
