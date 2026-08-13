@@ -8,6 +8,7 @@ const article: BlogArticle = {
   title: 'Interfaces acessiveis com Vue',
   date: 'Artigo',
   description: 'Boas escolhas semanticas deixam a leitura e a navegacao mais previsiveis.',
+  image: '/images/blog/interfaces-acessiveis-com-vue/cover.png',
   content: 'Conteudo do artigo.',
 }
 
@@ -32,6 +33,8 @@ describe('BlogCard', () => {
     expect(wrapper.text()).toContain(article.date)
     expect(wrapper.text()).toContain(article.title)
     expect(wrapper.text()).toContain(article.description)
+    expect(wrapper.get('img').attributes('src')).toBe(article.image)
+    expect(wrapper.get('img').attributes('alt')).toBe(article.title)
     expect(links).toHaveLength(2)
     expect(links.every((link) => link.attributes('href') === `/blog/${article.slug}`)).toBe(true)
     expect(links[0]!.attributes('aria-label')).toBe(`Ler artigo completo: ${article.title}`)

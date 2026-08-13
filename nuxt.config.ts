@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { blogArticleRoutes } from './app/data/blogMetadata'
 import pkg from './package.json' with { type: 'json' }
 
 export default defineNuxtConfig({
@@ -38,6 +39,7 @@ export default defineNuxtConfig({
         '/projetos/rocket-pay',
         '/projetos/desafio-focus-timer',
         '/projetos/quest-log',
+        ...blogArticleRoutes,
       ],
     },
   },
