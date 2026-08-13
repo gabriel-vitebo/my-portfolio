@@ -17,32 +17,26 @@
         </p>
 
         <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-          <UButton
+          <NuxtLink
             class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:bg-primary-hover"
             to="#projects"
-            color="neutral"
-            variant="solid"
             @click.prevent="scrollToSection('projects')"
           >
             Ver projetos
-          </UButton>
-          <UButton
+          </NuxtLink>
+          <NuxtLink
             class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary"
             to="#about"
-            color="neutral"
-            variant="outline"
             @click.prevent="scrollToSection('about')"
           >
             Sobre mim
-          </UButton>
-          <UButton
+          </NuxtLink>
+          <NuxtLink
             class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary"
             to="/blog"
-            color="neutral"
-            variant="outline"
           >
             Blog
-          </UButton>
+          </NuxtLink>
         </div>
       </div>
 

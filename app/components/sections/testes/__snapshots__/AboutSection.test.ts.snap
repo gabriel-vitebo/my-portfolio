@@ -11,9 +11,9 @@ exports[`AboutSection > matches the snapshot 1`] = `
         <p>Participei do desenvolvimento de marketplaces, checkouts, páginas com foco em SEO e ferramentas internas, sempre buscando equilibrar qualidade técnica, experiência do usuário e impacto no negócio.</p>
       </div>
       <ul class="mt-8 flex flex-wrap gap-3 text-sm">
-        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="https://github.com/gabriel-vitebo">GitHub</a></li>
-        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/">LinkedIn</a></li>
-        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" color="neutral" variant="outline" rel="noreferrer" target="_blank" href="mailto:contact@gabrielvitebo.dev">contact@gabrielvitebo.dev</a></li>
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" href="https://github.com/gabriel-vitebo" rel="noreferrer" target="_blank">GitHub</a></li>
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/" rel="noreferrer" target="_blank">LinkedIn</a></li>
+        <li><a class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary" href="mailto:contact@gabrielvitebo.dev" rel="noreferrer" target="_blank">contact@gabrielvitebo.dev</a></li>
       </ul>
     </div>
     <div class="grid content-center gap-4 sm:grid-cols-2"><a class="rounded-xl border border-border bg-surface/50 p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/50" rel="noreferrer" target="_blank" ui="[object Object]" href="https://nuxt.com/">
