@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- [#21](https://github.com/gabriel-vitebo/my-portfolio/pull/21) [`9536516`](https://github.com/gabriel-vitebo/my-portfolio/commit/953651663ba4075d570d8c59cd7948cb6c4c627f) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - ✨ Segunda versão oficial do portfólio.
+
+  Inclui:
+
+  - criação da área de blog com listagem, página de artigo e metadados;
+  - publicação dos primeiros artigos do blog, incluindo conteúdo sobre a construção do portfólio;
+  - adição de cards de blog com imagem, data de publicação e melhor apresentação visual;
+  - melhorias na navegação com breadcrumbs, links atualizados e layout mais responsivo;
+  - ajuste de espaçamentos nas páginas de blog, changelog e detalhes de projeto;
+  - adição do botão de expandir descrição nos projetos;
+  - configuração de rotas dinâmicas de projetos para prerender no Nuxt;
+  - ampliação da cobertura de testes unitários, snapshots e workflow de testes.
+
 ## 1.0.1
 
 ### Patch Changes
