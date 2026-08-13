@@ -13,16 +13,14 @@
 
         <ul class="mt-8 flex flex-wrap gap-3 text-sm">
           <li v-for="social in socials" :key="social.url">
-            <UButton
+            <a
               class="inline-flex rounded-full border border-border px-4 py-2 text-muted transition duration-300 hover:border-primary hover:text-primary"
               :href="social.url"
-              color="neutral"
-              variant="outline"
               rel="noreferrer"
               target="_blank"
             >
               {{ social.label }}
-            </UButton>
+            </a>
           </li>
         </ul>
       </div>
