@@ -90,13 +90,13 @@ const breadcrumbs = computed(() => {
   }
 
   if (route.path.startsWith('/blog/')) {
-    const articleId = String(route.params.id ?? '')
-    const article = blogArticles.find(item => item.id === articleId)
+    const articleSlug = String(route.params.slug ?? '')
+    const article = blogArticles.find(item => item.slug === articleSlug)
 
     return [
       { label: '/home', to: '/#hero' },
       { label: 'blogs', to: '/blog' },
-      { label: article?.title ?? articleId },
+      { label: article?.title ?? articleSlug },
     ]
   }
 

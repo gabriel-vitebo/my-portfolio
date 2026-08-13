@@ -11,7 +11,7 @@
       <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
           v-for="article in blogArticles"
-          :key="article.id"
+          :key="article.slug"
           :article="article"
         />
       </div>

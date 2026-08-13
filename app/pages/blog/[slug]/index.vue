@@ -14,7 +14,6 @@
         <Header
           :legend="article.date"
           :title="article.title"
-          :subtitle="article.description"
         />
 
         <div
@@ -37,9 +36,9 @@ import { blogArticles } from '~/data/blog'
 import { portfolio } from '~/data/portfolio'
 
 const route = useRoute()
-const articleId = route.params.id
+const articleSlug = route.params.slug
 
-const article = blogArticles.find((item) => item.id === articleId)
+const article = blogArticles.find((item) => item.slug === articleSlug)
 
 if (!article) {
   throw createError({
@@ -49,7 +48,7 @@ if (!article) {
 }
 
 const siteUrl = 'https://gabriel-vitebo.vercel.app'
-const canonicalUrl = `${siteUrl}/blog/${article.id}`
+const canonicalUrl = `${siteUrl}/blog/${article.slug}`
 
 const markdown = new MarkdownIt({
   html: false,

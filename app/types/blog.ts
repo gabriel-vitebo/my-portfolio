@@ -1,5 +1,5 @@
 export interface BlogArticle {
-  id: string
+  slug: string
   title: string
   date: string
   description: string

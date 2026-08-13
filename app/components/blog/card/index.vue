@@ -6,7 +6,7 @@
     <NuxtLink
       :aria-label="`Ler artigo completo: ${article.title}`"
       class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-      :to="`/blog/${article.id}`"
+      :to="`/blog/${article.slug}`"
     />
 
     <div class="pointer-events-none relative flex h-full flex-col gap-4">
@@ -27,7 +27,7 @@
       <NuxtLink
         :aria-label="`Ler artigo completo: ${article.title}`"
         class="pointer-events-auto mt-auto inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-        :to="`/blog/${article.id}`"
+        :to="`/blog/${article.slug}`"
       >
         Ler artigo completo
       </NuxtLink>
@@ -42,5 +42,5 @@ const props = defineProps<{
   article: BlogArticle
 }>()
 
-const titleId = `blog-article-${props.article.id}`
+const titleId = `blog-article-${props.article.slug}`
 </script>
