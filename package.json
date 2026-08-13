@@ -16,7 +16,7 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
-    "version": "node --env-file=.env ./node_modules/@changesets/cli/bin.js version"
+    "version": "changeset version"
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
