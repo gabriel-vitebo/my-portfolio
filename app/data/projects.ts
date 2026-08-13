@@ -99,3 +99,5 @@ export const projects: Project[] = [
     technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
   },
 ]
+
+export const projectRoutes = projects.map((project) => `/projetos/${project.slug}`)
