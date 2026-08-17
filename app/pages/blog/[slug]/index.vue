@@ -50,6 +50,7 @@ import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
 import MarkdownIt from 'markdown-it'
 import { blogArticles } from '~/data/blog'
+import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
 const route = useRoute()
@@ -64,7 +65,6 @@ if (!article) {
   })
 }
 
-const siteUrl = 'https://gabriel-vitebo.vercel.app'
 const canonicalUrl = `${siteUrl}/blog/${article.slug}`
 const socialImage = `${siteUrl}${article.image}`
 

@@ -27,9 +27,9 @@ import changelog from '../../CHANGELOG.md?raw'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
+import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
-const siteUrl = 'https://gabriel-vitebo.vercel.app'
 const canonicalUrl = `${siteUrl}/changelog`
 
 const markdown = new MarkdownIt({

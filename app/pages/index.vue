@@ -20,9 +20,9 @@ import AppNavbar from '~/components/layout/AppNavbar.vue'
 import AboutSection from '~/components/sections/AboutSection.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ProjectsSection from '~/components/sections/ProjectsSection.vue'
+import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
-const siteUrl = 'https://gabriel-vitebo.vercel.app'
 const socialImage = `${siteUrl}/images/social-cover.jpg`
 
 useSeoMeta({
