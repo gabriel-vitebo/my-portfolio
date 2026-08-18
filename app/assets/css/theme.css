@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @config "../../../tailwind.config.ts";
 @import "@nuxt/ui";
+@import "highlight.js/styles/github-dark.css";
 
 @theme inline {
   --color-background: rgb(var(--color-background-rgb) / 1);

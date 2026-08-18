@@ -22,37 +22,17 @@
 </template>
 
 <script setup lang="ts">
-import MarkdownIt from 'markdown-it'
 import changelog from '../../CHANGELOG.md?raw'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
 import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
+import { createMarkdownRenderer } from '~/utils/markdown'
 
 const canonicalUrl = `${siteUrl}/changelog`
 
-const markdown = new MarkdownIt({
-  html: false,
-  linkify: true,
-  typographer: true,
-})
-
-const defaultLinkOpenRenderer = markdown.renderer.rules.link_open
-
-markdown.renderer.rules.link_open = (tokens, index, options, env, self) => {
-  const href = tokens[index].attrGet('href') ?? ''
-  const isExternal = /^https?:\/\//.test(href)
-
-  if (isExternal) {
-    tokens[index].attrSet('target', '_blank')
-    tokens[index].attrSet('rel', 'noreferrer')
-  }
-
-  return defaultLinkOpenRenderer
-    ? defaultLinkOpenRenderer(tokens, index, options, env, self)
-    : self.renderToken(tokens, index, options)
-}
+const markdown = createMarkdownRenderer()
 
 const renderedChangelog = computed(() => markdown.render(changelog))
 
