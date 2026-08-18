@@ -94,7 +94,7 @@ O segundo elemento já nasce com significado e comportamento de botão. Ele pode
 
 Isso também ajuda na acessibilidade. Um usuário de leitor de tela não navega pela página exatamente da mesma forma que alguém olhando para ela. Ele pode navegar entre títulos, links, botões, regiões e outros elementos. Se tudo for apenas `div`, você remove boa parte dessas referências.
 
-Nos mecanismos de busca, a semântica também ajuda a deixar a estrutura e a relação entre os conteúdos mais claras. Isso não significa que trocar todas as `div`s por tags semânticas vai magicamente colocar seu site em primeiro lugar no Google — SEO é muito mais complexo que isso —, mas uma estrutura HTML correta ajuda os mecanismos de busca a compreenderem melhor a página.
+Nos mecanismos de busca, a semântica também ajuda a deixar a estrutura e a relação entre os conteúdos mais claras. Isso não significa que trocar todas as `div`s por tags semânticas vai magicamente colocar seu site em primeiro lugar no Google, SEO é muito mais complexo que isso, mas uma estrutura HTML correta ajuda os mecanismos de busca a compreenderem melhor a página.
 
 E ainda tem uma vantagem que às vezes esquecemos: **manutenção**.
 
