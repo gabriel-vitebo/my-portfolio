@@ -2,6 +2,7 @@ export interface BlogArticleMetadata {
   slug: string
   title: string
   date: string
+  publishedAtIso: string
   publishedAt: string
   description: string
   image: string

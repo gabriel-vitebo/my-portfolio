@@ -221,5 +221,3 @@ No fim, talvez o melhor jeito de resumir seja este:
 HTML semântico não vai deixar seu site mais bonito.
 
 Mas pode deixar seu site muito melhor.
-
-![Comparação final reforçando que páginas visualmente iguais podem ter estruturas HTML muito diferentes.](/images/blog/html-semantico/final.png)

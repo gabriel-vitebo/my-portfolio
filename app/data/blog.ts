@@ -22,4 +22,6 @@ export const blogArticles: BlogArticle[] = [
     ...getBlogArticleMetadata('html-semantico'),
     content: HTMLSemantico,
   },
-]
+].toSorted((currentArticle, nextArticle) =>
+  nextArticle.publishedAtIso.localeCompare(currentArticle.publishedAtIso),
+)
