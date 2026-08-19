@@ -2,7 +2,7 @@
   <div class="min-h-screen scroll-smooth bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
-      <HeroSection :hero="portfolio.hero" />
+      <HeroSection :hero="portfolio.hero" :socials="portfolio.socials" />
       <ProjectsSection
         :projects="portfolio.projects"
         :subtitle="portfolio.projectsSection.subtitle"

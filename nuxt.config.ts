@@ -9,8 +9,20 @@ export default defineNuxtConfig({
   css: ['~/assets/css/theme.css'],
   modules: [
     '@nuxt/image',
+    '@nuxt/icon',
     '@nuxt/ui'
   ],
+  icon: {
+    componentName: 'NuxtIcon',
+    clientBundle: {
+      icons: [
+        'lucide:mail',
+        'simple-icons:github',
+        'simple-icons:linkedin',
+      ],
+      scan: false,
+    },
+  },
   image: {
     format: ['avif', 'webp'],
     quality: 80,

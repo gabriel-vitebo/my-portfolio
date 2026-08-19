@@ -1,7 +1,7 @@
 <template>
   <section
     id="hero"
-    class="relative grid min-h-screen place-items-center overflow-hidden bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24"
+    class="relative grid min-h-[calc(100svh-4.5rem)] place-items-center overflow-hidden bg-background px-4 pb-14 pt-8 sm:px-6 sm:pb-20 sm:pt-10 md:pb-20 md:pt-12"
   >
     <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.10),transparent_68%)] blur-2xl" />
 
@@ -40,30 +40,18 @@
         </div>
       </div>
 
-      <div class="relative mx-auto w-full max-w-[17rem] rounded-3xl border border-border bg-surface p-3 shadow-lg transition duration-300 hover:scale-[1.02] sm:max-w-sm lg:max-w-md">
-        <div class="absolute inset-0 -z-10 rounded-3xl shadow-glow" />
-        <NuxtImg
-          class="aspect-[4/5] w-full rounded-2xl object-cover"
-          :src="hero.image"
-          :alt="hero.name"
-          width="1024"
-          height="1280"
-          sizes="(max-width: 1023px) 384px, 448px"
-          format="avif"
-          quality="82"
-          preload
-          fetchpriority="high"
-        />
-      </div>
+      <HeroPortrait :src="hero.image" :alt="hero.name" :socials="socials" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import type { HeroData } from '~/types/portfolio'
+import HeroPortrait from '~/components/hero/HeroPortrait.vue'
+import type { HeroData, SocialLink } from '~/types/portfolio'
 
 defineProps<{
   hero: HeroData
+  socials?: SocialLink[]
 }>()
 
 const { scrollToSection } = useSectionNavigation()
