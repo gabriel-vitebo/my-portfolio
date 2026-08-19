@@ -2,219 +2,30 @@
   <div class="min-h-screen overflow-x-hidden scroll-smooth bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
-      <section
-        id="sobre-mim"
-        class="grid min-h-[calc(100svh-9rem)] place-items-center bg-background px-4 pb-14 pt-8 sm:min-h-[calc(100svh-7rem)] sm:px-6 sm:pb-20 sm:pt-10 md:pb-20 md:pt-12"
-      >
-        <div class="mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.08fr_0.92fr]">
-          <div class="min-w-0 max-w-3xl text-center lg:text-left">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Sobre mim</p>
-            <h1 class="mt-5 text-4xl font-black leading-none text-foreground sm:text-[40px] md:text-[54px] lg:text-7xl">
-              Olá, eu sou o Gabriel Vitebo
-            </h1>
-
-            <div class="mx-auto mt-7 space-y-5 text-lg leading-8 text-muted lg:mx-0">
-              <p>
-                Sou desenvolvedor
-                <strong class="font-semibold text-primary">Full Stack</strong>,
-                com experiência profissional construindo aplicações com
-                <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>.
-              </p>
-              <p>
-                Gosto de transformar ideias e problemas em interfaces que sejam simples de usar, bem construídas e fáceis
-                de manter, sempre tentando entender não apenas
-                <strong class="font-semibold text-foreground">como fazer</strong>,
-                mas
-                <strong class="font-semibold text-foreground">por que fazer daquele jeito</strong>.
-              </p>
-              <p>
-                Atualmente curso
-                <strong class="font-semibold text-primary">Ciência da Computação</strong>
-                e sigo estudando e explorando novas tecnologias, tanto no front-end quanto no back-end.
-              </p>
-            </div>
-          </div>
-
-          <HeroPortrait :src="portfolio.hero.image" :alt="portfolio.hero.name" :socials="portfolio.socials" />
-        </div>
-      </section>
-
-      <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <div class="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
-          <div class="min-w-0">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Trajetória</p>
-            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-              Um pouco da minha história
-            </h2>
-
-            <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
-              <p>
-                Minha relação com tecnologia começou antes mesmo de trabalhar profissionalmente com desenvolvimento. Sou
-                formado em
-                <strong class="font-semibold text-primary">Análise e Desenvolvimento de Sistemas</strong>
-                e também tenho formação em
-                <strong class="font-semibold text-primary">Design Gráfico</strong>,
-                duas áreas que acabaram se encontrando naturalmente no front-end.
-              </p>
-              <p>
-                Minha experiência profissional começou como
-                <strong class="font-semibold text-primary">estagiário em desenvolvimento na Quero Educação</strong>,
-                onde posteriormente fui promovido a desenvolvedor júnior.
-              </p>
-              <p>
-                Foi lá que tive contato com aplicações reais, código em produção e trabalho em equipe. Trabalhei
-                principalmente com
-                <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>,
-                além de participar de projetos envolvendo
-                <strong class="font-semibold text-foreground">React</strong>
-                e contribuir em partes do back-end com
-                <strong class="font-semibold text-foreground">Ruby on Rails</strong>.
-              </p>
-              <p>
-                Com o tempo, passei a me interessar cada vez mais não apenas por fazer uma funcionalidade funcionar, mas
-                por entender arquitetura, qualidade de código, acessibilidade, performance e as decisões por trás de um
-                produto.
-              </p>
-              <p>
-                Hoje continuo aprofundando esses conhecimentos enquanto curso
-                <strong class="font-semibold text-primary">Ciência da Computação</strong>,
-                construo meus próprios projetos e compartilho parte do que aprendo através do meu blog.
-              </p>
-            </div>
-          </div>
-
-          <div class="min-w-0 lg:sticky lg:top-32 lg:pt-[7.75rem]">
-            <AboutTimeline :items="milestones" />
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-background px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <div class="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-          <div class="min-w-0">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Como eu trabalho</p>
-            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-              Mais do que fazer funcionar
-            </h2>
-
-            <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
-              <p>
-                Eu gosto de entender o problema antes de começar a escrever código.
-              </p>
-              <p>
-                Durante o desenvolvimento, tento encontrar um equilíbrio entre uma boa experiência para quem usa o
-                produto e um código que continue compreensível para quem precisar trabalhar nele depois.
-              </p>
-              <p>
-                Tenho bastante atenção a detalhes de interface e usabilidade, algo em que minha experiência com Design
-                também acaba contribuindo, mas sem deixar de lado aspectos como
-                <strong class="font-semibold text-primary">performance, acessibilidade, responsividade e manutenção</strong>.
-              </p>
-              <p>
-                Também sou bastante curioso. Se encontro algo que não conheço, dificilmente fico satisfeito apenas
-                copiando uma solução. Gosto de pesquisar, testar e entender o motivo dela funcionar.
-              </p>
-              <p>
-                No fim, meu objetivo não é simplesmente entregar uma tela. É construir algo que faça sentido.
-              </p>
-            </div>
-          </div>
-
-          <div class="min-w-0 lg:sticky lg:top-32 lg:pt-[7.75rem]">
-            <WorkPrinciples :principles="workPrinciples" />
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <div class="mx-auto w-full max-w-6xl">
-          <div class="max-w-3xl">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Skills</p>
-            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-              Tecnologias que fazem parte do meu dia a dia
-            </h2>
-          </div>
-
-          <AboutSkills
-            class="mt-9"
-            :primary-skills="primarySkills"
-            :secondary-skills="secondarySkills"
-          />
-        </div>
-      </section>
-
-      <section class="bg-background px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <div class="mx-auto w-full max-w-6xl">
-          <div class="max-w-3xl">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Formações</p>
-            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-              Caminhos que ajudaram a formar minha base
-            </h2>
-          </div>
-
-          <EducationCards class="mt-9" :items="educationItems" />
-        </div>
-      </section>
-
-      <section class="grid min-h-[70svh] place-items-center bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <div class="mx-auto max-w-4xl text-center">
-          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Contato</p>
-          <h2 class="mt-4 text-4xl font-black leading-tight text-foreground sm:text-5xl">
-            Vamos construir alguma coisa juntos?
-          </h2>
-
-          <div class="mx-auto mt-7 max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
-            <p>
-              Estou sempre aberto a conhecer novos projetos, pessoas e oportunidades.
-            </p>
-            <p>
-              Se você acha que meu perfil pode fazer sentido para sua equipe ou simplesmente quer trocar uma ideia sobre
-              desenvolvimento, tecnologia ou algum dos projetos que viu por aqui, fique à vontade para entrar em contato.
-            </p>
-          </div>
-
-          <div class="mt-9">
-            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Entre em contato</p>
-            <nav class="mt-4 flex flex-wrap justify-center gap-3" aria-label="Links de contato">
-              <a
-                v-for="social in portfolio.socials"
-                :key="social.url"
-                class="inline-flex min-w-0 items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2.5 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                :href="social.url"
-                :aria-label="social.label"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <AppIcon :name="getSocialIcon(social.label)" class-name="size-4 shrink-0" />
-                <span class="truncate">{{ social.label }}</span>
-              </a>
-            </nav>
-          </div>
-
-          <div class="mt-8 border-t border-border pt-8">
-            <NuxtLink
-              class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              to="/#projects"
-            >
-              Veja meus projetos
-            </NuxtLink>
-          </div>
-        </div>
-      </section>
+      <AboutHeroSection
+        :image="portfolio.hero.image"
+        :name="portfolio.hero.name"
+        :socials="portfolio.socials"
+      />
+      <AboutStorySection :milestones="milestones" />
+      <AboutWorkSection :principles="workPrinciples" />
+      <AboutSkillsSection :primary-skills="primarySkills" :secondary-skills="secondarySkills" />
+      <AboutEducationSection :items="educationItems" />
+      <AboutContactSection :contact-links="contactLinks" />
     </main>
     <AppFooter :name="portfolio.hero.name" />
   </div>
 </template>
 
 <script setup lang="ts">
-import AboutTimeline from '~/components/about/AboutTimeline.vue'
-import AboutSkills from '~/components/about/AboutSkills.vue'
-import EducationCards from '~/components/about/EducationCards.vue'
-import WorkPrinciples from '~/components/about/WorkPrinciples.vue'
-import HeroPortrait from '~/components/hero/HeroPortrait.vue'
+import AboutContactSection from '~/components/about/sections/AboutContactSection.vue'
+import AboutEducationSection from '~/components/about/sections/AboutEducationSection.vue'
+import AboutHeroSection from '~/components/about/sections/AboutHeroSection.vue'
+import AboutSkillsSection from '~/components/about/sections/AboutSkillsSection.vue'
+import AboutStorySection from '~/components/about/sections/AboutStorySection.vue'
+import AboutWorkSection from '~/components/about/sections/AboutWorkSection.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
-import AppIcon from '~/components/ui/Icon.vue'
 import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
@@ -248,7 +59,13 @@ interface EducationItem {
   icon: string
 }
 
-function getSocialIcon(label: string) {
+interface ContactLink {
+  label: string
+  url: string
+  icon: string
+}
+
+const getSocialIcon = (label: string) => {
   const normalizedLabel = label.toLowerCase()
 
   if (normalizedLabel.includes('github')) {
@@ -261,6 +78,11 @@ function getSocialIcon(label: string) {
 
   return 'lucide:mail'
 }
+
+const contactLinks: ContactLink[] = portfolio.socials.map(social => ({
+  ...social,
+  icon: getSocialIcon(social.label),
+}))
 
 const milestones: TimelineItem[] = [
   {
