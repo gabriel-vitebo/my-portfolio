@@ -142,6 +142,19 @@
           />
         </div>
       </section>
+
+      <section class="bg-background px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+        <div class="mx-auto w-full max-w-6xl">
+          <div class="max-w-3xl">
+            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Formações</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
+              Caminhos que ajudaram a formar minha base
+            </h2>
+          </div>
+
+          <EducationCards class="mt-9" :items="educationItems" />
+        </div>
+      </section>
     </main>
     <AppFooter :name="portfolio.hero.name" />
   </div>
@@ -150,6 +163,7 @@
 <script setup lang="ts">
 import AboutTimeline from '~/components/about/AboutTimeline.vue'
 import AboutSkills from '~/components/about/AboutSkills.vue'
+import EducationCards from '~/components/about/EducationCards.vue'
 import WorkPrinciples from '~/components/about/WorkPrinciples.vue'
 import HeroPortrait from '~/components/hero/HeroPortrait.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
@@ -177,6 +191,13 @@ interface WorkPrinciple {
 
 interface SkillItem {
   name: string
+  icon: string
+}
+
+interface EducationItem {
+  title: string
+  institution?: string
+  status: string
   icon: string
 }
 
@@ -249,6 +270,33 @@ const secondarySkills: SkillItem[] = [
   { name: 'Docker', icon: 'simple-icons:docker' },
   { name: 'Storybook', icon: 'simple-icons:storybook' },
   { name: 'Jest', icon: 'simple-icons:jest' },
+]
+
+const educationItems: EducationItem[] = [
+  {
+    title: 'Design Gráfico',
+    institution: 'UNICID',
+    status: 'Concluído em 2019',
+    icon: 'lucide:palette',
+  },
+  {
+    title: 'Explorer Full Stack',
+    institution: 'Rocketseat',
+    status: 'Concluído em 2023',
+    icon: 'lucide:rocket',
+  },
+  {
+    title: 'Análise e Desenvolvimento de Sistemas',
+    institution: 'Cruzeiro do Sul',
+    status: 'Concluído em 2024',
+    icon: 'lucide:monitor-cog',
+  },
+  {
+    title: 'Ciência da Computação',
+    institution: "ETEP",
+    status: 'Cursando',
+    icon: 'lucide:graduation-cap',
+  },
 ]
 
 useSeoMeta({
