@@ -38,12 +38,63 @@
           <HeroPortrait :src="portfolio.hero.image" :alt="portfolio.hero.name" :socials="portfolio.socials" />
         </div>
       </section>
+
+      <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+        <div class="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
+          <div>
+            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Trajetória</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
+              Um pouco da minha história
+            </h2>
+
+            <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
+              <p>
+                Minha relação com tecnologia começou antes mesmo de trabalhar profissionalmente com desenvolvimento. Sou
+                formado em
+                <strong class="font-semibold text-primary">Análise e Desenvolvimento de Sistemas</strong>
+                e também tenho formação em
+                <strong class="font-semibold text-primary">Design Gráfico</strong>,
+                duas áreas que acabaram se encontrando naturalmente no front-end.
+              </p>
+              <p>
+                Minha experiência profissional começou como
+                <strong class="font-semibold text-primary">estagiário em desenvolvimento na Quero Educação</strong>,
+                onde posteriormente fui promovido a desenvolvedor júnior.
+              </p>
+              <p>
+                Foi lá que tive contato com aplicações reais, código em produção e trabalho em equipe. Trabalhei
+                principalmente com
+                <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>,
+                além de participar de projetos envolvendo
+                <strong class="font-semibold text-foreground">React</strong>
+                e contribuir em partes do back-end com
+                <strong class="font-semibold text-foreground">Ruby on Rails</strong>.
+              </p>
+              <p>
+                Com o tempo, passei a me interessar cada vez mais não apenas por fazer uma funcionalidade funcionar, mas
+                por entender arquitetura, qualidade de código, acessibilidade, performance e as decisões por trás de um
+                produto.
+              </p>
+              <p>
+                Hoje continuo aprofundando esses conhecimentos enquanto curso
+                <strong class="font-semibold text-primary">Ciência da Computação</strong>,
+                construo meus próprios projetos e compartilho parte do que aprendo através do meu blog.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:sticky lg:top-32 lg:pt-[7.75rem]">
+            <AboutTimeline :items="milestones" />
+          </div>
+        </div>
+      </section>
     </main>
     <AppFooter :name="portfolio.hero.name" />
   </div>
 </template>
 
 <script setup lang="ts">
+import AboutTimeline from '~/components/about/AboutTimeline.vue'
 import HeroPortrait from '~/components/hero/HeroPortrait.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
@@ -53,6 +104,42 @@ import { portfolio } from '~/data/portfolio'
 const aboutUrl = `${siteUrl}/sobre-mim`
 const socialImage = `${siteUrl}/images/social-cover.jpg`
 const description = 'Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em Vue.js, Nuxt e TypeScript.'
+
+interface TimelineItem {
+  label: string
+  title: string
+  description: string
+  icon: string
+  highlight?: boolean
+}
+
+const milestones: TimelineItem[] = [
+  {
+    label: 'Formação',
+    title: 'Tecnologia + Design',
+    description: 'ADS e Design Gráfico se encontrando naturalmente no front-end.',
+    icon: 'lucide:graduation-cap',
+  },
+  {
+    label: 'Primeira experiência',
+    title: 'Quero Educação',
+    description: 'Entrada como estagiário Front-end e evolução para desenvolvedor júnior.',
+    icon: 'lucide:briefcase-business',
+  },
+  {
+    label: 'Stack',
+    title: 'Produto em produção',
+    description: 'Vue, Nuxt, TypeScript, React e contribuições com Ruby on Rails.',
+    icon: 'lucide:code-2',
+  },
+  {
+    label: 'Agora',
+    title: 'Ciência da Computação',
+    description: 'Estudo contínuo, projetos próprios e aprendizados compartilhados no blog.',
+    icon: 'lucide:sparkles',
+    highlight: true,
+  },
+]
 
 useSeoMeta({
   title: `Sobre mim | ${portfolio.hero.name}`,
