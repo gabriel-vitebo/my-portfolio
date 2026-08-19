@@ -125,6 +125,23 @@
           </div>
         </div>
       </section>
+
+      <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+        <div class="mx-auto w-full max-w-6xl">
+          <div class="max-w-3xl">
+            <p class="text-sm font-medium uppercase tracking-widest text-subtle">Skills</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
+              Tecnologias que fazem parte do meu dia a dia
+            </h2>
+          </div>
+
+          <AboutSkills
+            class="mt-9"
+            :primary-skills="primarySkills"
+            :secondary-skills="secondarySkills"
+          />
+        </div>
+      </section>
     </main>
     <AppFooter :name="portfolio.hero.name" />
   </div>
@@ -132,6 +149,7 @@
 
 <script setup lang="ts">
 import AboutTimeline from '~/components/about/AboutTimeline.vue'
+import AboutSkills from '~/components/about/AboutSkills.vue'
 import WorkPrinciples from '~/components/about/WorkPrinciples.vue'
 import HeroPortrait from '~/components/hero/HeroPortrait.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
@@ -154,6 +172,11 @@ interface TimelineItem {
 interface WorkPrinciple {
   title: string
   description: string
+  icon: string
+}
+
+interface SkillItem {
+  name: string
   icon: string
 }
 
@@ -206,6 +229,26 @@ const workPrinciples: WorkPrinciple[] = [
     description: 'Gosto de pesquisar, testar e entender por que uma solução funciona.',
     icon: 'lucide:flask-conical',
   },
+]
+
+const primarySkills: SkillItem[] = [
+  { name: 'Vue.js', icon: 'simple-icons:vuedotjs' },
+  { name: 'Nuxt', icon: 'simple-icons:nuxt' },
+  { name: 'TypeScript', icon: 'simple-icons:typescript' },
+  { name: 'JavaScript', icon: 'simple-icons:javascript' },
+  { name: 'Tailwind', icon: 'simple-icons:tailwindcss' },
+]
+
+const secondarySkills: SkillItem[] = [
+  { name: 'React', icon: 'simple-icons:react' },
+  { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
+  { name: 'Java', icon: 'simple-icons:openjdk' },
+  { name: 'Ruby on Rails', icon: 'simple-icons:rubyonrails' },
+  { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
+  { name: 'Prisma', icon: 'simple-icons:prisma' },
+  { name: 'Docker', icon: 'simple-icons:docker' },
+  { name: 'Storybook', icon: 'simple-icons:storybook' },
+  { name: 'Jest', icon: 'simple-icons:jest' },
 ]
 
 useSeoMeta({
