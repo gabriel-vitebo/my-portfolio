@@ -17,12 +17,12 @@
 
 :root {
   --color-background: #09090b;
-  --color-surface: #0f0f12;
-  --color-surface-elevated: #17171a;
+  --color-surface: #121217;
+  --color-surface-elevated: #121217;
   --color-border: #27272a;
   --color-background-rgb: 9 9 11;
-  --color-surface-rgb: 15 15 18;
-  --color-surface-elevated-rgb: 23 23 26;
+  --color-surface-rgb: 18 18 23;
+  --color-surface-elevated-rgb: 18 18 23;
   --color-border-rgb: 39 39 42;
 
   --color-text-primary: #fafafa;
@@ -32,10 +32,10 @@
   --color-text-secondary-rgb: 161 161 170;
   --color-text-tertiary-rgb: 113 113 122;
 
-  --color-primary: #10b981;
-  --color-primary-hover: #34d399;
-  --color-primary-rgb: 16 185 129;
-  --color-primary-hover-rgb: 52 211 153;
+  --color-primary: #6366f1;
+  --color-primary-hover: #818cf8;
+  --color-primary-rgb: 99 102 241;
+  --color-primary-hover-rgb: 129 140 248;
 
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
@@ -45,7 +45,7 @@
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.28);
   --shadow-md: 0 16px 40px rgb(0 0 0 / 0.24);
   --shadow-lg: 0 24px 80px rgb(0 0 0 / 0.36);
-  --shadow-glow: 0 0 80px rgb(16 185 129 / 0.1);
+  --shadow-glow: 0 0 80px rgb(99 102 241 / 0.1);
 }
 
 html {

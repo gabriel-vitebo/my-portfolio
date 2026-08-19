@@ -3,7 +3,7 @@
     id="hero"
     class="relative grid min-h-[calc(100svh-4.5rem)] place-items-center overflow-hidden bg-background px-4 pb-14 pt-8 sm:px-6 sm:pb-20 sm:pt-10 md:pb-20 md:pt-12"
   >
-    <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.10),transparent_68%)] blur-2xl" />
+    <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(99,102,241,0.10),transparent_68%)] blur-2xl" />
 
     <div class="relative mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
       <div class="text-center lg:text-left">
@@ -18,7 +18,7 @@
 
         <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
           <NuxtLink
-            class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:bg-primary-hover"
+            class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary-hover"
             to="#projects"
             @click.prevent="scrollToSection('projects')"
           >

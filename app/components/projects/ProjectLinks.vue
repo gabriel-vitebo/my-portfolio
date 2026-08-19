@@ -3,7 +3,7 @@
     <UButton
       v-for="githubLink in githubLinks"
       :key="githubLink.url"
-      class="inline-flex rounded-full bg-primary px-5 py-3 font-semibold text-black transition duration-300 hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      class="inline-flex rounded-full bg-primary px-5 py-3 font-semibold text-white transition duration-300 hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       :href="githubLink.url"
       color="neutral"
       variant="solid"
