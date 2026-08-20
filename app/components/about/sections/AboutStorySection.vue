@@ -11,34 +11,40 @@
           <p>
             Minha relação com tecnologia começou antes mesmo de trabalhar profissionalmente com desenvolvimento. Sou
             formado em
-            <strong class="font-semibold text-primary">Análise e Desenvolvimento de Sistemas</strong>
-            e também tenho formação em
-            <strong class="font-semibold text-primary">Design Gráfico</strong>,
-            duas áreas que acabaram se encontrando naturalmente no front-end.
+            <strong class="font-semibold text-primary">Análise e Desenvolvimento de Sistemas</strong>,
+            tenho formação em
+            <strong class="font-semibold text-primary">Design Gráfico</strong>
+            e atualmente curso
+            <strong class="font-semibold text-primary">Ciência da Computação</strong>.
           </p>
           <p>
-            Minha experiência profissional começou como
-            <strong class="font-semibold text-primary">estagiário em desenvolvimento na Quero Educação</strong>,
-            onde posteriormente fui promovido a desenvolvedor júnior.
+            Minha experiência profissional começou como estagiário na
+            <strong class="font-semibold text-primary">Quero Educação</strong>,
+            onde posteriormente fui promovido a desenvolvedor júnior. Durante esse período, participei do desenvolvimento
+            e manutenção de produtos reais, trabalhando em equipe e lidando com código em produção.
           </p>
           <p>
-            Foi lá que tive contato com aplicações reais, código em produção e trabalho em equipe. Trabalhei
-            principalmente com
+            No front-end, trabalhei principalmente com
             <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>,
-            além de participar de projetos envolvendo
-            <strong class="font-semibold text-foreground">React</strong>
-            e contribuir em partes do back-end com
-            <strong class="font-semibold text-foreground">Ruby on Rails</strong>.
+            desenvolvendo interfaces, componentes e novas funcionalidades. Também tive contato profissional com
+            <strong class="font-semibold text-foreground">React</strong>.
           </p>
           <p>
-            Com o tempo, passei a me interessar cada vez mais não apenas por fazer uma funcionalidade funcionar, mas
-            por entender arquitetura, qualidade de código, acessibilidade, performance e as decisões por trás de um
-            produto.
+            Minha atuação não ficou limitada à interface. Também trabalhei no back-end com
+            <strong class="font-semibold text-primary">Ruby on Rails</strong>,
+            participando de implementações que envolviam regras de negócio, dados e a comunicação entre diferentes
+            partes das aplicações.
           </p>
           <p>
-            Hoje continuo aprofundando esses conhecimentos enquanto curso
-            <strong class="font-semibold text-primary">Ciência da Computação</strong>,
-            construo meus próprios projetos e compartilho parte do que aprendo através do meu blog.
+            Fora do ambiente profissional, continuo expandindo esse lado Full Stack através dos meus próprios projetos,
+            principalmente com
+            <strong class="font-semibold text-primary">Node.js, PostgreSQL e Prisma</strong>,
+            o que me permite trabalhar desde a modelagem e construção da aplicação até a experiência final no navegador.
+          </p>
+          <p>
+            Hoje busco continuar evoluindo como desenvolvedor Full Stack, aprofundando meus conhecimentos tanto no
+            front-end quanto no back-end e, principalmente, entendendo cada vez melhor como todas essas partes se
+            conectam na construção de um produto.
           </p>
         </div>
       </div>

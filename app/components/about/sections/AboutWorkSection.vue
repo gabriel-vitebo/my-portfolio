@@ -4,25 +4,29 @@
       <div class="min-w-0">
         <p class="text-sm font-medium uppercase tracking-widest text-subtle">Como eu trabalho</p>
         <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-          Mais do que fazer funcionar
+          Do banco de dados à interface
         </h2>
 
         <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
-          <p>Eu gosto de entender o problema antes de começar a escrever código.</p>
+          <p>Gosto de entender o problema como um todo antes de começar a escrever código.</p>
           <p>
-            Durante o desenvolvimento, tento encontrar um equilíbrio entre uma boa experiência para quem usa o
-            produto e um código que continue compreensível para quem precisar trabalhar nele depois.
+            No front-end, tenho atenção especial à experiência do usuário, responsividade, acessibilidade, performance e
+            à construção de componentes que sejam fáceis de entender e manter.
           </p>
           <p>
-            Tenho bastante atenção a detalhes de interface e usabilidade, algo em que minha experiência com Design
-            também acaba contribuindo, mas sem deixar de lado aspectos como
-            <strong class="font-semibold text-primary">performance, acessibilidade, responsividade e manutenção</strong>.
+            No back-end, procuro aplicar o mesmo cuidado à organização do código, separação de responsabilidades, regras
+            de negócio, modelagem dos dados e construção de APIs.
           </p>
           <p>
-            Também sou bastante curioso. Se encontro algo que não conheço, dificilmente fico satisfeito apenas
-            copiando uma solução. Gosto de pesquisar, testar e entender o motivo dela funcionar.
+            É justamente essa visão entre as diferentes camadas que mais me interessa no desenvolvimento
+            <strong class="font-semibold text-primary">Full Stack</strong>.
+            Gosto de entender de onde os dados vêm, como são processados e como chegam até a interface que será
+            utilizada pelo usuário.
           </p>
-          <p>No fim, meu objetivo não é simplesmente entregar uma tela. É construir algo que faça sentido.</p>
+          <p>
+            Mais do que fazer uma funcionalidade funcionar, busco entender as decisões por trás dela e construir
+            soluções que continuem fazendo sentido conforme o produto evolui.
+          </p>
         </div>
       </div>
 

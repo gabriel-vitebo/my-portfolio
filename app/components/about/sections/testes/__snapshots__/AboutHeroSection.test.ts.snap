@@ -5,11 +5,11 @@ exports[`AboutHeroSection > matches the snapshot 1`] = `
   <div class="mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.08fr_0.92fr]">
     <div class="min-w-0 max-w-3xl text-center lg:text-left">
       <p class="text-sm font-medium uppercase tracking-widest text-subtle">Sobre mim</p>
-      <h1 class="mt-5 text-4xl font-black leading-none text-foreground sm:text-[40px] md:text-[54px] lg:text-7xl"> Olá, eu sou o Gabriel Vitebo </h1>
+      <h1 class="mt-5 text-4xl font-black leading-none text-foreground sm:text-[40px] md:text-[54px] lg:text-7xl"> Olá, eu sou o Gabriel </h1>
       <div class="mx-auto mt-7 space-y-5 text-lg leading-8 text-muted lg:mx-0">
-        <p> Sou desenvolvedor <strong class="font-semibold text-primary">Full Stack</strong>, com experiência profissional construindo aplicações com <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>. </p>
-        <p> Gosto de transformar ideias e problemas em interfaces que sejam simples de usar, bem construídas e fáceis de manter, sempre tentando entender não apenas <strong class="font-semibold text-foreground">como fazer</strong>, mas <strong class="font-semibold text-foreground">por que fazer daquele jeito</strong>. </p>
-        <p> Atualmente curso <strong class="font-semibold text-primary">Ciência da Computação</strong> e sigo estudando e explorando novas tecnologias, tanto no front-end quanto no back-end. </p>
+        <p> Sou desenvolvedor <strong class="font-semibold text-primary">Full Stack</strong>, com experiência na construção e manutenção de aplicações web, trabalhando desde a interface e experiência do usuário até APIs, regras de negócio e integração com dados. </p>
+        <p> No front-end, minha principal experiência está no ecossistema <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>. No back-end, já trabalhei profissionalmente com <strong class="font-semibold text-primary">Ruby on Rails</strong> e também desenvolvo projetos utilizando <strong class="font-semibold text-primary">Node.js, PostgreSQL e Prisma</strong>. </p>
+        <p> Gosto de entender o produto como um todo e transformar problemas em soluções que sejam boas tanto para quem usa quanto para quem desenvolve e mantém. </p>
       </div>
     </div>
     <div class="relative mx-auto w-full max-w-[17rem] rounded-3xl border border-border bg-surface p-3 shadow-lg sm:max-w-sm lg:max-w-md">

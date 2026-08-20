@@ -26,7 +26,7 @@ describe('AboutHeroSection', () => {
     })
 
     expect(wrapper.find('section#sobre-mim').exists()).toBe(true)
-    expect(wrapper.text()).toContain('Olá, eu sou o Gabriel Vitebo')
+    expect(wrapper.text()).toContain('Olá, eu sou o Gabriel')
     expect(wrapper.get('img').attributes('alt')).toBe(hero.name)
   })
 })

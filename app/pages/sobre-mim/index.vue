@@ -9,7 +9,11 @@
       />
       <AboutStorySection :milestones="milestones" />
       <AboutWorkSection :principles="workPrinciples" />
-      <AboutSkillsSection :primary-skills="primarySkills" :secondary-skills="secondarySkills" />
+      <AboutSkillsSection
+        :front-end-skills="frontEndSkills"
+        :back-end-skills="backEndSkills"
+        :tool-skills="toolSkills"
+      />
       <AboutEducationSection :items="educationItems" />
       <AboutContactSection :contact-links="contactLinks" />
     </main>
@@ -31,7 +35,7 @@ import { portfolio } from '~/data/portfolio'
 
 const aboutUrl = `${siteUrl}/sobre-mim`
 const socialImage = `${siteUrl}/images/social-cover.jpg`
-const description = 'Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em Vue.js, Nuxt e TypeScript.'
+const description = 'Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.'
 
 interface TimelineItem {
   label: string
@@ -88,26 +92,26 @@ const milestones: TimelineItem[] = [
   {
     label: 'Formação',
     title: 'Tecnologia + Design',
-    description: 'ADS e Design Gráfico se encontrando naturalmente no front-end.',
+    description: 'ADS, Design Gráfico e Ciência da Computação conectando produto, código e experiência.',
     icon: 'lucide:graduation-cap',
   },
   {
     label: 'Primeira experiência',
     title: 'Quero Educação',
-    description: 'Entrada como estagiário Front-end e evolução para desenvolvedor júnior.',
+    description: 'Entrada como estagiário e evolução para desenvolvedor júnior em produtos reais.',
     icon: 'lucide:briefcase-business',
   },
   {
     label: 'Stack',
-    title: 'Produto em produção',
-    description: 'Vue, Nuxt, TypeScript, React e contribuições com Ruby on Rails.',
+    title: 'Front-end e Back-end',
+    description: 'Vue, Nuxt, TypeScript, React, Ruby on Rails, Node.js, PostgreSQL e Prisma.',
     icon: 'lucide:code-2',
   },
   {
     label: 'Agora',
-    title: 'Ciência da Computação',
-    description: 'Estudo contínuo, projetos próprios e aprendizados compartilhados no blog.',
-    icon: 'lucide:sparkles',
+    title: 'Evolução Full Stack',
+    description: 'Estudo contínuo, projetos próprios e visão cada vez mais completa de produto.',
+    icon: 'lucide:layers-3',
     highlight: true,
   },
 ]
@@ -119,13 +123,13 @@ const workPrinciples: WorkPrinciple[] = [
     icon: 'lucide:search-check',
   },
   {
-    title: 'Experiência e código',
-    description: 'Busco equilibrar uma interface boa de usar com uma base simples de manter.',
+    title: 'Camadas conectadas',
+    description: 'Gosto de entender dados, regras, APIs e interface como partes do mesmo produto.',
     icon: 'lucide:scale',
   },
   {
-    title: 'Detalhes importam',
-    description: 'Performance, acessibilidade, responsividade e manutenção entram na decisão.',
+    title: 'Cuidado de ponta a ponta',
+    description: 'Experiência, performance, acessibilidade, modelagem e manutenção entram na decisão.',
     icon: 'lucide:sliders-horizontal',
   },
   {
@@ -135,24 +139,32 @@ const workPrinciples: WorkPrinciple[] = [
   },
 ]
 
-const primarySkills: SkillItem[] = [
+const frontEndSkills: SkillItem[] = [
   { name: 'Vue.js', icon: 'simple-icons:vuedotjs' },
   { name: 'Nuxt', icon: 'simple-icons:nuxt' },
   { name: 'TypeScript', icon: 'simple-icons:typescript' },
+  { name: 'React', icon: 'simple-icons:react' },
   { name: 'JavaScript', icon: 'simple-icons:javascript' },
   { name: 'Tailwind', icon: 'simple-icons:tailwindcss' },
+  { name: 'HTML', icon: 'simple-icons:html5' },
+  { name: 'CSS', icon: 'simple-icons:css' },
 ]
 
-const secondarySkills: SkillItem[] = [
-  { name: 'React', icon: 'simple-icons:react' },
-  { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
-  { name: 'Java', icon: 'simple-icons:openjdk' },
+const backEndSkills: SkillItem[] = [
   { name: 'Ruby on Rails', icon: 'simple-icons:rubyonrails' },
+  { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
   { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
   { name: 'Prisma', icon: 'simple-icons:prisma' },
+  { name: 'REST APIs', icon: 'lucide:route' },
+]
+
+const toolSkills: SkillItem[] = [
+  { name: 'Git', icon: 'simple-icons:git' },
+  { name: 'GitHub', icon: 'simple-icons:github' },
   { name: 'Docker', icon: 'simple-icons:docker' },
-  { name: 'Storybook', icon: 'simple-icons:storybook' },
   { name: 'Jest', icon: 'simple-icons:jest' },
+  { name: 'Storybook', icon: 'simple-icons:storybook' },
+  { name: 'Figma', icon: 'simple-icons:figma' },
 ]
 
 const educationItems: EducationItem[] = [

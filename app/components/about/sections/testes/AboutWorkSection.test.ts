@@ -24,8 +24,8 @@ describe('AboutWorkSection', () => {
       props: { principles },
     })
 
-    expect(wrapper.text()).toContain('Mais do que fazer funcionar')
-    expect(wrapper.text()).toContain('performance, acessibilidade, responsividade e manutenção')
+    expect(wrapper.text()).toContain('Do banco de dados à interface')
+    expect(wrapper.text()).toContain('responsividade, acessibilidade, performance')
     expect(wrapper.text()).toContain('Problema primeiro')
   })
 })

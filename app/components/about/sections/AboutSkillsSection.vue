@@ -10,8 +10,9 @@
 
       <AboutSkills
         class="mt-9"
-        :primary-skills="primarySkills"
-        :secondary-skills="secondarySkills"
+        :front-end-skills="frontEndSkills"
+        :back-end-skills="backEndSkills"
+        :tool-skills="toolSkills"
       />
     </div>
   </section>
@@ -26,7 +27,8 @@ interface SkillItem {
 }
 
 defineProps<{
-  primarySkills: SkillItem[]
-  secondarySkills: SkillItem[]
+  frontEndSkills: SkillItem[]
+  backEndSkills: SkillItem[]
+  toolSkills: SkillItem[]
 }>()
 </script>
