@@ -10,6 +10,5 @@ describe('index page', () => {
     expect(wrapper.text()).toContain(portfolio.hero.name)
     expect(wrapper.find('#hero').exists()).toBe(true)
     expect(wrapper.find('#projects').exists()).toBe(true)
-    expect(wrapper.find('#about').exists()).toBe(true)
   })
 })

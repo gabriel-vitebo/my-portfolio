@@ -29,6 +29,10 @@ export function mountForSnapshot(component: Component, options: ComponentMountin
           props: ['src', 'alt'],
           template: '<img v-bind="$attrs" :src="src" :alt="alt">',
         },
+        NuxtIcon: {
+          props: ['name', 'size', 'mode'],
+          template: '<span v-bind="$attrs" :data-icon="name" :data-size="size" :data-mode="mode" />',
+        },
         NuxtLink: {
           props: ['to'],
           template: '<a v-bind="$attrs" :href="to"><slot /></a>',

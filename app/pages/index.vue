@@ -2,13 +2,12 @@
   <div class="min-h-screen scroll-smooth bg-background text-foreground">
     <AppNavbar :name="portfolio.hero.name" />
     <main>
-      <HeroSection :hero="portfolio.hero" />
+      <HeroSection :hero="portfolio.hero" :socials="portfolio.socials" />
       <ProjectsSection
         :projects="portfolio.projects"
         :subtitle="portfolio.projectsSection.subtitle"
         :title="portfolio.projectsSection.title"
       />
-      <AboutSection :about="portfolio.about" :socials="portfolio.socials" />
     </main>
     <AppFooter :name="portfolio.hero.name" />
   </div>
@@ -17,7 +16,6 @@
 <script setup lang="ts">
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
-import AboutSection from '~/components/sections/AboutSection.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ProjectsSection from '~/components/sections/ProjectsSection.vue'
 import { siteUrl } from '~/data/constants'

@@ -19,7 +19,7 @@
               <NuxtLink :class="navLinkClass('projects')" to="/#projects" @click.prevent="scrollToSection('projects')">Projetos</NuxtLink>
             </li>
             <li>
-              <NuxtLink :class="navLinkClass('about')" to="/#about" @click.prevent="scrollToSection('about')">Sobre</NuxtLink>
+              <NuxtLink :class="routeLinkClass('/sobre-mim')" to="/sobre-mim">Sobre</NuxtLink>
             </li>
             <li>
               <NuxtLink :class="routeLinkClass('/blog')" to="/blog">Blog</NuxtLink>
@@ -50,7 +50,7 @@ defineProps<{
 const route = useRoute()
 const { scrollToSection } = useSectionNavigation()
 const activeSection = ref('hero')
-const sectionIds = ['hero', 'projects', 'about']
+const sectionIds = ['hero', 'projects']
 let sectionObserver: IntersectionObserver | null = null
 
 const navLinkClass = (sectionId: string) => [
@@ -69,13 +69,6 @@ const breadcrumbs = computed(() => {
       return [
         { label: '/home', to: '/#hero' },
         { label: 'projetos' },
-      ]
-    }
-
-    if (activeSection.value === 'about') {
-      return [
-        { label: '/home', to: '/#hero' },
-        { label: 'sobre' },
       ]
     }
 
@@ -115,6 +108,13 @@ const breadcrumbs = computed(() => {
     return [
       { label: '/home', to: '/#hero' },
       { label: 'changelog' },
+    ]
+  }
+
+  if (route.path === '/sobre-mim') {
+    return [
+      { label: '/home', to: '/#hero' },
+      { label: 'sobre mim' },
     ]
   }
 

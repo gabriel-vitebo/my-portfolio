@@ -8,7 +8,7 @@ exports[`AppNavbar > matches the snapshot 1`] = `
         <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
           <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
           <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
-          <li><a class="transition duration-300 hover:text-primary" href="/#about">Sobre</a></li>
+          <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
           <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
           <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
         </ul>

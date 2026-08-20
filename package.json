@@ -19,6 +19,7 @@
     "version": "changeset version"
   },
   "dependencies": {
+    "@nuxt/icon": "^2.5.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.9.0",
     "highlight.js": "^11.12.0",
@@ -30,6 +31,8 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
+    "@iconify-json/lucide": "^1.2.124",
+    "@iconify-json/simple-icons": "^1.2.93",
     "@types/markdown-it": "^14.1.2",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vitest/coverage-v8": "^4.1.10",
