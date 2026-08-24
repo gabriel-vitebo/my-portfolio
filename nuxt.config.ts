@@ -1,7 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { blogArticleRoutes } from './app/data/blogMetadata'
+import { blogArticlesMetadata } from './app/data/blogMetadata'
 import { projectRoutes } from './app/data/projects'
 import pkg from './package.json' with { type: 'json' }
+
+const blogArticleRoutes = blogArticlesMetadata.map((article) => `/blog/${article.slug}`)
+
+const blogArticleSitemapUrls = blogArticlesMetadata.map((article) => ({
+  loc: `/blog/${article.slug}`,
+  lastmod: article.updatedAtIso ?? article.publishedAtIso,
+  images: [
+    {
+      loc: article.image,
+      title: article.title,
+    },
+  ],
+}))
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -36,7 +49,7 @@ export default defineNuxtConfig({
     }
   },
   sitemap: {
-    urls: blogArticleRoutes,
+    urls: blogArticleSitemapUrls,
   },
   icon: {
     componentName: 'NuxtIcon',

@@ -49,7 +49,6 @@ import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
 import { blogArticles } from '~/data/blog'
-import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 import { createMarkdownRenderer } from '~/utils/markdown'
 
@@ -65,15 +64,16 @@ if (!article) {
   })
 }
 
-const canonicalUrl = `${siteUrl}/blog/${article.slug}`
-const socialImage = `${siteUrl}${article.image}`
+const site = useSiteConfig()
+const canonicalUrl = `${site.url}/blog/${article.slug}`
+const socialImage = `${site.url}${article.image}`
 
 const markdown = createMarkdownRenderer()
 
 const renderedArticle = computed(() => markdown.render(article.content))
 
 useSeoMeta({
-  title: `${article.title} | ${portfolio.hero.name}`,
+  title: article.title,
   description: article.description,
   ogTitle: `${article.title} | ${portfolio.hero.name}`,
   ogDescription: article.description,
@@ -90,6 +90,21 @@ useSeoMeta({
   twitterImage: socialImage,
   twitterImageAlt: article.title,
 })
+
+useSchemaOrg([
+  {
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.description,
+    datePublished: article.publishedAtIso,
+    dateModified: article.updatedAtIso ?? article.publishedAtIso,
+    image: socialImage,
+    author: {
+      '@id': 'https://gabrielvitebo.dev/#identity',
+    },
+    mainEntityOfPage: canonicalUrl,
+  },
+])
 
 useHead({
   link: [

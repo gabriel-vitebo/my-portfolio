@@ -3,6 +3,7 @@ export interface BlogArticleMetadata {
   title: string
   date: string
   publishedAtIso: string
+  updatedAtIso?: string
   publishedAt: string
   description: string
   image: string
