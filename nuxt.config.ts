@@ -25,6 +25,10 @@ export default defineNuxtConfig({
 
       jobTitle: 'Desenvolvedor Full Stack',
 
+      description: 'Desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web modernas, atuando com tecnologias de front-end e back-end.',
+
+      image: 'https://gabrielvitebo.dev/images/profile/my-photo.png',
+
       sameAs: [
         'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
         'https://github.com/gabriel-vitebo'
