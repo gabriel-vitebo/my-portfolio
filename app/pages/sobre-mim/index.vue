@@ -194,6 +194,15 @@ const educationItems: EducationItem[] = [
   },
 ]
 
+useSchemaOrg([
+  {
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@id': 'https://gabrielvitebo.dev/#identity'
+    }
+  }
+])
+
 useSeoMeta({
   title: `Sobre mim | ${portfolio.hero.name}`,
   description,

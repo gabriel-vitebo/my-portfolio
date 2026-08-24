@@ -7,11 +7,27 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   css: ['~/assets/css/theme.css'],
-  modules: [
-    '@nuxt/image',
-    '@nuxt/icon',
-    '@nuxt/ui'
-  ],
+  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo'],
+  site: {
+    url: 'https://gabrielvitebo.dev',
+    name: 'Gabriel Vitebo'
+  },
+  schemaOrg: {
+    identity: {
+      '@type': 'Person',
+
+      name: 'Gabriel Vitebo',
+
+      url: 'https://gabrielvitebo.dev',
+
+      jobTitle: 'Desenvolvedor Full Stack',
+
+      sameAs: [
+        'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
+        'https://github.com/gabriel-vitebo'
+      ]
+    }
+  },
   icon: {
     componentName: 'NuxtIcon',
     clientBundle: {
