@@ -35,6 +35,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  sitemap: {
+    urls: blogArticleRoutes,
+  },
   icon: {
     componentName: 'NuxtIcon',
     clientBundle: {
