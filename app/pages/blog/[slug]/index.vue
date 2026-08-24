@@ -72,6 +72,8 @@ const markdown = createMarkdownRenderer()
 
 const renderedArticle = computed(() => markdown.render(article.content))
 
+const toSchemaDateTime = (date: string) => `${date}T12:00:00-03:00`
+
 useSeoMeta({
   title: article.title,
   description: article.description,
@@ -96,8 +98,8 @@ useSchemaOrg([
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.description,
-    datePublished: article.publishedAtIso,
-    dateModified: article.updatedAtIso ?? article.publishedAtIso,
+    datePublished: toSchemaDateTime(article.publishedAtIso),
+    dateModified: toSchemaDateTime(article.publishedAtIso),
     image: socialImage,
     author: {
       '@id': 'https://gabrielvitebo.dev/#identity',
