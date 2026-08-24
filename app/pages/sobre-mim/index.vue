@@ -30,11 +30,11 @@ import AboutStorySection from '~/components/about/sections/AboutStorySection.vue
 import AboutWorkSection from '~/components/about/sections/AboutWorkSection.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
-import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
-const aboutUrl = `${siteUrl}/sobre-mim`
-const socialImage = `${siteUrl}/images/social-cover.jpg`
+const site = useSiteConfig()
+const aboutUrl = `${site.url}/sobre-mim`
+const socialImage = `${site.url}/images/social-cover.jpg`
 const description = 'Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.'
 
 interface TimelineItem {
@@ -194,8 +194,17 @@ const educationItems: EducationItem[] = [
   },
 ]
 
+useSchemaOrg([
+  {
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@id': 'https://gabrielvitebo.dev/#identity'
+    }
+  }
+])
+
 useSeoMeta({
-  title: `Sobre mim | ${portfolio.hero.name}`,
+  title: 'Sobre mim',
   description,
   ogTitle: `Sobre mim | ${portfolio.hero.name}`,
   ogDescription: description,

@@ -26,18 +26,18 @@ import changelog from '../../CHANGELOG.md?raw'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
-import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 import { createMarkdownRenderer } from '~/utils/markdown'
 
-const canonicalUrl = `${siteUrl}/changelog`
+const site = useSiteConfig()
+const canonicalUrl = `${site.url}/changelog`
 
 const markdown = createMarkdownRenderer()
 
 const renderedChangelog = computed(() => markdown.render(changelog))
 
 useSeoMeta({
-  title: `Changelog | ${portfolio.hero.name}`,
+  title: 'Changelog',
   description: 'Histórico de versões e mudanças do portfólio.',
   ogTitle: `Changelog | ${portfolio.hero.name}`,
   ogDescription: 'Histórico de versões e mudanças do portfólio.',

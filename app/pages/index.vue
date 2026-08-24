@@ -18,18 +18,19 @@ import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ProjectsSection from '~/components/sections/ProjectsSection.vue'
-import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
-const socialImage = `${siteUrl}/images/social-cover.jpg`
+const site = useSiteConfig()
+const canonicalUrl = site.url
+const socialImage = `${site.url}/images/social-cover.jpg`
 
 useSeoMeta({
-  title: `${portfolio.hero.name} | ${portfolio.hero.role}`,
+  title: portfolio.hero.role,
   description: portfolio.hero.description,
   ogTitle: `${portfolio.hero.name} | ${portfolio.hero.role}`,
   ogDescription: portfolio.hero.description,
   ogType: 'website',
-  ogUrl: siteUrl,
+  ogUrl: canonicalUrl,
   ogImage: socialImage,
   ogImageAlt: `${portfolio.hero.name} — ${portfolio.hero.role}`,
   ogImageWidth: 1200,
@@ -44,7 +45,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: 'canonical', href: siteUrl },
+    { rel: 'canonical', href: canonicalUrl },
   ],
 })
 </script>

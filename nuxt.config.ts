@@ -1,17 +1,56 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { blogArticleRoutes } from './app/data/blogMetadata'
+import { blogArticlesMetadata } from './app/data/blogMetadata'
 import { projectRoutes } from './app/data/projects'
 import pkg from './package.json' with { type: 'json' }
+
+const blogArticleRoutes = blogArticlesMetadata.map((article) => `/blog/${article.slug}`)
+
+const blogArticleSitemapUrls = blogArticlesMetadata.map((article) => ({
+  loc: `/blog/${article.slug}`,
+  lastmod: article.updatedAtIso ?? article.publishedAtIso,
+  images: [
+    {
+      loc: article.image,
+      title: article.title,
+    },
+  ],
+}))
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   css: ['~/assets/css/theme.css'],
-  modules: [
-    '@nuxt/image',
-    '@nuxt/icon',
-    '@nuxt/ui'
-  ],
+  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo'],
+  site: {
+    url: 'https://gabrielvitebo.dev',
+    name: 'Gabriel Vitebo',
+    defaultLocale: 'pt-BR',
+    currentLocale: 'pt-BR'
+  },
+  schemaOrg: {
+    identity: {
+      type: 'Person',
+      '@id': 'https://gabrielvitebo.dev/#identity',
+
+      name: 'Gabriel Vitebo',
+
+      url: 'https://gabrielvitebo.dev',
+
+      jobTitle: 'Desenvolvedor Full Stack',
+
+      description: 'Desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web modernas, atuando com tecnologias de front-end e back-end.',
+
+      image: 'https://gabrielvitebo.dev/images/profile/my-photo.png',
+
+      sameAs: [
+        'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
+        'https://github.com/gabriel-vitebo'
+      ]
+    }
+  },
+  sitemap: {
+    urls: blogArticleSitemapUrls,
+  },
   icon: {
     componentName: 'NuxtIcon',
     clientBundle: {

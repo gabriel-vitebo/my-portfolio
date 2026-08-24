@@ -28,4 +28,43 @@ import Header from '~/components/header/index.vue'
 import BlogCard from '~/components/blog/card/index.vue'
 import { blogArticles } from '~/data/blog'
 import { portfolio } from '~/data/portfolio'
+
+const site = useSiteConfig()
+const canonicalUrl = `${site.url}/blog`
+const description = 'Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.'
+const socialImage = `${site.url}/images/social-cover.jpg`
+
+useSeoMeta({
+  title: 'Blog',
+  description,
+  ogTitle: `Blog | ${portfolio.hero.name}`,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: canonicalUrl,
+  ogImage: socialImage,
+  ogImageAlt: `${portfolio.hero.name} — Blog`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/jpeg',
+  twitterCard: 'summary_large_image',
+  twitterTitle: `Blog | ${portfolio.hero.name}`,
+  twitterDescription: description,
+  twitterImage: socialImage,
+  twitterImageAlt: `${portfolio.hero.name} — Blog`,
+})
+
+useSchemaOrg([
+  {
+    '@type': 'Blog',
+    name: `Blog | ${portfolio.hero.name}`,
+    description,
+    url: canonicalUrl,
+  },
+])
+
+useHead({
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
+})
 </script>

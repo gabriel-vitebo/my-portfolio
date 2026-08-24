@@ -29,7 +29,6 @@ import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import ProjectGallery from '~/components/projects/ProjectGallery.vue'
 import ProjectHero from '~/components/projects/ProjectHero.vue'
-import { siteUrl } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 import type { ProjectGalleryItem } from '~/types/portfolio'
 
@@ -38,8 +37,9 @@ const slug = route.params.slug
 
 const project = portfolio.projects.find((item) => item.slug === slug)
 const selectedMedia = ref<ProjectGalleryItem | null>(null)
-const canonicalUrl = `${siteUrl}/projetos/${project?.slug}`
-const socialImage = `${siteUrl}/images/social-cover.jpg`
+const site = useSiteConfig()
+const canonicalUrl = `${site.url}/projetos/${project?.slug}`
+const socialImage = `${site.url}/images/social-cover.jpg`
 
 const openMedia = (media: ProjectGalleryItem) => {
   selectedMedia.value = media
@@ -57,7 +57,7 @@ if (!project) {
 }
 
 useSeoMeta({
-  title: `${project.title} | ${portfolio.hero.name}`,
+  title: project.title,
   description: project.shortDescription,
   ogTitle: `${project.title} | ${portfolio.hero.name}`,
   ogDescription: project.shortDescription,
