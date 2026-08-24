@@ -10,11 +10,14 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo'],
   site: {
     url: 'https://gabrielvitebo.dev',
-    name: 'Gabriel Vitebo'
+    name: 'Gabriel Vitebo',
+    defaultLocale: 'pt-BR',
+    currentLocale: 'pt-BR'
   },
   schemaOrg: {
     identity: {
-      '@type': 'Person',
+      type: 'Person',
+      '@id': 'https://gabrielvitebo.dev/#identity',
 
       name: 'Gabriel Vitebo',
 
