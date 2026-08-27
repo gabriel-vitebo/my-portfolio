@@ -23,11 +23,11 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
   },
   {
     slug: 'como-maquinas-endentem-quem-eu-sou-na-internet',
-    title: 'Como Máquinas Entendem Quem eu sou na internet',
+    title: 'Dados estruturados: Como máquinas entendem quem eu sou na internet',
     date: 'Artigo',
     publishedAtIso: '2026-08-27',
     publishedAt: '27 de agosto de 2026',
-    description: 'Uma reflexão sobre LLMs, busca, retrieval, RAG e dados estruturados para entender como máquinas encontram e relacionam informações sobre uma pessoa na internet.',
+    description: 'Como dados estruturados, Schema.org e relações entre entidades ajudam máquinas, buscadores e sistemas de IA a entender melhor quem sou na internet.',
     image: blogImage('como-maquinas-endentem-quem-eu-sou-na-internet', 'cover.jpeg'),
   },
 ]
