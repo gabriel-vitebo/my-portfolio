@@ -1,6 +1,7 @@
 import type { BlogArticle } from '~/types/blog'
 import HowIBuiltMyPortfolio from '~/content/blog/como-eu-construi-meu-portifolio.md?raw'
 import HTMLSemantico from '~/content/blog/html-semantico.md?raw'
+import HowMachinesUnderstandWhoIAm from '~/content/blog/como-maquinas-endentem-quem-eu-sou-na-internet.md?raw'
 import { blogArticlesMetadata } from './blogMetadata'
 
 const getBlogArticleMetadata = (slug: string) => {
@@ -21,6 +22,10 @@ export const blogArticles: BlogArticle[] = [
   {
     ...getBlogArticleMetadata('html-semantico'),
     content: HTMLSemantico,
+  },
+  {
+    ...getBlogArticleMetadata('como-maquinas-endentem-quem-eu-sou-na-internet'),
+    content: HowMachinesUnderstandWhoIAm,
   },
 ].toSorted((currentArticle, nextArticle) =>
   nextArticle.publishedAtIso.localeCompare(currentArticle.publishedAtIso),
