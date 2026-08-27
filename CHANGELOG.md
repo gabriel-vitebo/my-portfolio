@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.1.1
+
+### Patch Changes
+
+- [#31](https://github.com/gabriel-vitebo/my-portfolio/pull/31) [`ef6fcc0`](https://github.com/gabriel-vitebo/my-portfolio/commit/ef6fcc04f3512dbb5d3ee85b7661339537842ff3) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - Corrige e enriquece os dados estruturados Schema.org do portfólio
+
+  - Define a identidade global como Person usando a configuração oficial do Nuxt Schema.org
+  - Configura o idioma global do site como pt-BR no Nuxt SEO/Site Config
+  - Conecta a página /sobre-mim à identidade global usando ProfilePage
+  - Adiciona descrição e imagem pública à entidade Person
+
+- [#31](https://github.com/gabriel-vitebo/my-portfolio/pull/31) [`05b765e`](https://github.com/gabriel-vitebo/my-portfolio/commit/05b765e6a9d95256115d54a2f2078485eb80311c) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - ðŸ”§ ManutenÃ§Ã£o: padroniza metadados, sitemap e dados estruturados com Nuxt SEO.
+
 ## 2.1.0
 
 ### Minor Changes
