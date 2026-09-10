@@ -23,11 +23,9 @@
       <ProjectLinks class="mt-8" :demo-url="project.demoUrl" :github-links="project.githubLinks" />
     </div>
 
-    <UButton
+    <button
       class="group block w-full rounded-3xl border border-border bg-surface shadow-lg transition duration-300 hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:sticky lg:top-28"
       type="button"
-      color="neutral"
-      variant="outline"
       :aria-label="`Abrir imagem principal de ${project.title}`"
       @click="openHeroImage"
     >
@@ -45,7 +43,7 @@
         quality="75"
         preload
       />
-    </UButton>
+    </button>
   </div>
 </template>
 

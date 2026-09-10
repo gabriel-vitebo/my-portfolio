@@ -2,13 +2,11 @@
   <section class="mt-14" aria-labelledby="project-gallery-title">
     <h2 id="project-gallery-title" class="text-2xl font-semibold text-foreground">Galeria</h2>
     <div class="mt-6 grid gap-4 md:grid-cols-2">
-      <UButton
+      <button
         v-for="media in items"
         :key="getMediaKey(media)"
         class="group relative block w-full overflow-hidden rounded-2xl border border-border bg-surface transition duration-300 hover:scale-[1.02] hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         type="button"
-        color="neutral"
-        variant="outline"
         :aria-label="getMediaLabel(media)"
         @click="$emit('open-media', media)"
       >
@@ -42,7 +40,7 @@
             </span>
           </span>
         </template>
-      </UButton>
+      </button>
     </div>
   </section>
 </template>
