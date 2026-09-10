@@ -80,6 +80,7 @@ textarea {
 button {
   appearance: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {
