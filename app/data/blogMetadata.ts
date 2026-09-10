@@ -30,6 +30,15 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
     description: 'Como dados estruturados, Schema.org e relações entre entidades ajudam máquinas, buscadores e sistemas de IA a entender melhor quem sou na internet.',
     image: blogImage('como-maquinas-endentem-quem-eu-sou-na-internet', 'cover.jpeg'),
   },
+  {
+    slug: 'como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js',
+    title: 'Como dados viram recomendações de filmes com TensorFlow.js',
+    date: 'Artigo',
+    publishedAtIso: '2026-09-10',
+    publishedAt: '10 de setembro de 2026',
+    description: 'O que aprendi ao adaptar uma atividade da pós-graduação para representar filmes e usuários com normalização, vetores, tensores e uma rede neural em TensorFlow.js.',
+    image: blogImage('como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js', 'cover.png'),
+  },
 ]
 
 export const blogArticleRoutes = blogArticlesMetadata.map((article) => `/blog/${article.slug}`)
