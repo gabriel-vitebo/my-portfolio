@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.2
+
+### Patch Changes
+
+- [#33](https://github.com/gabriel-vitebo/my-portfolio/pull/33) [`4c9c12a`](https://github.com/gabriel-vitebo/my-portfolio/commit/4c9c12a26d17bb4339b7324aa4978420e73b7eb3) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - 📝 Conteúdo: adiciona artigo sobre como dados viram recomendações de filmes com TensorFlow.js.
+
+  🐛 Correção: remove estilos do Nuxt UI de botões customizados para evitar fundo branco em alguns dispositivos.
+
 ## 2.1.1
 
 ### Patch Changes
