@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
   css: ['~/assets/css/theme.css'],
-  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo'],
+  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo', '@nuxt/scripts'],
   site: {
     url: 'https://gabrielvitebo.dev',
     name: 'Gabriel Vitebo',
@@ -79,6 +79,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appVersion: pkg.version,
+      gaId: process.env.NUXT_PUBLIC_GA_ID || 'G-5F6Z5B03CF',
     },
   },
   nitro: {
