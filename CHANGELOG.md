@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.3
+
+### Patch Changes
+
+- [#35](https://github.com/gabriel-vitebo/my-portfolio/pull/35) [`a1fb984`](https://github.com/gabriel-vitebo/my-portfolio/commit/a1fb984b455dbcd339c5a71f7712b19a145b87c6) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - 🔧 Manutenção: configura Google Analytics 4 com @nuxt/scripts.
+
 ## 2.1.2
 
 ### Patch Changes
