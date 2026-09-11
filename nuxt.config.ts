@@ -79,7 +79,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appVersion: pkg.version,
-      gaId: process.env.NUXT_PUBLIC_GA_ID || 'G-5F6Z5B03CF',
+      gaId: 'G-5F6Z5B03CF',
     },
   },
   nitro: {
