@@ -92,7 +92,7 @@ const milestones: TimelineItem[] = [
   {
     label: 'Formação',
     title: 'Tecnologia + Design',
-    description: 'ADS, Design Gráfico e Ciência da Computação conectando produto, código e experiência.',
+    description: 'ADS, Design Gráfico, Ciência da Computação e pós-graduação conectando produto, código e experiência.',
     icon: 'lucide:graduation-cap',
   },
   {
@@ -110,7 +110,7 @@ const milestones: TimelineItem[] = [
   {
     label: 'Agora',
     title: 'Evolução Full Stack',
-    description: 'Estudo contínuo, projetos próprios e visão cada vez mais completa de produto.',
+    description: 'Ciência da Computação, pós-graduação em IA aplicada, projetos próprios e visão completa de produto.',
     icon: 'lucide:layers-3',
     highlight: true,
   },
@@ -188,9 +188,15 @@ const educationItems: EducationItem[] = [
   },
   {
     title: 'Ciência da Computação',
-    institution: "ETEP",
-    status: 'Cursando',
+    institution: 'ETEP',
+    status: 'Em andamento',
     icon: 'lucide:graduation-cap',
+  },
+  {
+    title: 'Engenharia de Software com IA Aplicada',
+    institution: 'UNIPDS',
+    status: 'Em andamento',
+    icon: 'lucide:brain-circuit',
   },
 ]
 

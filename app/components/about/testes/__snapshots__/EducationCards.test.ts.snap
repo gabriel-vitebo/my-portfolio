@@ -1,20 +1,34 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`EducationCards > matches the snapshot 1`] = `
-"<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-  <article class="group flex min-h-44 min-w-0 flex-col justify-between rounded-lg border border-border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+"<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-border hover:border-primary/30">
+    <!--v-if-->
     <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:palette" data-size="1em" data-mode="svg"></span></span>
       <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Design Gráfico</h3>
       <p class="mt-2 text-sm leading-6 text-muted">UNICID</p>
     </div>
-    <p class="mt-5 w-fit rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-border text-subtle">Concluído em 2019</p>
+    <div class="mt-6 flex flex-wrap items-center gap-2">
+      <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-border text-subtle"><span class="size-3.5" aria-hidden="true" data-icon="lucide:check" data-size="1em" data-mode="svg"></span> Concluído em 2019</p>
+    </div>
   </article>
-  <article class="group flex min-h-44 min-w-0 flex-col justify-between rounded-lg border border-border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+  <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-primary/40 ring-1 ring-primary/10 hover:border-primary/60"><span class="absolute inset-x-0 top-0 h-1 bg-primary" aria-hidden="true"></span>
     <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:graduation-cap" data-size="1em" data-mode="svg"></span></span>
       <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Ciência da Computação</h3>
       <p class="mt-2 text-sm leading-6 text-muted">ETEP</p>
     </div>
-    <p class="mt-5 w-fit rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-primary/40 text-primary">Cursando</p>
+    <div class="mt-6 flex flex-wrap items-center gap-2">
+      <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-primary/40 bg-primary/5 text-primary"><span class="size-3.5" aria-hidden="true" data-icon="lucide:loader-circle" data-size="1em" data-mode="svg"></span> Em andamento</p>
+    </div>
+  </article>
+  <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-primary/40 ring-1 ring-primary/10 hover:border-primary/60"><span class="absolute inset-x-0 top-0 h-1 bg-primary" aria-hidden="true"></span>
+    <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:brain-circuit" data-size="1em" data-mode="svg"></span></span>
+      <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Engenharia de Software com IA Aplicada</h3>
+      <p class="mt-2 text-sm leading-6 text-muted">UNIPDS</p>
+    </div>
+    <div class="mt-6 flex flex-wrap items-center gap-2">
+      <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-primary/40 bg-primary/5 text-primary"><span class="size-3.5" aria-hidden="true" data-icon="lucide:loader-circle" data-size="1em" data-mode="svg"></span> Em andamento</p>
+    </div>
   </article>
 </div>"
 `;

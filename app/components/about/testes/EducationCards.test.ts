@@ -12,8 +12,14 @@ const items = [
   {
     title: 'Ciência da Computação',
     institution: 'ETEP',
-    status: 'Cursando',
+    status: 'Em andamento',
     icon: 'lucide:graduation-cap',
+  },
+  {
+    title: 'Engenharia de Software com IA Aplicada',
+    institution: 'UNIPDS',
+    status: 'Em andamento',
+    icon: 'lucide:brain-circuit',
   },
 ]
 
@@ -33,6 +39,7 @@ describe('EducationCards', () => {
 
     expect(wrapper.findAll('article')).toHaveLength(items.length)
     expect(wrapper.text()).toContain('Design Gráfico')
-    expect(wrapper.text()).toContain('Cursando')
+    expect(wrapper.text()).toContain('Em andamento')
+    expect(wrapper.text()).toContain('Engenharia de Software com IA Aplicada')
   })
 })

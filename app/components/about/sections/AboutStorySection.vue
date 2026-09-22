@@ -15,7 +15,9 @@
             tenho formação em
             <strong class="font-semibold text-primary">Design Gráfico</strong>
             e atualmente curso
-            <strong class="font-semibold text-primary">Ciência da Computação</strong>.
+            <strong class="font-semibold text-primary">Ciência da Computação</strong>
+            junto com a pós-graduação em
+            <strong class="font-semibold text-primary">Engenharia de Software com IA Aplicada</strong>.
           </p>
           <p>
             Minha experiência profissional começou como estagiário na
