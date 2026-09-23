@@ -7,6 +7,8 @@ export interface BlogArticleMetadata {
   publishedAt: string
   description: string
   image: string
+  imageWidth?: number
+  imageHeight?: number
 }
 
 export interface BlogArticle extends BlogArticleMetadata {

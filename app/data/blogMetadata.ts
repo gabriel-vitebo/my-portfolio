@@ -4,6 +4,17 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes',
+    title: 'Jev: e se a IA ajudasse o seu código a tomar decisões?',
+    date: 'Artigo',
+    publishedAtIso: '2026-09-23',
+    publishedAt: '23 de setembro de 2026',
+    description: 'Como o Jev pode ajudar aplicações a interpretar contextos e tomar decisões estruturadas, com exemplos de revisão de tarefas, triagem de chamados e supervisão humana.',
+    image: blogImage('jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes', 'cover.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'como-eu-construi-meu-portifolio',
     title: 'Como eu construí meu portfólio',
     date: 'Artigo',

@@ -4,6 +4,7 @@ import HTMLSemantico from '~/content/blog/html-semantico.md?raw'
 import HowMachinesUnderstandWhoIAm from '~/content/blog/como-maquinas-endentem-quem-eu-sou-na-internet.md?raw'
 import HowDataBecomesMovieRecommendations from '~/content/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js.md?raw'
 import { blogArticlesMetadata } from './blogMetadata'
+import JevDecisions from '~/content/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes.md?raw'
 
 const getBlogArticleMetadata = (slug: string) => {
   const article = blogArticlesMetadata.find((item) => item.slug === slug)
@@ -16,6 +17,10 @@ const getBlogArticleMetadata = (slug: string) => {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    ...getBlogArticleMetadata('jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes'),
+    content: JevDecisions,
+  },
   {
     ...getBlogArticleMetadata('como-eu-construi-meu-portifolio'),
     content: HowIBuiltMyPortfolio,
