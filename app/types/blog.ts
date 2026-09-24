@@ -1,5 +1,6 @@
 export interface BlogArticleMetadata {
   slug: string
+  shortSlug: string
   title: string
   date: string
   publishedAtIso: string

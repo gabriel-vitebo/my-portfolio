@@ -5,6 +5,7 @@ import { mountForSnapshot } from '../../../../../tests/support/mount'
 
 const article: BlogArticle = {
   slug: 'interfaces-acessiveis-com-vue',
+  shortSlug: 'interfaces-vue',
   title: 'Interfaces acessiveis com Vue',
   date: 'Artigo',
   publishedAt: '13 de agosto de 2026',
