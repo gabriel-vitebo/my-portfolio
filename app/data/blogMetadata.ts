@@ -5,6 +5,7 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
     slug: 'jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes',
+    shortSlug: 'jev',
     title: 'Jev: e se a IA ajudasse o seu código a tomar decisões?',
     date: 'Artigo',
     publishedAtIso: '2026-09-23',
@@ -16,6 +17,7 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
   },
   {
     slug: 'como-eu-construi-meu-portifolio',
+    shortSlug: 'meu-portfolio',
     title: 'Como eu construí meu portfólio',
     date: 'Artigo',
     publishedAtIso: '2026-08-13',
@@ -25,6 +27,7 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
   },
   {
     slug: 'html-semantico',
+    shortSlug: 'html-semantico',
     title: 'HTML Semântico',
     date: 'Artigo',
     publishedAtIso: '2026-08-18',
@@ -34,6 +37,7 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
   },
   {
     slug: 'como-maquinas-endentem-quem-eu-sou-na-internet',
+    shortSlug: 'dados-estruturados',
     title: 'Dados estruturados: Como máquinas entendem quem eu sou na internet',
     date: 'Artigo',
     publishedAtIso: '2026-08-27',
@@ -43,6 +47,7 @@ export const blogArticlesMetadata: BlogArticleMetadata[] = [
   },
   {
     slug: 'como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js',
+    shortSlug: 'filmes-tensorflow-js',
     title: 'Como dados viram recomendações de filmes com TensorFlow.js',
     date: 'Artigo',
     publishedAtIso: '2026-09-10',
