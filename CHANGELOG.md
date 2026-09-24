@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0
+
+### Minor Changes
+
+- [#47](https://github.com/gabriel-vitebo/my-portfolio/pull/47) [`91f9d23`](https://github.com/gabriel-vitebo/my-portfolio/commit/91f9d23ab58fa2f3f9b6c327bcd7fba69c3a597f) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - ✨ Feature: adiciona compartilhamento no LinkedIn no início e no final dos artigos, com parâmetros UTM e componente reutilizável.
+
 ## 2.1.3
 
 ### Patch Changes
