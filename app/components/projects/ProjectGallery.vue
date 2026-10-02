@@ -3,7 +3,7 @@
     <h2 id="project-gallery-title" class="text-2xl font-semibold text-foreground">Galeria</h2>
     <div class="mt-6 grid gap-4 md:grid-cols-2">
       <button
-        v-for="media in items"
+        v-for="media in paginatedItems"
         :key="getMediaKey(media)"
         class="group relative block w-full overflow-hidden rounded-2xl border border-border bg-surface transition duration-300 hover:scale-[1.02] hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         type="button"
@@ -42,10 +42,20 @@
         </template>
       </button>
     </div>
+    <Pagination
+      class="mt-8"
+      :page="currentPage"
+      :total-pages="totalPages"
+      label="Paginação das imagens do projeto"
+      @update:page="setPage"
+    />
+    <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
   </section>
 </template>
 
 <script setup lang="ts">
+import Pagination from '~/components/ui/Pagination.vue'
+import { usePagination } from '~/composables/usePagination'
 import type { ProjectGalleryItem } from '~/types/portfolio'
 
 const props = defineProps<{
@@ -58,6 +68,7 @@ defineEmits<{
 }>()
 
 const { getYoutubeThumbnail } = useYoutubeMedia()
+const { currentPage, totalPages, paginatedItems, setPage } = usePagination(() => props.items, 4)
 
 const getMediaKey = (media: ProjectGalleryItem) => media.type === 'image' ? media.src : media.url
 

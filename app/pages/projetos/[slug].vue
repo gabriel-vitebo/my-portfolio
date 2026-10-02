@@ -9,7 +9,7 @@
 
       <article class="mt-10">
         <ProjectHero :project="project" @open-media="openMedia" />
-        <ProjectGallery :items="project.gallery" :project-title="project.title" @open-media="openMedia" />
+        <ProjectGallery :key="project.slug" :items="project.gallery" :project-title="project.title" @open-media="openMedia" />
       </article>
     </main>
 

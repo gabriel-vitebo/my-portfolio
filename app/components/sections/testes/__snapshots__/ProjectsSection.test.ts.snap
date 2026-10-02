@@ -4,7 +4,7 @@ exports[`ProjectsSection > matches the snapshot 1`] = `
 "<section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
   <div class="mx-auto w-full max-w-6xl">
     <div class="max-w-2xl">
-      <h2 class="text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
+      <h2 tabindex="-1" class="scroll-mt-24 text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
       <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Projetos em destaque</p>
     </div>
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -45,6 +45,8 @@ exports[`ProjectsSection > matches the snapshot 1`] = `
           </div>
         </a></article>
     </div>
+    <!--v-if-->
+    <!--v-if-->
   </div>
 </section>"
 `;

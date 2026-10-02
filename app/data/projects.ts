@@ -98,6 +98,7 @@ export const projects: Project[] = [
     demoUrl: 'https://gabriel-vitebo.github.io/checkNumbers/',
     technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
   },
+  
 ]
 
 export const projectRoutes = projects.map((project) => `/projetos/${project.slug}`)
