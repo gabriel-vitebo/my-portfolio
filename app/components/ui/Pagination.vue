@@ -1,29 +1,7 @@
-<template>
-  <nav v-if="totalPages > 1" :aria-label="label" class="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
-    <button type="button" class="pagination-button" aria-label="Página anterior" :disabled="page <= 1" @click="selectPage(page - 1)">
-      <span aria-hidden="true">←</span>
-    </button>
-    <template v-for="item in visiblePages" :key="item">
-      <span v-if="typeof item === 'string'" aria-hidden="true" class="px-1 text-muted">…</span>
-      <button
-        v-else
-        type="button"
-        class="pagination-button"
-        :aria-label="`Página ${item}`"
-        :aria-current="item === page ? 'page' : undefined"
-        @click="selectPage(item)"
-      >
-        {{ item }}
-      </button>
-    </template>
-    <button type="button" class="pagination-button" aria-label="Próxima página" :disabled="page >= totalPages" @click="selectPage(page + 1)">
-      <span aria-hidden="true">→</span>
-    </button>
-  </nav>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue'
+
+const buttonClasses = 'min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40'
 
 const props = withDefaults(defineProps<{
   page: number
@@ -64,25 +42,26 @@ const visiblePages = computed(() => {
 })
 </script>
 
-<style scoped>
-.pagination-button {
-  min-width: 2.25rem;
-  min-height: 2.75rem;
-  padding: 0.5rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  color: var(--color-text-secondary);
-}
-
-.pagination-button:hover:not(:disabled),
-.pagination-button[aria-current='page'] {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-text-primary);
-}
-
-.pagination-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.4;
-}
-</style>
+<template>
+  <nav v-if="totalPages > 1" :aria-label="label" class="flex flex-wrap items-center justify-center gap-1 sm:gap-2">
+    <button type="button" :class="buttonClasses" aria-label="Página anterior" :disabled="page <= 1" @click="selectPage(page - 1)">
+      <span aria-hidden="true">←</span>
+    </button>
+    <template v-for="item in visiblePages" :key="item">
+      <span v-if="typeof item === 'string'" aria-hidden="true" class="px-1 text-muted">…</span>
+      <button
+        v-else
+        type="button"
+        :class="buttonClasses"
+        :aria-label="`Página ${item}`"
+        :aria-current="item === page ? 'page' : undefined"
+        @click="selectPage(item)"
+      >
+        {{ item }}
+      </button>
+    </template>
+    <button type="button" :class="buttonClasses" aria-label="Próxima página" :disabled="page >= totalPages" @click="selectPage(page + 1)">
+      <span aria-hidden="true">→</span>
+    </button>
+  </nav>
+</template>
