@@ -19,7 +19,7 @@
         />
       </div>
 
-      <ProjectTechnologies class="mt-8" :technologies="project.technologies" />
+      <ProjectTechnologies class="mt-8" :technologies="project.technologies" :technology-labels="project.technologyLabels" />
       <ProjectLinks class="mt-8" :demo-url="project.demoUrl" :github-links="project.githubLinks" />
     </div>
 

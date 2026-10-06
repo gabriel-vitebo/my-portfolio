@@ -1,0 +1,881 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`pages consuming shared data > preserves about rendering and SEO 1`] = `
+"<div class="min-h-screen overflow-x-hidden scroll-smooth bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/#hero">/home</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">sobre mim</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span><span>-&gt;</span><span>sobre mim</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main>
+    <section id="sobre-mim" class="grid min-h-[calc(100svh-9rem)] place-items-center bg-background px-4 pb-14 pt-8 sm:min-h-[calc(100svh-7rem)] sm:px-6 sm:pb-20 sm:pt-10 md:pb-20 md:pt-12">
+      <div class="mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.08fr_0.92fr]">
+        <div class="min-w-0 max-w-3xl text-center lg:text-left">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Sobre mim</p>
+          <h1 class="mt-5 text-4xl font-black leading-none text-foreground sm:text-[40px] md:text-[54px] lg:text-7xl"> Olá, eu sou o Gabriel </h1>
+          <div class="mx-auto mt-7 space-y-5 text-lg leading-8 text-muted lg:mx-0">
+            <p> Sou desenvolvedor <strong class="font-semibold text-primary">Full Stack</strong>, com experiência na construção e manutenção de aplicações web, trabalhando desde a interface e experiência do usuário até APIs, regras de negócio e integração com dados. </p>
+            <p> No front-end, minha principal experiência está no ecossistema <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>. No back-end, já trabalhei profissionalmente com <strong class="font-semibold text-primary">Ruby on Rails</strong> e também desenvolvo projetos utilizando <strong class="font-semibold text-primary">Node.js, PostgreSQL e Prisma</strong>. </p>
+            <p> Gosto de entender o produto como um todo e transformar problemas em soluções que sejam boas tanto para quem usa quanto para quem desenvolve e mantém. </p>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-[17rem] rounded-3xl border border-border bg-surface p-3 shadow-lg sm:max-w-sm lg:max-w-md">
+          <div class="absolute inset-0 -z-10 rounded-3xl shadow-glow"></div><img class="aspect-[4/5] w-full rounded-2xl object-cover" width="1024" height="1280" sizes="(max-width: 1023px) 384px, 448px" format="avif" quality="82" preload="" fetchpriority="high" src="/images/profile/my-photo.png" alt="Gabriel Vitebo">
+          <nav class="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-3" aria-label="Links sociais"><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://github.com/gabriel-vitebo" aria-label="GitHub" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="simple-icons:github" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">https://github.com/gabriel-vitebo</span></a><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/" aria-label="LinkedIn" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="simple-icons:linkedin" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/</span></a><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="mailto:contact@gabrielvitebo.dev" aria-label="contact@gabrielvitebo.dev" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="lucide:mail" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">mailto:contact@gabrielvitebo.dev</span></a></nav>
+        </div>
+      </div>
+    </section>
+    <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div class="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
+        <div class="min-w-0">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Trajetória</p>
+          <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl"> Um pouco da minha história </h2>
+          <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
+            <p> Minha relação com tecnologia começou antes mesmo de trabalhar profissionalmente com desenvolvimento. Sou formado em <strong class="font-semibold text-primary">Análise e Desenvolvimento de Sistemas</strong>, tenho formação em <strong class="font-semibold text-primary">Design Gráfico</strong> e atualmente curso <strong class="font-semibold text-primary">Ciência da Computação</strong> junto com a pós-graduação em <strong class="font-semibold text-primary">Engenharia de Software com IA Aplicada</strong>. </p>
+            <p> Minha experiência profissional começou como estagiário na <strong class="font-semibold text-primary">Quero Educação</strong>, onde posteriormente fui promovido a desenvolvedor júnior. Durante esse período, participei do desenvolvimento e manutenção de produtos reais, trabalhando em equipe e lidando com código em produção. </p>
+            <p> No front-end, trabalhei principalmente com <strong class="font-semibold text-primary">Vue.js, Nuxt e TypeScript</strong>, desenvolvendo interfaces, componentes e novas funcionalidades. Também tive contato profissional com <strong class="font-semibold text-foreground">React</strong>. </p>
+            <p> Minha atuação não ficou limitada à interface. Também trabalhei no back-end com <strong class="font-semibold text-primary">Ruby on Rails</strong>, participando de implementações que envolviam regras de negócio, dados e a comunicação entre diferentes partes das aplicações. </p>
+            <p> Fora do ambiente profissional, continuo expandindo esse lado Full Stack através dos meus próprios projetos, principalmente com <strong class="font-semibold text-primary">Node.js, PostgreSQL e Prisma</strong>, o que me permite trabalhar desde a modelagem e construção da aplicação até a experiência final no navegador. </p>
+            <p> Hoje busco continuar evoluindo como desenvolvedor Full Stack, aprofundando meus conhecimentos tanto no front-end quanto no back-end e, principalmente, entendendo cada vez melhor como todas essas partes se conectam na construção de um produto. </p>
+          </div>
+        </div>
+        <div class="min-w-0 lg:sticky lg:top-32 lg:pt-[7.75rem]">
+          <aside class="relative w-full max-w-full" aria-label="Marcos da trajetória">
+            <div class="absolute left-5 top-9 h-[calc(100%-4.5rem)] w-px bg-border sm:left-7 sm:top-10 sm:h-[calc(100%-5rem)]" aria-hidden="true"></div>
+            <ol class="relative space-y-4">
+              <li class="group grid min-w-0 grid-cols-[2.75rem_minmax(0,1fr)] items-start gap-3 sm:grid-cols-[3.5rem_minmax(0,1fr)] sm:gap-4">
+                <div class="relative grid size-10 place-items-center rounded-full border border-border bg-background text-primary shadow-md transition duration-300 group-hover:border-primary/60 sm:size-14"><span class="absolute inset-0 rounded-full bg-primary/10 opacity-0 transition duration-300 group-hover:opacity-100"></span>
+                  <!--v-if--><span class="size-5" aria-hidden="true" data-icon="lucide:graduation-cap" data-size="1em" data-mode="svg"></span>
+                </div>
+                <div class="min-w-0 rounded-lg border border-border bg-background/70 p-4 shadow-sm transition duration-300 group-hover:border-primary/40">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Formação</p>
+                  <h3 class="mt-2 text-base font-semibold text-foreground">Tecnologia + Design</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">ADS, Design Gráfico, Ciência da Computação e pós-graduação conectando produto, código e experiência.</p>
+                </div>
+              </li>
+              <li class="group grid min-w-0 grid-cols-[2.75rem_minmax(0,1fr)] items-start gap-3 sm:grid-cols-[3.5rem_minmax(0,1fr)] sm:gap-4">
+                <div class="relative grid size-10 place-items-center rounded-full border border-border bg-background text-primary shadow-md transition duration-300 group-hover:border-primary/60 sm:size-14"><span class="absolute inset-0 rounded-full bg-primary/10 opacity-0 transition duration-300 group-hover:opacity-100"></span>
+                  <!--v-if--><span class="size-5" aria-hidden="true" data-icon="lucide:briefcase-business" data-size="1em" data-mode="svg"></span>
+                </div>
+                <div class="min-w-0 rounded-lg border border-border bg-background/70 p-4 shadow-sm transition duration-300 group-hover:border-primary/40">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Primeira experiência</p>
+                  <h3 class="mt-2 text-base font-semibold text-foreground">Quero Educação</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Entrada como estagiário e evolução para desenvolvedor júnior em produtos reais.</p>
+                </div>
+              </li>
+              <li class="group grid min-w-0 grid-cols-[2.75rem_minmax(0,1fr)] items-start gap-3 sm:grid-cols-[3.5rem_minmax(0,1fr)] sm:gap-4">
+                <div class="relative grid size-10 place-items-center rounded-full border border-border bg-background text-primary shadow-md transition duration-300 group-hover:border-primary/60 sm:size-14"><span class="absolute inset-0 rounded-full bg-primary/10 opacity-0 transition duration-300 group-hover:opacity-100"></span>
+                  <!--v-if--><span class="size-5" aria-hidden="true" data-icon="lucide:code-2" data-size="1em" data-mode="svg"></span>
+                </div>
+                <div class="min-w-0 rounded-lg border border-border bg-background/70 p-4 shadow-sm transition duration-300 group-hover:border-primary/40">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Stack</p>
+                  <h3 class="mt-2 text-base font-semibold text-foreground">Front-end e Back-end</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Vue, Nuxt, TypeScript, React, Ruby on Rails, Node.js, PostgreSQL e Prisma.</p>
+                </div>
+              </li>
+              <li class="group grid min-w-0 grid-cols-[2.75rem_minmax(0,1fr)] items-start gap-3 sm:grid-cols-[3.5rem_minmax(0,1fr)] sm:gap-4">
+                <div class="relative grid size-10 place-items-center rounded-full border border-border bg-background text-primary shadow-md transition duration-300 group-hover:border-primary/60 sm:size-14"><span class="absolute inset-0 rounded-full bg-primary/10 opacity-0 transition duration-300 group-hover:opacity-100"></span><span class="absolute inset-0 animate-ping rounded-full border border-primary/30 motion-reduce:hidden" aria-hidden="true"></span><span class="size-5" aria-hidden="true" data-icon="lucide:layers-3" data-size="1em" data-mode="svg"></span></div>
+                <div class="min-w-0 rounded-lg border border-border bg-background/70 p-4 shadow-sm transition duration-300 group-hover:border-primary/40">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Agora</p>
+                  <h3 class="mt-2 text-base font-semibold text-foreground">Evolução Full Stack</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Ciência da Computação, pós-graduação em IA aplicada, projetos próprios e visão completa de produto.</p>
+                </div>
+              </li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="bg-background px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div class="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+        <div class="min-w-0">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Como eu trabalho</p>
+          <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl"> Do banco de dados à interface </h2>
+          <div class="mt-7 space-y-5 text-base leading-8 text-muted sm:text-lg">
+            <p>Gosto de entender o problema como um todo antes de começar a escrever código.</p>
+            <p> No front-end, tenho atenção especial à experiência do usuário, responsividade, acessibilidade, performance e à construção de componentes que sejam fáceis de entender e manter. </p>
+            <p> No back-end, procuro aplicar o mesmo cuidado à organização do código, separação de responsabilidades, regras de negócio, modelagem dos dados e construção de APIs. </p>
+            <p> É justamente essa visão entre as diferentes camadas que mais me interessa no desenvolvimento <strong class="font-semibold text-primary">Full Stack</strong>. Gosto de entender de onde os dados vêm, como são processados e como chegam até a interface que será utilizada pelo usuário. </p>
+            <p> Mais do que fazer uma funcionalidade funcionar, busco entender as decisões por trás dela e construir soluções que continuem fazendo sentido conforme o produto evolui. </p>
+          </div>
+        </div>
+        <div class="min-w-0 lg:sticky lg:top-32 lg:pt-[7.75rem]">
+          <div class="grid w-full max-w-full gap-3 sm:grid-cols-2 lg:grid-cols-1">
+            <article class="group min-w-0 rounded-lg border border-border bg-surface/70 p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+              <div class="flex items-start gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg border border-border bg-background text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:search-check" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <h3 class="text-base font-semibold text-foreground">Problema primeiro</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Antes de codar, procuro entender contexto, objetivo e impacto da solução.</p>
+                </div>
+              </div>
+            </article>
+            <article class="group min-w-0 rounded-lg border border-border bg-surface/70 p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+              <div class="flex items-start gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg border border-border bg-background text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:scale" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <h3 class="text-base font-semibold text-foreground">Camadas conectadas</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Gosto de entender dados, regras, APIs e interface como partes do mesmo produto.</p>
+                </div>
+              </div>
+            </article>
+            <article class="group min-w-0 rounded-lg border border-border bg-surface/70 p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+              <div class="flex items-start gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg border border-border bg-background text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:sliders-horizontal" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <h3 class="text-base font-semibold text-foreground">Cuidado de ponta a ponta</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Experiência, performance, acessibilidade, modelagem e manutenção entram na decisão.</p>
+                </div>
+              </div>
+            </article>
+            <article class="group min-w-0 rounded-lg border border-border bg-surface/70 p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-primary/40">
+              <div class="flex items-start gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg border border-border bg-background text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:flask-conical" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <h3 class="text-base font-semibold text-foreground">Curiosidade prática</h3>
+                  <p class="mt-2 text-sm leading-6 text-muted">Gosto de pesquisar, testar e entender por que uma solução funciona.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-3xl">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Skills</p>
+          <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl"> Tecnologias que fazem parte do meu dia a dia </h2>
+        </div>
+        <div class="grid w-full max-w-full gap-5 mt-9">
+          <div class="grid min-w-0 gap-5 lg:grid-cols-2">
+            <section class="min-w-0 rounded-lg border border-primary/35 bg-primary/5 p-5 shadow-sm">
+              <div class="flex items-center gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg bg-primary text-black"><span class="size-4" aria-hidden="true" data-icon="lucide:monitor-smartphone" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary">Front-end</p>
+                  <h3 class="mt-1 text-lg font-semibold text-foreground">Interfaces, componentes e experiência</h3>
+                </div>
+              </div>
+              <ul class="mt-5 flex flex-wrap gap-2">
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:vuedotjs" data-size="1em" data-mode="svg"></span><span class="break-words">Vue.js</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:nuxt" data-size="1em" data-mode="svg"></span><span class="break-words">Nuxt</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:typescript" data-size="1em" data-mode="svg"></span><span class="break-words">TypeScript</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:react" data-size="1em" data-mode="svg"></span><span class="break-words">React</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:javascript" data-size="1em" data-mode="svg"></span><span class="break-words">JavaScript</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:tailwindcss" data-size="1em" data-mode="svg"></span><span class="break-words">Tailwind</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:html5" data-size="1em" data-mode="svg"></span><span class="break-words">HTML</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:css" data-size="1em" data-mode="svg"></span><span class="break-words">CSS</span></li>
+              </ul>
+            </section>
+            <section class="min-w-0 rounded-lg border border-primary/35 bg-primary/5 p-5 shadow-sm">
+              <div class="flex items-center gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg bg-primary text-black"><span class="size-4" aria-hidden="true" data-icon="lucide:server-cog" data-size="1em" data-mode="svg"></span></span>
+                <div class="min-w-0">
+                  <p class="text-xs font-medium uppercase tracking-widest text-primary">Back-end</p>
+                  <h3 class="mt-1 text-lg font-semibold text-foreground">APIs, dados e regras de negócio</h3>
+                </div>
+              </div>
+              <ul class="mt-5 flex flex-wrap gap-2">
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:rubyonrails" data-size="1em" data-mode="svg"></span><span class="break-words">Ruby on Rails</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:nodedotjs" data-size="1em" data-mode="svg"></span><span class="break-words">Node.js</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:postgresql" data-size="1em" data-mode="svg"></span><span class="break-words">PostgreSQL</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:prisma" data-size="1em" data-mode="svg"></span><span class="break-words">Prisma</span></li>
+                <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-primary/35 bg-background/80 px-3 py-2 text-sm font-semibold text-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/70"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="lucide:route" data-size="1em" data-mode="svg"></span><span class="break-words">REST APIs</span></li>
+              </ul>
+            </section>
+          </div>
+          <section class="min-w-0 rounded-lg border border-border bg-surface/70 p-5 shadow-sm">
+            <div class="flex items-center gap-3"><span class="grid size-10 shrink-0 place-items-center rounded-lg border border-border bg-background text-primary"><span class="size-4" aria-hidden="true" data-icon="lucide:blocks" data-size="1em" data-mode="svg"></span></span>
+              <div class="min-w-0">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Ferramentas &amp; Ecossistema</p>
+                <h3 class="mt-1 text-lg font-semibold text-foreground">Ferramentas que apoiam meu fluxo de desenvolvimento</h3>
+              </div>
+            </div>
+            <ul class="mt-5 flex flex-wrap gap-2">
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:git" data-size="1em" data-mode="svg"></span><span class="break-words">Git</span></li>
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:github" data-size="1em" data-mode="svg"></span><span class="break-words">GitHub</span></li>
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:docker" data-size="1em" data-mode="svg"></span><span class="break-words">Docker</span></li>
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:jest" data-size="1em" data-mode="svg"></span><span class="break-words">Jest</span></li>
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:storybook" data-size="1em" data-mode="svg"></span><span class="break-words">Storybook</span></li>
+              <li class="inline-flex min-w-0 items-center gap-2 rounded-lg border border-border bg-background/70 px-3 py-2 text-sm font-medium text-muted transition duration-300 hover:border-primary/50 hover:text-foreground"><span class="size-4 shrink-0 text-primary" aria-hidden="true" data-icon="simple-icons:figma" data-size="1em" data-mode="svg"></span><span class="break-words">Figma</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="bg-background px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-3xl">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Formações</p>
+          <h2 class="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl"> Caminhos que ajudaram a formar minha base </h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-9">
+          <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-border hover:border-primary/30">
+            <!--v-if-->
+            <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:palette" data-size="1em" data-mode="svg"></span></span>
+              <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Design Gráfico</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">UNICID</p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+              <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-border text-subtle"><span class="size-3.5" aria-hidden="true" data-icon="lucide:check" data-size="1em" data-mode="svg"></span> Concluído em 2019</p>
+            </div>
+          </article>
+          <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-border hover:border-primary/30">
+            <!--v-if-->
+            <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:rocket" data-size="1em" data-mode="svg"></span></span>
+              <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Explorer Full Stack</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">Rocketseat</p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+              <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-border text-subtle"><span class="size-3.5" aria-hidden="true" data-icon="lucide:check" data-size="1em" data-mode="svg"></span> Concluído em 2023</p>
+            </div>
+          </article>
+          <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-border hover:border-primary/30">
+            <!--v-if-->
+            <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:monitor-cog" data-size="1em" data-mode="svg"></span></span>
+              <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Análise e Desenvolvimento de Sistemas</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">Cruzeiro do Sul</p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+              <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-border text-subtle"><span class="size-3.5" aria-hidden="true" data-icon="lucide:check" data-size="1em" data-mode="svg"></span> Concluído em 2024</p>
+            </div>
+          </article>
+          <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-primary/40 ring-1 ring-primary/10 hover:border-primary/60"><span class="absolute inset-x-0 top-0 h-1 bg-primary" aria-hidden="true"></span>
+            <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:graduation-cap" data-size="1em" data-mode="svg"></span></span>
+              <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Ciência da Computação</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">ETEP</p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+              <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-primary/40 bg-primary/5 text-primary"><span class="size-3.5" aria-hidden="true" data-icon="lucide:loader-circle" data-size="1em" data-mode="svg"></span> Em andamento</p>
+            </div>
+          </article>
+          <article class="group relative flex min-h-52 min-w-0 flex-col justify-between overflow-hidden rounded-lg border bg-background/70 p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 border-primary/40 ring-1 ring-primary/10 hover:border-primary/60"><span class="absolute inset-x-0 top-0 h-1 bg-primary" aria-hidden="true"></span>
+            <div><span class="grid size-10 place-items-center rounded-lg border border-border bg-surface text-primary transition duration-300 group-hover:border-primary/60"><span class="size-4" aria-hidden="true" data-icon="lucide:brain-circuit" data-size="1em" data-mode="svg"></span></span>
+              <h3 class="mt-4 text-lg font-semibold leading-snug text-foreground">Engenharia de Software com IA Aplicada</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">UNIPDS</p>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-2">
+              <p class="inline-flex w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-medium uppercase tracking-widest border-primary/40 bg-primary/5 text-primary"><span class="size-3.5" aria-hidden="true" data-icon="lucide:loader-circle" data-size="1em" data-mode="svg"></span> Em andamento</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="grid min-h-[70svh] place-items-center bg-surface/35 px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="text-sm font-medium uppercase tracking-widest text-subtle">Contato</p>
+        <h2 class="mt-4 text-4xl font-black leading-tight text-foreground sm:text-5xl"> Vamos construir alguma coisa juntos? </h2>
+        <div class="mx-auto mt-7 max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
+          <p>Estou sempre aberto a conhecer novos projetos, pessoas e oportunidades.</p>
+          <p> Se você acha que meu perfil pode fazer sentido para sua equipe ou simplesmente quer trocar uma ideia sobre desenvolvimento, tecnologia ou algum dos projetos que viu por aqui, fique à vontade para entrar em contato. </p>
+        </div>
+        <div class="mt-9">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Entre em contato</p>
+          <nav class="mt-4 flex flex-wrap justify-center gap-3" aria-label="Links de contato"><a class="inline-flex min-w-0 items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2.5 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://github.com/gabriel-vitebo" aria-label="GitHub" rel="noreferrer" target="_blank"><span class="size-4 shrink-0" aria-hidden="true" data-icon="simple-icons:github" data-size="1em" data-mode="svg"></span><span class="truncate">GitHub</span></a><a class="inline-flex min-w-0 items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2.5 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/" aria-label="LinkedIn" rel="noreferrer" target="_blank"><span class="size-4 shrink-0" aria-hidden="true" data-icon="simple-icons:linkedin" data-size="1em" data-mode="svg"></span><span class="truncate">LinkedIn</span></a><a class="inline-flex min-w-0 items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2.5 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="mailto:contact@gabrielvitebo.dev" aria-label="contact@gabrielvitebo.dev" rel="noreferrer" target="_blank"><span class="size-4 shrink-0" aria-hidden="true" data-icon="lucide:mail" data-size="1em" data-mode="svg"></span><span class="truncate">contact@gabrielvitebo.dev</span></a></nav>
+        </div>
+        <div class="mt-8 border-t border-border pt-8"><a class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="/#projects"> Veja meus projetos </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+</div>"
+`;
+
+exports[`pages consuming shared data > preserves about rendering and SEO 2`] = `
+{
+  "description": "Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.",
+  "ogDescription": "Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.",
+  "ogImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "ogImageAlt": "Gabriel Vitebo — Sobre mim",
+  "ogTitle": "Sobre mim | Gabriel Vitebo",
+  "ogType": "profile",
+  "ogUrl": "https://gabrielvitebo.dev/sobre-mim",
+  "title": "Sobre mim",
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.",
+  "twitterImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "twitterImageAlt": "Gabriel Vitebo — Sobre mim",
+  "twitterTitle": "Sobre mim | Gabriel Vitebo",
+}
+`;
+
+exports[`pages consuming shared data > preserves about rendering and SEO 3`] = `
+[
+  {
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@id": "https://gabrielvitebo.dev/#identity",
+    },
+  },
+]
+`;
+
+exports[`pages consuming shared data > preserves article rendering and SEO 1`] = `
+"<div class="min-h-screen bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/#hero">/home</a><span class="text-border">-&gt;</span><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/blog">blogs</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">HTML Semântico</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span><span>-&gt;</span><span>blogs</span><span>-&gt;</span><span>HTML Semântico</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main class="mx-auto max-w-3xl px-4 pb-20 sm:px-6"><a class="inline-flex w-fit items-center text-sm font-medium text-muted transition duration-300 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog"> Voltar para o blog </a>
+    <article class="mt-10">
+      <header class="border-b border-border pb-10">
+        <!--v-if-->
+        <h1 class="mt-4 text-4xl font-bold text-foreground sm:text-5xl">HTML Semântico</h1>
+        <!--v-if-->
+      </header>
+      <p class="mt-6 text-sm font-medium text-muted"> Data de publicação: <time class="text-foreground">18 de agosto de 2026</time></p><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgabrielvitebo.dev%2Fblog%2Fhtml-semantico%3Futm_source%3Dlinkedin%26utm_campaign%3Dhtml-semantico" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary mt-4"><span class="size-5" aria-hidden="true" data-icon="simple-icons:linkedin" data-size="1em" data-mode="svg"></span> Compartilhar no LinkedIn <span class="sr-only">(abre em uma nova aba)</span></a><img class="mt-8 aspect-[16/9] w-full rounded-2xl border border-border bg-surface object-cover" width="960" height="540" sizes="(max-width: 767px) 100vw, 768px" densities="x1" format="webp" quality="80" fetchpriority="high" src="/images/blog/html-semantico/cover.png" alt="HTML Semântico">
+      <div class="mt-10 [&amp;_a:hover]:text-primary-hover [&amp;_a]:text-primary [&amp;_a]:no-underline [&amp;_a]:transition-colors [&amp;_a]:duration-300 [&amp;_blockquote]:border-l-2 [&amp;_blockquote]:border-primary [&amp;_blockquote]:pl-5 [&amp;_blockquote]:text-muted [&amp;_code]:rounded-sm [&amp;_code]:bg-surface-elevated [&amp;_code]:px-[0.35rem] [&amp;_code]:py-[0.15rem] [&amp;_code]:text-[0.9em] [&amp;_code]:text-foreground [&amp;_h2:first-of-type]:mt-0 [&amp;_h2]:mt-10 [&amp;_h2]:text-2xl [&amp;_h2]:font-bold [&amp;_h2]:leading-tight [&amp;_h2]:text-foreground [&amp;_h3]:mt-8 [&amp;_h3]:text-lg [&amp;_h3]:font-bold [&amp;_h3]:text-primary [&amp;_hr]:my-10 [&amp;_hr]:border-border [&amp;_img]:mt-6 [&amp;_img]:w-full [&amp;_img]:rounded-lg [&amp;_img]:border [&amp;_img]:border-border [&amp;_img]:bg-surface [&amp;_li]:leading-8 [&amp;_li]:text-muted [&amp;_ol]:mt-4 [&amp;_ol]:list-decimal [&amp;_ol]:space-y-3 [&amp;_ol]:pl-6 [&amp;_p]:mt-4 [&amp;_p]:text-base [&amp;_p]:leading-8 [&amp;_p]:text-muted [&amp;_pre]:overflow-x-auto [&amp;_pre]:rounded-lg [&amp;_pre]:border [&amp;_pre]:border-border [&amp;_pre]:bg-surface [&amp;_pre]:p-4 [&amp;_pre_code]:bg-transparent [&amp;_pre_code]:p-0 [&amp;_table]:mt-6 [&amp;_table]:w-full [&amp;_table]:table-fixed [&amp;_td]:align-top [&amp;_td]:text-sm [&amp;_td]:font-medium [&amp;_td]:text-muted [&amp;_td]:not-last:pr-2 [&amp;_th]:pb-2 [&amp;_th]:text-left [&amp;_th]:text-sm [&amp;_th]:font-medium [&amp;_th]:text-muted [&amp;_th]:not-last:pr-2 [&amp;_ul]:mt-4 [&amp;_ul]:list-disc [&amp;_ul]:space-y-3 [&amp;_ul]:pl-6">
+        <h1>HTML Semântico</h1>
+        <p>Quando falamos de desenvolvimento web ou front-end, logo vem na cabeça aquela imagem de sites lindos, com várias animações, imagens e textos chamativos. Mas sinto dizer: essa parte de deixar o visual bonitão cabe mais ao design. O que devemos nos preocupar como devs front-end é com o que está gerando aquele site: o código.</p>
+        <p>A nossa responsabilidade não é apenas passar o design do Figma para a tela do usuário. Também precisamos garantir que o site seja performático, acessível e que sua estrutura seja fácil de entender por navegadores e mecanismos de busca. E uma das bases para fazer isso direito é o HTML semântico.</p>
+        <p>O mais interessante é que, muitas vezes, duas páginas podem ser <strong>visualmente idênticas</strong>, mas por baixo uma delas pode ter uma estrutura muito melhor que a outra. Para quem está olhando a tela talvez não mude nada, mas para quem usa tecnologias assistivas, para o navegador, para mecanismos de busca e até para o próximo dev que abrir aquele código, muda bastante.</p>
+        <p>Nesse artigo pretendo mostrar por que utilizar HTML semântico, por que ele é mais importante do que parece e por que devemos estudar e aplicar isso desde o começo da carreira como dev front-end.</p>
+        <h2>O que é HTML semântico?</h2>
+        <p>HTML semântico é basicamente utilizar elementos HTML que dão sentido e significado ao conteúdo da página, deixando mais claro tanto para o dev que vai mexer naquele código quanto para navegadores, leitores de tela e mecanismos de busca.</p>
+        <p>Por exemplo:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Lista com os melhores jogos do mundo<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Dota 2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Clair Obscur<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Assassin's Creed Odyssey<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Life is Strange<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Guitar Hero<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <p>Esse código não é semântico. Visualmente, ele pode estar bonito e idêntico ao Figma, mas o HTML praticamente não explica <strong>o que cada coisa representa</strong>.</p>
+        <p>Os leitores de tela conseguem ler o conteúdo, porém não fica claro para o usuário que aquilo se trata de uma lista ordenada. Pode soar apenas como um bloco de textos soltos. A navegação também fica prejudicada, porque não existem elementos estruturais, como títulos e listas, que podem ser usados como pontos de navegação.</p>
+        <p>Já os mecanismos de busca conseguem extrair e interpretar os textos da página, mas o HTML não fornece explicitamente a informação de que aquele primeiro texto é um título e que os elementos seguintes formam uma lista ordenada.</p>
+        <p>E como ficaria com HTML semântico?</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Lista com os melhores jogos do mundo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Dota 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Clair Obscur<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Assassin's Creed Odyssey<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Life is Strange<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Guitar Hero<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</code></pre>
+        <p>Agora sim, o próprio HTML explica a estrutura daquele conteúdo.</p>
+        <p>Os leitores de tela conseguem dar muito mais contexto para o usuário. Dependendo do leitor e das configurações, esse código teria uma leitura mais ou menos assim:</p>
+        <pre><code class="language-text">"Cabeçalho nível 1, Lista com os melhores jogos do mundo."
+
+"Lista, 5 itens."
+"1, Dota 2."
+"2, Clair Obscur."
+"3, Assassin's Creed Odyssey."
+"4, Life is Strange."
+"5, Guitar Hero."
+"Fim da lista."
+</code></pre>
+        <p>Além disso, a navegação fica muito melhor, pois o usuário consegue utilizar os elementos estruturais da página para navegar, sabendo onde está e entendendo que aquele conteúdo faz parte de uma lista.</p>
+        <p>Para os mecanismos de busca, a estrutura também fica muito mais explícita. Em vez de depender apenas do texto e do contexto para entender a página, o próprio HTML já está dizendo algo como: <strong>“opa, aqui temos um título principal e, logo depois, uma lista ordenada com 5 itens”.</strong></p>
+        <p>E esse é um ponto importante: HTML semântico não serve para “deixar o Google feliz”. Ele serve primeiro para estruturar corretamente o conteúdo. SEO, acessibilidade e manutenção acabam se beneficiando dessa estrutura melhor.</p>
+        <h2>Como ele ajuda?</h2>
+        <p>O HTML semântico ajuda o navegador a entender melhor o papel de cada parte da página. Um <code>&lt;nav&gt;</code> indica uma área de navegação, um <code>&lt;main&gt;</code> indica o conteúdo principal, um <code>&lt;article&gt;</code> representa um conteúdo independente, um <code>&lt;button&gt;</code> representa uma ação, e por aí vai.</p>
+        <p>Pode parecer detalhe, mas não é.</p>
+        <p>Imagine, por exemplo, criar um botão assim:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span>&gt;</span>Enviar formulário<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <p>Com CSS você consegue deixar esse <code>div</code> exatamente igual a um botão. Para quem está usando o mouse, provavelmente vai parecer que está tudo certo.</p>
+        <p>Mas agora compare com:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Enviar formulário<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+        <p>O segundo elemento já nasce com significado e comportamento de botão. Ele pode receber foco pelo teclado, possui semântica adequada para tecnologias assistivas e deixa muito mais claro para o navegador e para quem lê o código qual é a intenção daquele elemento.</p>
+        <p>É aí que começa a diferença entre uma página que <strong>parece funcionar</strong> e uma página que foi realmente bem construída.</p>
+        <p>Isso também ajuda na acessibilidade. Um usuário de leitor de tela não navega pela página exatamente da mesma forma que alguém olhando para ela. Ele pode navegar entre títulos, links, botões, regiões e outros elementos. Se tudo for apenas <code>div</code>, você remove boa parte dessas referências.</p>
+        <p>Nos mecanismos de busca, a semântica também ajuda a deixar a estrutura e a relação entre os conteúdos mais claras. Isso não significa que trocar todas as <code>div</code>s por tags semânticas vai magicamente colocar seu site em primeiro lugar no Google, SEO é muito mais complexo que isso, mas uma estrutura HTML correta ajuda os mecanismos de busca a compreenderem melhor a página.</p>
+        <p>E ainda tem uma vantagem que às vezes esquecemos: <strong>manutenção</strong>.</p>
+        <p>Compare abrir um projeto e encontrar isso:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <p>com isso:</p>
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+</code></pre>
+        <p>Só de bater o olho já dá para ter uma ideia muito melhor de como aquela página está organizada.</p>
+        <p>Então, no fim, HTML semântico não é apenas sobre SEO ou leitor de tela. É sobre escrever um HTML que realmente descreve o conteúdo que está sendo exibido.</p>
+        <h2>Vamos testar na prática</h2>
+        <p>Eu codei duas páginas estáticas para a gente poder brincar um pouco com isso:</p>
+        <p><a href="https://gabriel-vitebo.github.io/html-semantico-para-artigo/src/" target="_blank" rel="noreferrer">https://gabriel-vitebo.github.io/html-semantico-para-artigo/src/</a></p>
+        <p>Uma delas foi construída utilizando HTML semântico. A outra tenta reproduzir praticamente a mesma página utilizando elementos genéricos, principalmente <code>div</code>s.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Tela 1</th>
+              <th>Tela 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/images/blog/html-semantico/tela-um.jpeg" alt="Primeira tela da página de exemplo do artigo sobre HTML semântico."></td>
+              <td><img src="/images/blog/html-semantico/tela-dois.jpeg" alt="Segunda tela da página de exemplo do artigo sobre HTML semântico."></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Analise essas duas imagens. O que há de diferente nelas?</p>
+        <p>Quase nada.</p>
+        <p>Porém, uma está com o HTML semântico e a outra não. E isso prova uma coisa que acho importante: <strong>HTML semântico não precisa interferir no visual da página.</strong></p>
+        <p>Você pode ter duas páginas praticamente idênticas visualmente, mas completamente diferentes em relação à estrutura.</p>
+        <p>Ou seja: <strong>uma página bonita não significa necessariamente uma página bem construída.</strong></p>
+        <p>Essa diferença começa a aparecer quando a gente para de olhar apenas para o visual e começa a olhar para como o navegador interpreta aquela página.</p>
+        <h2>Vendo como o navegador entende a página</h2>
+        <p>Entrando nas duas páginas, abra o DevTools do navegador e procure pela árvore de acessibilidade. No Chrome, você pode inspecionar um elemento e acessar as informações de acessibilidade disponíveis no DevTools.</p>
+        <p><img src="/images/blog/html-semantico/como-ativar-arvore.jpeg" alt="DevTools do navegador mostrando onde ativar ou visualizar a árvore de acessibilidade."></p>
+        <p>Aqui você consegue ter uma ideia de como o navegador expõe e entende a estrutura da página para recursos de acessibilidade.</p>
+        <p>Quando colocamos lado a lado o HTML semântico e o HTML bagunçado, a diferença começa a ficar bem mais clara.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Árvore não semântica</th>
+              <th>Árvore semântica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/images/blog/html-semantico/arvore-nao-semantica.jpeg" alt="Árvore de acessibilidade de uma página construída sem HTML semântico."></td>
+              <td><img src="/images/blog/html-semantico/arvore%20semantica.jpeg" alt="Árvore de acessibilidade de uma página construída com HTML semântico."></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Aqui a diferença começa a ficar bem mais clara.
+          Na página feita apenas com elementos genéricos, o navegador ainda consegue acessar os textos e links, mas quase toda a estrutura aparece como conteúdo genérico ou até mesmo dentro de Ignored. Ele sabe que existe texto ali, mas recebe muito menos informação sobre o papel de cada parte da página.
+          Já na página com HTML semântico, a árvore de acessibilidade consegue representar muito melhor a estrutura do site. Podemos identificar elementos como banner, navigation, main, region, heading, paragraph e contentinfo.
+          E o mais interessante é lembrar que visualmente as duas páginas são praticamente iguais.
+          Para quem está olhando para a tela, quase nada mudou. Mas para o navegador e para tecnologias assistivas, agora existe uma estrutura muito mais clara dizendo o que cada parte daquela página representa.</p>
+        <h2>Testando com um leitor de tela</h2>
+        <p>Outra coisa interessante de testar, caso tenha interesse, é utilizar um leitor de tela.</p>
+        <p>A princípio você pode até pensar:</p>
+        <blockquote>
+          <p>“Mas ele está lendo todo o conteúdo das duas páginas.”</p>
+        </blockquote>
+        <p>E, de fato, ele provavelmente vai conseguir ler os textos das duas.</p>
+        <p>Só que <strong>ler o texto não é a mesma coisa que entender e navegar pela estrutura da página</strong>.</p>
+        <p>Quando você começa a navegar pelo site com o leitor de tela ligado, pulando entre títulos, listas, links, botões e regiões da página, a importância do HTML semântico fica muito mais evidente.</p>
+        <p>Uma página acessível não é apenas uma página que consegue “falar” todos os textos em voz alta. Ela precisa dar contexto e permitir que o usuário navegue pelo conteúdo de forma eficiente.</p>
+        <p>É parecido com receber um texto enorme sem títulos, parágrafos ou listas. Você até consegue ler tudo, mas encontrar uma informação específica vira um trabalho muito maior.</p>
+        <p>E é justamente por isso que testar apenas olhando para a tela não é suficiente.</p>
+        <h2>HTML semântico não significa parar de usar <code>div</code></h2>
+        <p>Também não precisa declarar guerra às <code>div</code>s.</p>
+        <p><code>div</code> não é uma tag errada. Ela continua sendo extremamente útil quando você precisa apenas de um elemento genérico para agrupar conteúdo, organizar layout ou aplicar estilos e não existe um elemento semântico mais adequado para aquele caso.</p>
+        <p>O problema é usar <code>div</code> para <strong>tudo</strong>.</p>
+        <p>Se aquilo é um botão, use <code>&lt;button&gt;</code>.</p>
+        <p>Se é uma lista, use <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code> com <code>&lt;li&gt;</code>.</p>
+        <p>Se é uma área de navegação, provavelmente faz sentido utilizar <code>&lt;nav&gt;</code>.</p>
+        <p>Se existe um elemento HTML que representa corretamente aquele conteúdo ou comportamento, na maioria das vezes ele deve ser a primeira opção.</p>
+        <h2>No final, ninguém vê o HTML. E esse é justamente o ponto</h2>
+        <p>HTML semântico é uma daquelas coisas que podem passar despercebidas quando tudo está funcionando. O usuário abre a página, vê o layout bonito, clica nos botões e segue a vida.</p>
+        <p>Só que desenvolvimento front-end não deveria ser apenas fazer a tela ficar igual ao Figma.</p>
+        <p>Existe muita coisa acontecendo por trás daquela interface: pessoas navegando apenas pelo teclado, usuários utilizando leitores de tela, mecanismos de busca tentando entender o conteúdo, navegadores montando a árvore de acessibilidade e outros desenvolvedores que talvez precisem dar manutenção naquele código no futuro.</p>
+        <p>E o HTML é a base de tudo isso.</p>
+        <p>Por isso acho estranho tratar HTML como aquela parte “fácil” do front-end que você aprende em alguns dias e depois esquece enquanto vai estudar framework. Saber criar uma <code>div</code> é fácil. Saber escolher o elemento correto, estruturar títulos, formulários, navegação, artigos, listas e ações de forma que a página faça sentido é outra história.</p>
+        <p>No fim, talvez o melhor jeito de resumir seja este:</p>
+        <p><strong>se duas páginas podem ser visualmente iguais, mas uma delas é mais acessível, mais fácil de navegar, mais fácil de entender e mais simples de manter, por que escolher a pior estrutura?</strong></p>
+        <p>HTML semântico não vai deixar seu site mais bonito.</p>
+        <p>Mas pode deixar seu site muito melhor.</p>
+      </div><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgabrielvitebo.dev%2Fblog%2Fhtml-semantico%3Futm_source%3Dlinkedin%26utm_campaign%3Dhtml-semantico" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary mt-10"><span class="size-5" aria-hidden="true" data-icon="simple-icons:linkedin" data-size="1em" data-mode="svg"></span> Compartilhar no LinkedIn <span class="sr-only">(abre em uma nova aba)</span></a>
+    </article>
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+</div>"
+`;
+
+exports[`pages consuming shared data > preserves article rendering and SEO 2`] = `
+{
+  "description": "Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.",
+  "ogDescription": "Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.",
+  "ogImage": "https://gabrielvitebo.dev/images/blog/html-semantico/cover.png",
+  "ogImageAlt": "HTML Semântico",
+  "ogImageHeight": 1024,
+  "ogImageType": "image/png",
+  "ogImageWidth": 1536,
+  "ogTitle": "HTML Semântico | Gabriel Vitebo",
+  "ogType": "article",
+  "ogUrl": "https://gabrielvitebo.dev/blog/html-semantico",
+  "title": "HTML Semântico",
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.",
+  "twitterImage": "https://gabrielvitebo.dev/images/blog/html-semantico/cover.png",
+  "twitterImageAlt": "HTML Semântico",
+  "twitterTitle": "HTML Semântico | Gabriel Vitebo",
+}
+`;
+
+exports[`pages consuming shared data > preserves article rendering and SEO 3`] = `
+[
+  {
+    "@type": "BlogPosting",
+    "author": {
+      "@id": "https://gabrielvitebo.dev/#identity",
+    },
+    "dateModified": "2026-08-18T12:00:00-03:00",
+    "datePublished": "2026-08-18T12:00:00-03:00",
+    "description": "Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.",
+    "headline": "HTML Semântico",
+    "image": "https://gabrielvitebo.dev/images/blog/html-semantico/cover.png",
+    "mainEntityOfPage": "https://gabrielvitebo.dev/blog/html-semantico",
+  },
+]
+`;
+
+exports[`pages consuming shared data > preserves blog rendering and SEO 1`] = `
+"<div class="min-h-screen bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/#hero">/home</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">blogs</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span><span>-&gt;</span><span>blogs</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main class="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
+    <header class="border-b border-border pb-10">
+      <!--v-if-->
+      <h1 class="mt-4 text-4xl font-bold text-foreground sm:text-5xl">Blog</h1>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-muted">Aqui você encontra artigos sobre desenvolvimento web, programação, tecnologia e muito mais.</p>
+    </header>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <article aria-labelledby="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="MCP e RAG: como conectar a IA aos dados que ela precisa">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="mt-3 text-xl font-semibold text-foreground">MCP e RAG: como conectar a IA aos dados que ela precisa</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Uma visão prática sobre o que MCP e RAG resolvem, suas diferenças e como podem trabalhar juntos para conectar aplicações de IA a ferramentas e documentos.</p><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+      <article aria-labelledby="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes/cover.png" alt="Jev: e se a IA ajudasse o seu código a tomar decisões?">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="mt-3 text-xl font-semibold text-foreground">Jev: e se a IA ajudasse o seu código a tomar decisões?</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como o Jev pode ajudar aplicações a interpretar contextos e tomar decisões estruturadas, com exemplos de revisão de tarefas, triagem de chamados e supervisão humana.</p><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+      <article aria-labelledby="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js/cover.png" alt="Como dados viram recomendações de filmes com TensorFlow.js">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="mt-3 text-xl font-semibold text-foreground">Como dados viram recomendações de filmes com TensorFlow.js</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">O que aprendi ao adaptar uma atividade da pós-graduação para representar filmes e usuários com normalização, vetores, tensores e uma rede neural em TensorFlow.js.</p><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+      <article aria-labelledby="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-maquinas-endentem-quem-eu-sou-na-internet/cover.jpeg" alt="Dados estruturados: Como máquinas entendem quem eu sou na internet">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="mt-3 text-xl font-semibold text-foreground">Dados estruturados: Como máquinas entendem quem eu sou na internet</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como dados estruturados, Schema.org e relações entre entidades ajudam máquinas, buscadores e sistemas de IA a entender melhor quem sou na internet.</p><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+      <article aria-labelledby="blog-article-html-semantico" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: HTML Semântico" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/html-semantico/cover.png" alt="HTML Semântico">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-html-semantico" class="mt-3 text-xl font-semibold text-foreground">HTML Semântico</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.</p><a aria-label="Ler artigo completo: HTML Semântico" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+      <article aria-labelledby="blog-article-como-eu-construi-meu-portifolio" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"></a>
+        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-eu-construi-meu-portifolio/cover.png" alt="Como eu construí meu portfólio">
+          <div class="flex flex-1 flex-col p-5 pt-1">
+            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+            <h2 id="blog-article-como-eu-construi-meu-portifolio" class="mt-3 text-xl font-semibold text-foreground">Como eu construí meu portfólio</h2>
+            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um guia prático sobre escolhas semânticas, estados de foco e pequenos cuidados de implementação que melhoram a experiência de leitura e navegação para todas as pessoas.</p><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"> Ler artigo completo </a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+</div>"
+`;
+
+exports[`pages consuming shared data > preserves blog rendering and SEO 2`] = `
+{
+  "description": "Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.",
+  "ogDescription": "Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.",
+  "ogImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "ogImageAlt": "Gabriel Vitebo — Blog",
+  "ogImageHeight": 630,
+  "ogImageType": "image/jpeg",
+  "ogImageWidth": 1200,
+  "ogTitle": "Blog | Gabriel Vitebo",
+  "ogType": "website",
+  "ogUrl": "https://gabrielvitebo.dev/blog",
+  "title": "Blog",
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.",
+  "twitterImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "twitterImageAlt": "Gabriel Vitebo — Blog",
+  "twitterTitle": "Blog | Gabriel Vitebo",
+}
+`;
+
+exports[`pages consuming shared data > preserves blog rendering and SEO 3`] = `
+[
+  {
+    "@type": "Blog",
+    "description": "Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.",
+    "name": "Blog | Gabriel Vitebo",
+    "url": "https://gabrielvitebo.dev/blog",
+  },
+]
+`;
+
+exports[`pages consuming shared data > preserves home rendering and SEO 1`] = `
+"<div class="min-h-screen scroll-smooth bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><span class="truncate text-foreground">/home</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main>
+    <section id="hero" class="relative grid min-h-[calc(100svh-4.5rem)] place-items-center overflow-hidden bg-background px-4 pb-14 pt-8 sm:px-6 sm:pb-20 sm:pt-10 md:pb-20 md:pt-12">
+      <div class="absolute right-[8%] top-[22%] h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(99,102,241,0.10),transparent_68%)] blur-2xl"></div>
+      <div class="relative mx-auto grid w-full max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div class="text-center lg:text-left">
+          <p class="text-sm font-medium uppercase tracking-widest text-subtle">Olá, eu sou</p>
+          <h1 class="mt-5 text-[42px] font-black leading-none text-foreground md:text-[56px] lg:text-7xl"><span class="block">Gabriel Vitebo</span></h1>
+          <p class="mt-5 text-[22px] font-semibold leading-tight text-muted lg:text-[28px]">Desenvolvedor Full Stack</p>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted lg:mx-0">Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.</p>
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start"><a class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-primary-hover" href="#projects"> Ver projetos </a><a class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary" href="/sobre-mim"> Sobre mim </a><a class="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary" href="/blog"> Blog </a></div>
+        </div>
+        <div class="relative mx-auto w-full max-w-[17rem] rounded-3xl border border-border bg-surface p-3 shadow-lg sm:max-w-sm lg:max-w-md">
+          <div class="absolute inset-0 -z-10 rounded-3xl shadow-glow"></div><img class="aspect-[4/5] w-full rounded-2xl object-cover" width="1024" height="1280" sizes="(max-width: 1023px) 384px, 448px" format="avif" quality="82" preload="" fetchpriority="high" src="/images/profile/my-photo.png" alt="Gabriel Vitebo">
+          <nav class="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-3" aria-label="Links sociais"><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://github.com/gabriel-vitebo" aria-label="GitHub" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="simple-icons:github" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">https://github.com/gabriel-vitebo</span></a><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/" aria-label="LinkedIn" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="simple-icons:linkedin" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/</span></a><a class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="mailto:contact@gabrielvitebo.dev" aria-label="contact@gabrielvitebo.dev" rel="noreferrer" target="_blank"><span class="size-5" aria-hidden="true" data-icon="lucide:mail" data-size="1em" data-mode="svg"></span><span class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">mailto:contact@gabrielvitebo.dev</span></a></nav>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
+      <div class="mx-auto w-full max-w-6xl">
+        <div class="max-w-2xl">
+          <h2 tabindex="-1" class="scroll-mt-24 text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
+          <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Uma seleção de interfaces, produtos e ferramentas construídos com foco em execução, clareza e qualidade técnica.</p>
+        </div>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
+              </div>
+            </a></article>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+</div>"
+`;
+
+exports[`pages consuming shared data > preserves home rendering and SEO 2`] = `
+{
+  "description": "Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.",
+  "ogDescription": "Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.",
+  "ogImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "ogImageAlt": "Gabriel Vitebo — Desenvolvedor Full Stack",
+  "ogImageHeight": 630,
+  "ogImageType": "image/jpeg",
+  "ogImageWidth": 1200,
+  "ogTitle": "Gabriel Vitebo | Desenvolvedor Full Stack",
+  "ogType": "website",
+  "ogUrl": "https://gabrielvitebo.dev",
+  "title": "Desenvolvedor Full Stack",
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Transformo ideias em produtos digitais escaláveis, combinando engenharia de software, experiência do usuário e foco em resultados.",
+  "twitterImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "twitterImageAlt": "Gabriel Vitebo — Desenvolvedor Full Stack",
+  "twitterTitle": "Gabriel Vitebo | Desenvolvedor Full Stack",
+}
+`;
+
+exports[`pages consuming shared data > preserves home rendering and SEO 3`] = `undefined`;
+
+exports[`pages consuming shared data > preserves project rendering and SEO 1`] = `
+"<div class="min-h-screen bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/#hero">/home</a><span class="text-border">-&gt;</span><a class="shrink-0 text-muted transition duration-300 hover:text-primary" href="/#projects">projetos</a><span class="text-border">-&gt;</span><span class="truncate text-foreground">Check Numbers</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span><span>-&gt;</span><span>projetos</span><span>-&gt;</span><span>Check Numbers</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main class="mx-auto max-w-6xl px-4 pb-20 sm:px-6"><a class="text-sm text-muted transition duration-300 hover:text-primary" href="/#projects"> Voltar para projetos </a>
+    <article class="mt-10">
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div>
+          <h1 class="text-4xl font-bold leading-tight text-foreground sm:text-6xl">Check Numbers</h1>
+          <div class="mt-6 max-w-2xl">
+            <p id="project-page-description-check-numbers" class="text-lg leading-8 text-muted line-clamp-4">Esse é um projeto pessoal que surgiu para resolver uma situação comum entre familiares, amigos e colegas que participam de bolões da Mega da Virada. Quando existem muitas apostas, conferir manualmente cada jogo após o sorteio pode se tornar uma tarefa demorada e confusa. A aplicação permite cadastrar e armazenar todas as apostas de forma simples, mantendo os dados salvos no navegador para consultas futuras. Após a divulgação do resultado oficial, basta informar os números sorteados para que o sistema faça a conferência automaticamente, exibindo quantos acertos cada jogo obteve e quais foram os números correspondentes. O projeto nasceu a partir da experiência de pessoas próximas que participavam desses bolões e precisavam conferir diversos jogos manualmente todos os anos. Embora tenha sido criado pensando na Mega da Virada, a solução também pode ser utilizada para auxiliar na conferência de outros sorteios e apostas semelhantes, tornando o processo muito mais rápido, organizado e prático.</p><button class="mt-3 text-sm font-medium text-primary transition duration-300 hover:text-primary-hover" type="button" aria-controls="project-page-description-check-numbers" aria-expanded="false">Leia mais</button>
+          </div>
+          <ul class="flex flex-wrap gap-2 mt-8" aria-label="Tecnologias utilizadas">
+            <li class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">React</li>
+            <li class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">Vite</li>
+            <li class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">Typescript</li>
+            <li class="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted">Styled Components</li>
+          </ul>
+          <div class="flex flex-wrap gap-3 text-sm mt-8" aria-label="Links do projeto"><a class="inline-flex rounded-full bg-primary px-5 py-3 font-semibold text-white transition duration-300 hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://github.com/gabriel-vitebo/checkNumbers" rel="noreferrer" target="_blank">GitHub</a><a class="inline-flex rounded-full border border-border px-5 py-3 font-semibold text-foreground transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="https://gabriel-vitebo.github.io/checkNumbers/" rel="noreferrer" target="_blank"> Demo </a></div>
+        </div><button class="group block w-full rounded-3xl border border-border bg-surface shadow-lg transition duration-300 hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:sticky lg:top-28" type="button" aria-label="Abrir imagem principal de Check Numbers"><img class="aspect-video w-full rounded-3xl object-cover" fetchpriority="high" loading="eager" decoding="async" width="1280" height="720" sizes="(max-width: 1023px) 100vw, 640px" format="webp" quality="75" preload="" src="/images/projects/check-numbers/cover.png" alt="Check Numbers"></button>
+      </div>
+      <section class="mt-14" aria-labelledby="project-gallery-title">
+        <h2 id="project-gallery-title" class="text-2xl font-semibold text-foreground">Galeria</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-2"><button class="group relative block w-full overflow-hidden rounded-2xl border border-border bg-surface transition duration-300 hover:scale-[1.02] hover:border-primary/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" type="button" aria-label="Abrir imagem da galeria de Check Numbers"><img class="aspect-video w-full rounded-2xl object-cover" loading="lazy" decoding="async" width="768" height="432" sizes="(max-width: 767px) 100vw, 576px" densities="x1" format="webp" quality="70" src="/images/projects/check-numbers/home-page.png" alt="Tela principal do Check Numbers"></button></div>
+        <!--v-if-->
+        <!--v-if-->
+      </section>
+    </article>
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`pages consuming shared data > preserves project rendering and SEO 2`] = `
+{
+  "description": "Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.",
+  "ogDescription": "Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.",
+  "ogImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "ogImageAlt": "Gabriel Vitebo — Desenvolvedor Full Stack",
+  "ogImageHeight": 630,
+  "ogImageType": "image/jpeg",
+  "ogImageWidth": 1200,
+  "ogTitle": "Check Numbers | Gabriel Vitebo",
+  "ogType": "article",
+  "ogUrl": "https://gabrielvitebo.dev/projetos/check-numbers",
+  "title": "Check Numbers",
+  "twitterCard": "summary_large_image",
+  "twitterDescription": "Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.",
+  "twitterImage": "https://gabrielvitebo.dev/images/social-cover.jpg",
+  "twitterImageAlt": "Gabriel Vitebo — Desenvolvedor Full Stack",
+  "twitterTitle": "Check Numbers | Gabriel Vitebo",
+}
+`;
+
+exports[`pages consuming shared data > preserves project rendering and SEO 3`] = `undefined`;

@@ -30,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+import { socialImagePath } from '~/data/constants'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
@@ -44,7 +45,7 @@ const { currentPage, totalPages, paginatedItems, setPage } = usePagination(blogA
 const site = useSiteConfig()
 const canonicalUrl = `${site.url}/blog`
 const description = 'Artigos sobre desenvolvimento web, programação, tecnologia e decisões práticas de produto.'
-const socialImage = `${site.url}/images/social-cover.jpg`
+const socialImage = `${site.url}${socialImagePath}`
 
 useSeoMeta({
   title: 'Blog',
