@@ -5,6 +5,7 @@ import HowMachinesUnderstandWhoIAm from '~/content/blog/como-maquinas-endentem-q
 import HowDataBecomesMovieRecommendations from '~/content/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js.md?raw'
 import { blogArticlesMetadata } from './blogMetadata'
 import JevDecisions from '~/content/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes.md?raw'
+import McpAndRag from '~/content/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa.md?raw'
 
 const getBlogArticleMetadata = (slug: string) => {
   const article = blogArticlesMetadata.find((item) => item.slug === slug)
@@ -17,6 +18,10 @@ const getBlogArticleMetadata = (slug: string) => {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    ...getBlogArticleMetadata('mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa'),
+    content: McpAndRag,
+  },
   {
     ...getBlogArticleMetadata('jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes'),
     content: JevDecisions,

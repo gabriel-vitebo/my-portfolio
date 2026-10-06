@@ -4,6 +4,18 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa',
+    shortSlug: 'mcp-e-rag',
+    title: 'MCP e RAG: como conectar a IA aos dados que ela precisa',
+    date: 'Artigo',
+    publishedAtIso: '2026-10-06',
+    publishedAt: '6 de outubro de 2026',
+    description: 'Uma visão prática sobre o que MCP e RAG resolvem, suas diferenças e como podem trabalhar juntos para conectar aplicações de IA a ferramentas e documentos.',
+    image: blogImage('mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa', 'cover.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes',
     shortSlug: 'jev',
     title: 'Jev: e se a IA ajudasse o seu código a tomar decisões?',
