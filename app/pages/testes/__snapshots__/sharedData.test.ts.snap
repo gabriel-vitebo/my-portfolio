@@ -585,64 +585,77 @@ exports[`pages consuming shared data > preserves blog rendering and SEO 1`] = `
       <h1 class="mt-4 text-4xl font-bold text-foreground sm:text-5xl">Blog</h1>
       <p class="mt-5 max-w-2xl text-base leading-8 text-muted">Aqui você encontra artigos sobre desenvolvimento web, programação, tecnologia e muito mais.</p>
     </header>
-    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      <article aria-labelledby="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="MCP e RAG: como conectar a IA aos dados que ela precisa">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="mt-3 text-xl font-semibold text-foreground">MCP e RAG: como conectar a IA aos dados que ela precisa</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Uma visão prática sobre o que MCP e RAG resolvem, suas diferenças e como podem trabalhar juntos para conectar aplicações de IA a ferramentas e documentos.</p><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
-      <article aria-labelledby="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes/cover.png" alt="Jev: e se a IA ajudasse o seu código a tomar decisões?">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="mt-3 text-xl font-semibold text-foreground">Jev: e se a IA ajudasse o seu código a tomar decisões?</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como o Jev pode ajudar aplicações a interpretar contextos e tomar decisões estruturadas, com exemplos de revisão de tarefas, triagem de chamados e supervisão humana.</p><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
-      <article aria-labelledby="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js/cover.png" alt="Como dados viram recomendações de filmes com TensorFlow.js">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="mt-3 text-xl font-semibold text-foreground">Como dados viram recomendações de filmes com TensorFlow.js</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">O que aprendi ao adaptar uma atividade da pós-graduação para representar filmes e usuários com normalização, vetores, tensores e uma rede neural em TensorFlow.js.</p><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
-      <article aria-labelledby="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-maquinas-endentem-quem-eu-sou-na-internet/cover.jpeg" alt="Dados estruturados: Como máquinas entendem quem eu sou na internet">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="mt-3 text-xl font-semibold text-foreground">Dados estruturados: Como máquinas entendem quem eu sou na internet</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como dados estruturados, Schema.org e relações entre entidades ajudam máquinas, buscadores e sistemas de IA a entender melhor quem sou na internet.</p><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
-      <article aria-labelledby="blog-article-html-semantico" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: HTML Semântico" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/html-semantico/cover.png" alt="HTML Semântico">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-html-semantico" class="mt-3 text-xl font-semibold text-foreground">HTML Semântico</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.</p><a aria-label="Ler artigo completo: HTML Semântico" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
-      <article aria-labelledby="blog-article-como-eu-construi-meu-portifolio" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"></a>
-        <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-eu-construi-meu-portifolio/cover.png" alt="Como eu construí meu portfólio">
-          <div class="flex flex-1 flex-col p-5 pt-1">
-            <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
-            <h2 id="blog-article-como-eu-construi-meu-portifolio" class="mt-3 text-xl font-semibold text-foreground">Como eu construí meu portfólio</h2>
-            <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um guia prático sobre escolhas semânticas, estados de foco e pequenos cuidados de implementação que melhoram a experiência de leitura e navegação para todas as pessoas.</p><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"> Ler artigo completo </a>
-          </div>
-        </div>
-      </article>
+    <div class="w-full sm:max-w-md mt-8"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar blogs</label>
+      <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Título ou descrição" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary">
+        <!--v-if-->
+      </div>
     </div>
-    <!--v-if-->
-    <!--v-if-->
+    <div class="grid mt-10" data-search-results="">
+      <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline=""></div>
+      <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+        <p role="status" aria-live="polite" class="text-sm text-muted">
+          <!--v-if-->
+        </p>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article aria-labelledby="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="MCP e RAG: como conectar a IA aos dados que ela precisa">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa" class="mt-3 text-xl font-semibold text-foreground">MCP e RAG: como conectar a IA aos dados que ela precisa</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Uma visão prática sobre o que MCP e RAG resolvem, suas diferenças e como podem trabalhar juntos para conectar aplicações de IA a ferramentas e documentos.</p><a aria-label="Ler artigo completo: MCP e RAG: como conectar a IA aos dados que ela precisa" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+          <article aria-labelledby="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes/cover.png" alt="Jev: e se a IA ajudasse o seu código a tomar decisões?">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes" class="mt-3 text-xl font-semibold text-foreground">Jev: e se a IA ajudasse o seu código a tomar decisões?</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como o Jev pode ajudar aplicações a interpretar contextos e tomar decisões estruturadas, com exemplos de revisão de tarefas, triagem de chamados e supervisão humana.</p><a aria-label="Ler artigo completo: Jev: e se a IA ajudasse o seu código a tomar decisões?" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-tomar-decisoes"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+          <article aria-labelledby="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js/cover.png" alt="Como dados viram recomendações de filmes com TensorFlow.js">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js" class="mt-3 text-xl font-semibold text-foreground">Como dados viram recomendações de filmes com TensorFlow.js</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">O que aprendi ao adaptar uma atividade da pós-graduação para representar filmes e usuários com normalização, vetores, tensores e uma rede neural em TensorFlow.js.</p><a aria-label="Ler artigo completo: Como dados viram recomendações de filmes com TensorFlow.js" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-dados-viram-recomendacoes-de-filmes-com-tensorflow-js"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+          <article aria-labelledby="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-maquinas-endentem-quem-eu-sou-na-internet/cover.jpeg" alt="Dados estruturados: Como máquinas entendem quem eu sou na internet">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-como-maquinas-endentem-quem-eu-sou-na-internet" class="mt-3 text-xl font-semibold text-foreground">Dados estruturados: Como máquinas entendem quem eu sou na internet</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Como dados estruturados, Schema.org e relações entre entidades ajudam máquinas, buscadores e sistemas de IA a entender melhor quem sou na internet.</p><a aria-label="Ler artigo completo: Dados estruturados: Como máquinas entendem quem eu sou na internet" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-maquinas-endentem-quem-eu-sou-na-internet"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+          <article aria-labelledby="blog-article-html-semantico" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: HTML Semântico" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/html-semantico/cover.png" alt="HTML Semântico">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-html-semantico" class="mt-3 text-xl font-semibold text-foreground">HTML Semântico</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um olhar prático sobre como o HTML semântico melhora acessibilidade, navegação, SEO e manutenção mesmo em páginas que parecem visualmente iguais.</p><a aria-label="Ler artigo completo: HTML Semântico" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/html-semantico"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+          <article aria-labelledby="blog-article-como-eu-construi-meu-portifolio" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"></a>
+            <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/como-eu-construi-meu-portifolio/cover.png" alt="Como eu construí meu portfólio">
+              <div class="flex flex-1 flex-col p-5 pt-1">
+                <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                <h2 id="blog-article-como-eu-construi-meu-portifolio" class="mt-3 text-xl font-semibold text-foreground">Como eu construí meu portfólio</h2>
+                <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Um guia prático sobre escolhas semânticas, estados de foco e pequenos cuidados de implementação que melhoram a experiência de leitura e navegação para todas as pessoas.</p><a aria-label="Ler artigo completo: Como eu construí meu portfólio" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/como-eu-construi-meu-portifolio"> Ler artigo completo </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
   </main>
   <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
     <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
@@ -728,46 +741,59 @@ exports[`pages consuming shared data > preserves home rendering and SEO 1`] = `
           <h2 tabindex="-1" class="scroll-mt-24 text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
           <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Uma seleção de interfaces, produtos e ferramentas construídos com foco em execução, clareza e qualidade técnica.</p>
         </div>
-        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
-              </div>
-            </a></article>
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
-              </div>
-            </a></article>
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
-              </div>
-            </a></article>
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
-              </div>
-            </a></article>
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
-              </div>
-            </a></article>
-          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
-              <div class="flex flex-1 flex-col p-4">
-                <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
-                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
-              </div>
-            </a></article>
+        <div class="w-full sm:max-w-md mt-8"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar projetos</label>
+          <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Título, descrição ou tecnologia" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary">
+            <!--v-if-->
+          </div>
         </div>
-        <!--v-if-->
-        <!--v-if-->
+        <div class="grid mt-8" data-search-results="">
+          <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline=""></div>
+          <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+            <p role="status" aria-live="polite" class="text-sm text-muted">
+              <!--v-if-->
+            </p>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+                  </div>
+                </a></article>
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
+                  </div>
+                </a></article>
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
+                  </div>
+                </a></article>
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
+                  </div>
+                </a></article>
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
+                  </div>
+                </a></article>
+              <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
+                  <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
+                    <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
+                  </div>
+                </a></article>
+            </div>
+            <!--v-if-->
+            <!--v-if-->
+          </div>
+        </div>
       </div>
     </section>
   </main>

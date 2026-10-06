@@ -8,21 +8,33 @@
         subtitle="Aqui você encontra artigos sobre desenvolvimento web, programação, tecnologia e muito mais."
       />
 
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <BlogCard
-          v-for="article in paginatedItems"
-          :key="article.slug"
-          :article="article"
-        />
-      </div>
-      <Pagination
+      <SearchInput
+        v-model="query"
         class="mt-8"
-        :page="currentPage"
-        :total-pages="totalPages"
-        label="Paginação dos blogs"
-        @update:page="setPage"
+        label="Pesquisar blogs"
+        placeholder="Título ou descrição"
       />
-      <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
+      <StableSearchResults :active="Boolean(query.trim())" class="mt-10">
+        <p role="status" aria-live="polite" class="text-sm text-muted">
+          <span v-if="blogArticles.length && !filteredItems.length" class="block px-4 py-8 text-center">Nenhum resultado encontrado para “{{ query.trim() }}”.</span>
+        </p>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <BlogCard
+            v-for="article in paginatedItems"
+            :key="article.slug"
+            :article="article"
+          />
+        </div>
+        <Pagination
+          class="mt-8"
+          :page="currentPage"
+          :total-pages="totalPages"
+          label="Paginação dos blogs"
+          @update:page="setPage"
+        />
+        <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
+      </StableSearchResults>
     </main>
 
     <AppFooter :name="portfolio.hero.name" />
@@ -30,17 +42,24 @@
 </template>
 
 <script setup lang="ts">
+import { watch } from 'vue'
 import { socialImagePath } from '~/data/constants'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
 import BlogCard from '~/components/blog/card/index.vue'
+import SearchInput from '~/components/ui/SearchInput.vue'
+import StableSearchResults from '~/components/ui/StableSearchResults.vue'
+import { useSearch } from '~/composables/useSearch'
+import { getBlogSearchFields } from '~/utils/searchFields'
 import Pagination from '~/components/ui/Pagination.vue'
 import { usePagination } from '~/composables/usePagination'
 import { blogArticles } from '~/data/blog'
 import { portfolio } from '~/data/portfolio'
 
-const { currentPage, totalPages, paginatedItems, setPage } = usePagination(blogArticles, 6)
+const { query, filteredItems } = useSearch(blogArticles, getBlogSearchFields)
+const { currentPage, totalPages, paginatedItems, setPage } = usePagination(filteredItems, 6)
+watch(query, () => setPage(1), { flush: 'sync' })
 
 const site = useSiteConfig()
 const canonicalUrl = `${site.url}/blog`
