@@ -10,11 +10,19 @@
 
       <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
-          v-for="article in blogArticles"
+          v-for="article in paginatedItems"
           :key="article.slug"
           :article="article"
         />
       </div>
+      <Pagination
+        class="mt-8"
+        :page="currentPage"
+        :total-pages="totalPages"
+        label="Paginação dos blogs"
+        @update:page="setPage"
+      />
+      <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
     </main>
 
     <AppFooter :name="portfolio.hero.name" />
@@ -26,8 +34,12 @@ import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
 import BlogCard from '~/components/blog/card/index.vue'
+import Pagination from '~/components/ui/Pagination.vue'
+import { usePagination } from '~/composables/usePagination'
 import { blogArticles } from '~/data/blog'
 import { portfolio } from '~/data/portfolio'
+
+const { currentPage, totalPages, paginatedItems, setPage } = usePagination(blogArticles, 6)
 
 const site = useSiteConfig()
 const canonicalUrl = `${site.url}/blog`
