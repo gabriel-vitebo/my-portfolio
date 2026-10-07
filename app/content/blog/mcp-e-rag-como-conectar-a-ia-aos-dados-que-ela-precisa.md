@@ -6,7 +6,7 @@ Para responder, o modelo precisa de informações que não estão necessariament
 
 É nesse ponto que entram dois conceitos bastante presentes nas conversas sobre aplicações com inteligência artificial: **MCP e RAG**.
 
-O MCP foi apresentado pela Anthropic em novembro de 2024 para padronizar a conexão entre aplicações de IA e fontes de dados ou ferramentas. Já o RAG ganhou uma formulação de referência em um artigo de 2020, combinando recuperação de informações com geração de texto. São respostas a problemas relacionados, mas diferentes. [1][2]
+O MCP foi apresentado pela Anthropic em novembro de 2024 para padronizar a conexão entre aplicações de IA e fontes de dados ou ferramentas. Já o RAG ganhou uma formulação de referência em um artigo de 2020, combinando recuperação de informações com geração de texto. São respostas a problemas relacionados, mas diferentes.
 
 Em uma aplicação, podemos usar MCP para disponibilizar uma consulta de pedidos e RAG para buscar trechos da política de trocas antes de gerar uma resposta.
 
@@ -14,7 +14,7 @@ Para entender onde cada um se encaixa, vale começar por uma distinção: **MCP 
 
 ## O que é MCP?
 
-MCP significa **Model Context Protocol**, ou Protocolo de Contexto de Modelo. Ele define uma maneira padronizada de aplicações de IA se comunicarem com sistemas externos. [3]
+MCP significa **Model Context Protocol**, ou Protocolo de Contexto de Modelo. Ele define uma maneira padronizada de aplicações de IA se comunicarem com sistemas externos.
 
 Pense nas integrações que um assistente pode precisar: consultar arquivos, acessar uma API, buscar informações em um repositório ou executar uma operação no sistema da empresa.
 
@@ -22,13 +22,13 @@ O protocolo oferece uma interface comum para expor essas capacidades a aplicaç�
 
 ### Quem participa dessa comunicação?
 
-A arquitetura tem três participantes principais: [3]
+A arquitetura tem três participantes principais:
 
 - **Host:** a aplicação de IA que organiza a interação com o usuário e as conexões.
 - **Cliente MCP:** o componente do host que se comunica com um servidor MCP.
 - **Servidor MCP:** o programa que disponibiliza capacidades, executado localmente ou de forma remota.
 
-Um servidor pode oferecer **tools**, funções executáveis; **resources**, conteúdos disponíveis para consulta; e **prompts**, modelos reutilizáveis de instruções. [4]
+Um servidor pode oferecer **tools**, funções executáveis; **resources**, conteúdos disponíveis para consulta; e **prompts**, modelos reutilizáveis de instruções.
 
 Voltando à loja, poderíamos disponibilizar uma ferramenta chamada `consultarPedido`. Ela receberia o identificador do pedido e retornaria os dados permitidos para aquele usuário.
 
@@ -56,7 +56,7 @@ Também é possível integrar ferramentas diretamente à aplicação, sem MCP. O
 
 RAG significa **Retrieval-Augmented Generation**, geralmente traduzido como geração aumentada por recuperação.
 
-A ideia é recuperar informações relevantes de uma fonte externa e incluí-las no contexto usado pelo modelo para produzir uma resposta. Assim, a geração pode se apoiar em documentos e dados específicos do problema. [5]
+A ideia é recuperar informações relevantes de uma fonte externa e incluí-las no contexto usado pelo modelo para produzir uma resposta. Assim, a geração pode se apoiar em documentos e dados específicos do problema.
 
 No exemplo da loja, uma pergunta sobre troca pode ser respondida a partir da política publicada pela própria empresa.
 
@@ -64,7 +64,7 @@ O objetivo é buscar o conteúdo necessário para aquela pergunta, sem enviar to
 
 ### Como esse processo funciona?
 
-Em uma implementação comum com busca vetorial, existem dois momentos. A arquitetura apresentada pelo Google Cloud ajuda a visualizar essa separação. [6]
+Em uma implementação comum com busca vetorial, existem dois momentos. A arquitetura apresentada pelo Google Cloud ajuda a visualizar essa separação.
 
 **Primeiro, preparamos os documentos:**
 
@@ -81,13 +81,13 @@ Em uma implementação comum com busca vetorial, existem dois momentos. A arquit
 
 Por exemplo, alguém pode perguntar “posso devolver uma camiseta que não serviu?”, enquanto o documento usa a expressão “troca por tamanho”. Uma busca semântica pode ajudar a aproximar essas formas de falar do mesmo assunto.
 
-Embeddings e bancos vetoriais são comuns, mas não definem sozinhos o RAG. A recuperação também pode usar busca por palavras-chave ou combinar métodos. O ponto central é **recuperar informações para apoiar a geração**. [5]
+Embeddings e bancos vetoriais são comuns, mas não definem sozinhos o RAG. A recuperação também pode usar busca por palavras-chave ou combinar métodos. O ponto central é **recuperar informações para apoiar a geração**.
 
 ![Fluxo de RAG separando a preparação dos documentos da recuperação de trechos para responder uma pergunta.](/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/como-funciona-rag.png)
 
 ### Isso significa treinar o modelo com meus documentos?
 
-Usar RAG não exige atualizar os pesos do modelo a cada mudança nos documentos. O conteúdo recuperado é fornecido como contexto durante a resposta. [2][5]
+Usar RAG não exige atualizar os pesos do modelo a cada mudança nos documentos. O conteúdo recuperado é fornecido como contexto durante a resposta.
 
 Se a política da loja mudar, o sistema precisa atualizar a fonte e sua representação no mecanismo de busca.
 
