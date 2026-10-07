@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SearchInput > emits typed text and clears by button and Escape, returning focus 1`] = `
+"<div class="w-full sm:max-w-md"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar itens</label>
+  <div class="flex items-center gap-2"><input id="v-0" type="search" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary"><button type="button" class="min-h-11 shrink-0 rounded-sm border border-border px-3 py-2 text-sm text-muted hover:border-primary hover:text-foreground" aria-label="Limpar pesquisa"> Limpar </button></div>
+</div>"
+`;
+
+exports[`SearchInput > renders an accessible input and configurable placeholder 1`] = `
+"<div class="w-full sm:max-w-md"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar itens</label>
+  <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Digite um termo" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary">
+    <!--v-if-->
+  </div>
+</div>"
+`;
