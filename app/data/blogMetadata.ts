@@ -4,6 +4,18 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'programacao-orientada-a-objetos-poo-entendendo-os-conceitos-alem-da-linguagem',
+    shortSlug: 'poo',
+    title: 'Programação Orientada a Objetos (POO): entendendo os conceitos além da linguagem',
+    date: 'Artigo',
+    publishedAtIso: '2026-10-15',
+    publishedAt: '15 de outubro de 2026',
+    description: 'Entenda classes, objetos, encapsulamento, abstração, herança e polimorfismo com exemplos em Java e TypeScript, além de um checkout com diferentes formas de pagamento.',
+    image: blogImage('programacao-orientada-a-objetos-poo-entendendo-os-conceitos-alem-da-linguagem', 'cover.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa',
     shortSlug: 'mcp-e-rag',
     title: 'MCP e RAG: como conectar a IA aos dados que ela precisa',
