@@ -1,4 +1,5 @@
 import type { BlogArticle } from '~/types/blog'
+import ReverseEngineeringWithAI from '~/content/blog/engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea.md?raw'
 import HowIBuiltMyPortfolio from '~/content/blog/como-eu-construi-meu-portifolio.md?raw'
 import HTMLSemantico from '~/content/blog/html-semantico.md?raw'
 import HowMachinesUnderstandWhoIAm from '~/content/blog/como-maquinas-endentem-quem-eu-sou-na-internet.md?raw'
@@ -20,6 +21,10 @@ const getBlogArticleMetadata = (slug: string) => {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    ...getBlogArticleMetadata('engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea'),
+    content: ReverseEngineeringWithAI,
+  },
   {
     ...getBlogArticleMetadata('programacao-orientada-a-objetos-poo-entendendo-os-conceitos-alem-da-linguagem'),
     content: ObjectOrientedProgramming,

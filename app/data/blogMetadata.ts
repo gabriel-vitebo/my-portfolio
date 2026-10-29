@@ -4,6 +4,18 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea',
+    shortSlug: 'engenharia-reversa-com-ia',
+    title: 'Engenharia reversa com IA: descobrindo como softwares funcionam com REA',
+    date: 'Artigo',
+    publishedAtIso: '2026-10-29',
+    publishedAt: '29 de outubro de 2026',
+    description: 'Entenda como o REA (Reverse Engineer Anything) usa agentes de IA para investigar softwares, descobrir regras de funcionamento e validar evidências, com exemplos práticos e cuidados éticos.',
+    image: blogImage('engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea', 'cover.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'programacao-orientada-a-objetos-poo-entendendo-os-conceitos-alem-da-linguagem',
     shortSlug: 'poo',
     title: 'Programação Orientada a Objetos (POO): entendendo os conceitos além da linguagem',
