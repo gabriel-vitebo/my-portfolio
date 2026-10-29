@@ -2,13 +2,14 @@ import { afterEach, expect, it } from 'vitest'
 import BlogPage from '~/pages/blog/index.vue'
 import { blogArticles } from '~/data/blog'
 import { mountForSnapshot } from '../../../tests/support/mount'
+import { createBlogArticle } from '../../../tests/support/blog'
 
 const original = [...blogArticles]
 afterEach(() => blogArticles.splice(0, blogArticles.length, ...original))
 
 it('searches across all blog pages, resets pagination, paginates matches and restores on clear', async () => {
-  blogArticles.splice(0, blogArticles.length, ...Array.from({ length: 15 }, (_, index) => ({
-    ...original[0]!, slug: `article-${index}`, title: `Artigo ${index + 1}`, description: 'Descrição pesquisável',
+  blogArticles.splice(0, blogArticles.length, ...Array.from({ length: 15 }, (_, index) => createBlogArticle({
+    slug: `article-${index}`, title: `Artigo ${index + 1}`,
   })))
   const wrapper = mountForSnapshot(BlogPage)
   await wrapper.get('[data-search-results-content] [aria-label="Página 3"]').trigger('click')
@@ -41,7 +42,9 @@ it('preserves the originally empty blog list', async () => {
 })
 
 it.each([3, 6])('preserves the actual %i-item blog page through partial and empty searches', async (count) => {
-  blogArticles.splice(0, blogArticles.length, ...original.slice(0, count))
+  blogArticles.splice(0, blogArticles.length, ...Array.from({ length: count }, (_, index) => createBlogArticle({
+    slug: `article-${index}`, title: index === 0 ? 'MCP' : `Artigo ${index + 1}`,
+  })))
   const wrapper = mountForSnapshot(BlogPage)
   const content = wrapper.get('[data-search-results-content]')
   const baseline = wrapper.get('[data-search-results-baseline]')

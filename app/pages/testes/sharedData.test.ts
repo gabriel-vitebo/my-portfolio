@@ -7,10 +7,14 @@ import ProjectPage from '~/pages/projetos/[slug].vue'
 import { mountForSnapshot } from '../../../tests/support/mount'
 import { route, useSchemaOrg, useSeoMeta } from '../../../tests/support/nuxt'
 import { socials } from '~/data/profile'
+import { blogArticles } from '~/data/blog'
+import { createBlogArticle } from '../../../tests/support/blog'
 
+const originalArticles = [...blogArticles]
 const wrappers: ReturnType<typeof mountForSnapshot>[] = []
 afterEach(() => {
   wrappers.splice(0).forEach(wrapper => wrapper.unmount())
+  blogArticles.splice(0, blogArticles.length, ...originalArticles)
   Object.assign(route, { path: '/', fullPath: '/', hash: '', params: {} })
   useSchemaOrg.mockClear()
   useSeoMeta.mockClear()
@@ -25,6 +29,11 @@ describe('pages consuming shared data', () => {
     ['project', ProjectPage, '/projetos/check-numbers', 'check-numbers'],
   ] as const) {
     it(`preserves ${name} rendering and SEO`, () => {
+      if (name === 'blog') {
+        blogArticles.splice(0, blogArticles.length, ...Array.from({ length: 8 }, (_, index) => createBlogArticle({
+          slug: `article-${index}`, title: `Artigo ${index + 1}`,
+        })))
+      }
       Object.assign(route, { path, fullPath: path, params: slug ? { slug } : {} })
       const wrapper = mountForSnapshot(component)
       wrappers.push(wrapper)
