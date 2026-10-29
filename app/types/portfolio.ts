@@ -1,3 +1,6 @@
+import type { SkillId } from '../data/skills'
+import type { SocialId } from '../data/socialLinks'
+
 export interface HeroData {
   greeting: string
   name: string
@@ -7,6 +10,8 @@ export interface HeroData {
 }
 
 export interface SocialLink {
+  id: SocialId
+  icon: string
   label: string
   url: string
 }
@@ -37,7 +42,9 @@ export interface Project {
   gallery: ProjectGalleryItem[]
   githubLinks: ProjectGithubLink[]
   demoUrl?: string
-  technologies: string[]
+  technologies: SkillId[]
+  /** Existing editorial spelling, only where it differs from the catalog. */
+  technologyLabels?: Partial<Record<SkillId, string>>
 }
 
 export interface ProjectsData {

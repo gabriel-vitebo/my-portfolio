@@ -1,9 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { blogArticlesMetadata } from './app/data/blogMetadata'
+import { hero } from './app/data/profile'
+import { socialLinks } from './app/data/socialLinks'
+import { siteUrl, identityId } from './app/data/constants'
+import { blogArticlesMetadata, blogArticleRoutes } from './app/data/blogMetadata'
 import { projectRoutes } from './app/data/projects'
 import pkg from './package.json' with { type: 'json' }
-
-const blogArticleRoutes = blogArticlesMetadata.map((article) => `/blog/${article.slug}`)
 
 const blogArticleSitemapUrls = blogArticlesMetadata.map((article) => ({
   loc: `/blog/${article.slug}`,
@@ -22,29 +23,29 @@ export default defineNuxtConfig({
   css: ['~/assets/css/theme.css'],
   modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/seo', '@nuxt/scripts'],
   site: {
-    url: 'https://gabrielvitebo.dev',
-    name: 'Gabriel Vitebo',
+    url: siteUrl,
+    name: hero.name,
     defaultLocale: 'pt-BR',
     currentLocale: 'pt-BR'
   },
   schemaOrg: {
     identity: {
       type: 'Person',
-      '@id': 'https://gabrielvitebo.dev/#identity',
+      '@id': identityId,
 
-      name: 'Gabriel Vitebo',
+      name: hero.name,
 
-      url: 'https://gabrielvitebo.dev',
+      url: siteUrl,
 
-      jobTitle: 'Desenvolvedor Full Stack',
+      jobTitle: hero.role,
 
       description: 'Desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web modernas, atuando com tecnologias de front-end e back-end.',
 
-      image: 'https://gabrielvitebo.dev/images/profile/my-photo.png',
+      image: `${siteUrl}${hero.image}`,
 
       sameAs: [
-        'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
-        'https://github.com/gabriel-vitebo'
+        socialLinks.linkedin.url,
+        socialLinks.github.url
       ]
     }
   },

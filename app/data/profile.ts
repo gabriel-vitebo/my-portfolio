@@ -1,5 +1,5 @@
 import type { HeroData, SocialLink } from '~/types/portfolio'
-import { githubUrl } from './constants'
+import { socialLinks } from './socialLinks'
 
 export const hero: HeroData = {
   greeting: 'Olá, eu sou',
@@ -10,17 +10,4 @@ export const hero: HeroData = {
   image: '/images/profile/my-photo.png',
 }
 
-export const socials: SocialLink[] = [
-  {
-    label: 'GitHub',
-    url: githubUrl,
-  },
-  {
-    label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/gabriel-alves-vitebo-2978ab177/',
-  },
-  {
-    label: 'contact@gabrielvitebo.dev',
-    url: 'mailto:contact@gabrielvitebo.dev',
-  },
-]
+export const socials: SocialLink[] = [socialLinks.github, socialLinks.linkedin, socialLinks.email]

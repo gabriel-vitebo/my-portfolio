@@ -25,6 +25,7 @@
 </template>
 
 <script setup lang="ts">
+import { socialImagePath } from '~/data/constants'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import ProjectGallery from '~/components/projects/ProjectGallery.vue'
@@ -39,7 +40,7 @@ const project = portfolio.projects.find((item) => item.slug === slug)
 const selectedMedia = ref<ProjectGalleryItem | null>(null)
 const site = useSiteConfig()
 const canonicalUrl = `${site.url}/projetos/${project?.slug}`
-const socialImage = `${site.url}/images/social-cover.jpg`
+const socialImage = `${site.url}${socialImagePath}`
 
 const openMedia = (media: ProjectGalleryItem) => {
   selectedMedia.value = media

@@ -23,14 +23,14 @@
     >
       <a
         v-for="social in socials"
-        :key="social.url"
+        :key="social.id"
         class="group relative grid size-11 place-items-center rounded-full border border-border bg-background/80 text-foreground shadow-lg backdrop-blur transition duration-300 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         :href="social.url"
         :aria-label="social.label"
         rel="noreferrer"
         target="_blank"
       >
-        <AppIcon :name="getSocialIcon(social.label)" />
+        <AppIcon :name="social.icon" />
         <span
           class="pointer-events-none absolute bottom-[calc(100%+0.75rem)] left-1/2 w-max max-w-[min(17rem,80vw)] -translate-x-1/2 rounded-lg border border-border bg-background px-3 py-2 text-xs text-muted opacity-0 shadow-lg transition duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
         >
@@ -51,17 +51,4 @@ defineProps<{
   socials?: SocialLink[]
 }>()
 
-function getSocialIcon(label: string) {
-  const normalizedLabel = label.toLowerCase()
-
-  if (normalizedLabel.includes('github')) {
-    return 'simple-icons:github'
-  }
-
-  if (normalizedLabel.includes('linkedin')) {
-    return 'simple-icons:linkedin'
-  }
-
-  return 'lucide:mail'
-}
 </script>

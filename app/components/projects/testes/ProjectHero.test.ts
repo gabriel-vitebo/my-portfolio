@@ -6,6 +6,14 @@ import { mountForSnapshot } from '../../../../tests/support/mount'
 const project = projects[0]!
 
 describe('ProjectHero', () => {
+  it('preserves the Check Numbers editorial spelling through the parent component', () => {
+    const wrapper = mountForSnapshot(ProjectHero, {
+      props: { project: projects.find(item => item.slug === 'check-numbers')! },
+    })
+    expect(wrapper.get('ul[aria-label="Tecnologias utilizadas"]').text()).toContain('Typescript')
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+
   it('matches the snapshot', () => {
     const wrapper = mountForSnapshot(ProjectHero, {
       props: { project },

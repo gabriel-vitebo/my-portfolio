@@ -14,6 +14,7 @@
 </template>
 
 <script setup lang="ts">
+import { socialImagePath } from '~/data/constants'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
@@ -22,7 +23,7 @@ import { portfolio } from '~/data/portfolio'
 
 const site = useSiteConfig()
 const canonicalUrl = site.url
-const socialImage = `${site.url}/images/social-cover.jpg`
+const socialImage = `${site.url}${socialImagePath}`
 
 useSeoMeta({
   title: portfolio.hero.role,

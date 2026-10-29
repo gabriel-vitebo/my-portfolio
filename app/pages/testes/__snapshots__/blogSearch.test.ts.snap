@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`searches across all blog pages, resets pagination, paginates matches and restores on clear 1`] = `
+"<div class="min-h-screen bg-background text-foreground">
+  <div>
+    <header class="fixed inset-x-0 top-0 z-50 w-full border-b border-border bg-[rgb(var(--color-background-rgb)/0.62)] backdrop-blur-xl backdrop-saturate-150">
+      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+        <nav class="grid gap-3 sm:grid-cols-[minmax(0,min(48vw,34rem))_auto] sm:items-center sm:justify-between"><a class="block min-w-0 truncate text-[15px] font-semibold text-foreground transition duration-300 hover:text-primary" href="/#hero">Gabriel Vitebo</a>
+          <ul class="flex max-w-full shrink-0 items-center gap-3 overflow-x-auto pb-1 text-[13px] text-muted sm:col-start-2 sm:row-span-2 sm:row-start-1 sm:gap-6 sm:overflow-visible sm:pb-0 sm:text-[15px]">
+            <li><a class="transition duration-300 hover:text-primary text-primary" href="/#hero">Início</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/#projects">Projetos</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/sobre-mim">Sobre</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/blog">Blog</a></li>
+            <li><a class="transition duration-300 hover:text-primary" href="/changelog">Changelog</a></li>
+          </ul>
+          <nav aria-label="Caminho da página" class="relative flex min-w-0 max-w-full items-center gap-2 overflow-hidden rounded-md border border-border bg-surface/70 px-3 py-1.5 text-xs font-medium text-subtle shadow-sm w-full sm:col-start-1 sm:row-start-2 sm:max-w-[34rem]">
+            <!--v-if--><span class="truncate text-foreground">/home</span><span aria-hidden="true" class="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-medium"><!--v-if--><span>/home</span></span>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <div aria-hidden="true" class="h-36 sm:h-28"></div>
+  </div>
+  <main class="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
+    <header class="border-b border-border pb-10">
+      <!--v-if-->
+      <h1 class="mt-4 text-4xl font-bold text-foreground sm:text-5xl">Blog</h1>
+      <p class="mt-5 max-w-2xl text-base leading-8 text-muted">Aqui você encontra artigos sobre desenvolvimento web, programação, tecnologia e muito mais.</p>
+    </header>
+    <div class="w-full sm:max-w-md mt-8"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar blogs</label>
+      <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Título ou descrição" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary"><button type="button" class="min-h-11 shrink-0 rounded-sm border border-border px-3 py-2 text-sm text-muted hover:border-primary hover:text-foreground" aria-label="Limpar pesquisa"> Limpar </button></div>
+    </div>
+    <div class="grid mt-10" data-search-results="">
+      <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline="">
+        <div class="col-start-1 row-start-1 flow-root min-w-0 self-start">
+          <p role="status" aria-live="polite" class="text-sm text-muted">
+            <!--v-if-->
+          </p>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article aria-labelledby="blog-article-article-12" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Artigo 13" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-12"></a>
+              <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="Artigo 13">
+                <div class="flex flex-1 flex-col p-5 pt-1">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                  <h2 class="mt-3 text-xl font-semibold text-foreground">Artigo 13</h2>
+                  <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Descrição pesquisável</p><a aria-label="Ler artigo completo: Artigo 13" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-12"> Ler artigo completo </a>
+                </div>
+              </div>
+            </article>
+            <article aria-labelledby="blog-article-article-13" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Artigo 14" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-13"></a>
+              <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="Artigo 14">
+                <div class="flex flex-1 flex-col p-5 pt-1">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                  <h2 class="mt-3 text-xl font-semibold text-foreground">Artigo 14</h2>
+                  <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Descrição pesquisável</p><a aria-label="Ler artigo completo: Artigo 14" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-13"> Ler artigo completo </a>
+                </div>
+              </div>
+            </article>
+            <article aria-labelledby="blog-article-article-14" class="relative overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50"><a aria-label="Ler artigo completo: Artigo 15" class="absolute inset-0 rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-14"></a>
+              <div class="pointer-events-none relative flex h-full flex-col gap-4"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa/cover.png" alt="Artigo 15">
+                <div class="flex flex-1 flex-col p-5 pt-1">
+                  <p class="text-xs font-medium uppercase tracking-widest text-subtle">Artigo</p>
+                  <h2 class="mt-3 text-xl font-semibold text-foreground">Artigo 15</h2>
+                  <p class="mt-3 line-clamp-3 text-sm leading-6 text-muted">Descrição pesquisável</p><a aria-label="Ler artigo completo: Artigo 15" class="pointer-events-auto mt-4 inline-flex w-fit items-center text-sm font-semibold text-primary transition hover:text-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary" href="/blog/article-14"> Ler artigo completo </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <nav aria-label="Paginação dos blogs" class="flex flex-wrap items-center justify-center gap-1 sm:gap-2 mt-8"><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página anterior"><span aria-hidden="true">←</span></button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 1">1</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 2">2</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 3" aria-current="page">3</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Próxima página" disabled=""><span aria-hidden="true">→</span></button></nav>
+          <p class="sr-only" role="status">Página 3 de 3</p>
+        </div>
+      </div>
+      <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+        <p role="status" aria-live="polite" class="text-sm text-muted"><span class="block px-4 py-8 text-center">Nenhum resultado encontrado para “inexistente”.</span></p>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+  </main>
+  <footer class="border-t border-border bg-background px-4 py-6 sm:px-6">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between">
+      <p>Gabriel Vitebo</p><a class="w-fit font-medium uppercase tracking-wide text-muted transition duration-300 hover:text-primary" href="/changelog"> V1.0.1-test</a>
+    </div>
+  </footer>
+</div>"
+`;

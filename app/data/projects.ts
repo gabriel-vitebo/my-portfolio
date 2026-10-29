@@ -25,7 +25,7 @@ export const projects: Project[] = [
       { type: 'image', src: projectImage('food-explorer', 'search.png'), alt: 'Busca de pratos no Food Explorer' },
     ],
     githubLinks: [{ label: 'Front-end', url: `${githubUrl}/food-explorer` }, { label: 'Back-end', url: `${githubUrl}/api-food-explorer` }],
-    technologies: ['React', 'MySql', 'Node.js', 'Express', 'JWT', 'Styled Components'],
+    technologies: ['react', 'mysql', 'node', 'express', 'jwt', 'styled-components'],
   },
   {
     slug: 'curriculo-ai',
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     ],
     githubLinks: [{ url: `${githubUrl}/curriculoAi` }],
     demoUrl: 'https://curriculo-ai-sepia.vercel.app',
-    technologies: ['Nuxt', 'TypeScript', 'Tailwind CSS', 'OpenAI API'],
+    technologies: ['nuxt', 'typescript', 'tailwind', 'openai-api'],
   },
   
   {
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     gallery: [{ type: 'image', src: projectImage('rocket-pay', 'home.png'), alt: 'Tela de cadastro de cartão do Rocket Pay' }],
     githubLinks: [{ url: `${githubUrl}/Rocketpay` }],
     demoUrl: 'https://rocketpay-swart.vercel.app/',
-    technologies: ['HTML', 'CSS', 'Regex', 'JavaScript'],
+    technologies: ['html', 'css', 'regex', 'javascript'],
   },
   {
     slug: 'quest-log',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       { type: 'image', src: projectImage('quest-log', 'profile-page.jpeg'), alt: 'Perfil do usuário no Quest Log' },
     ],
     githubLinks: [{ url: `${githubUrl}/questlog` }],
-    technologies: ['React Native', 'TypeScript', 'Firebase'],
+    technologies: ['react-native', 'typescript', 'firebase'],
   },
   {
     slug: 'desafio-focus-timer',
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     ],
     githubLinks: [{ url: `${githubUrl}/Desafio-focus-timer-2.0` }],
     demoUrl: 'https://gabriel-vitebo.github.io/Desafio-focus-timer-2.0/',
-    technologies: ['JavaScript', 'CSS', 'HTML'],
+    technologies: ['javascript', 'css', 'html'],
   },
   {
     slug: 'check-numbers',
@@ -96,7 +96,8 @@ export const projects: Project[] = [
     gallery: [{ type: 'image', src: projectImage('check-numbers', 'home-page.png'), alt: 'Tela principal do Check Numbers' }],
     githubLinks: [{ url: `${githubUrl}/checkNumbers` }],
     demoUrl: 'https://gabriel-vitebo.github.io/checkNumbers/',
-    technologies: ['React', 'Vite', 'Typescript', 'Styled Components'],
+    technologies: ['react', 'vite', 'typescript', 'styled-components'],
+    technologyLabels: { typescript: 'Typescript' },
   },
   
 ]

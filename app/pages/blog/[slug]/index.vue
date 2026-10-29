@@ -57,6 +57,7 @@
 </template>
 
 <script setup lang="ts">
+import { identityId } from '~/data/constants'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
 import Header from '~/components/header/index.vue'
@@ -115,7 +116,7 @@ useSchemaOrg([
     dateModified: toSchemaDateTime(article.publishedAtIso),
     image: socialImage,
     author: {
-      '@id': 'https://gabrielvitebo.dev/#identity',
+      '@id': identityId,
     },
     mainEntityOfPage: canonicalUrl,
   },

@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StableSearchResults > renders normally without retaining an extra list 1`] = `
+"<div class="grid" data-search-results="">
+  <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline=""></div>
+  <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <article>
+        <h2 id="item-1">Item 1</h2><a href="/items/1">Abrir</a>
+      </article>
+      <article>
+        <h2 id="item-2">Item 2</h2><a href="/items/2">Abrir</a>
+      </article>
+      <article>
+        <h2 id="item-3">Item 3</h2><a href="/items/3">Abrir</a>
+      </article>
+    </div>
+    <p role="status"></p>
+  </div>
+</div>"
+`;
+
+exports[`StableSearchResults > retains the pre-filter layout for partial and empty results, then releases it on clear 1`] = `
+"<div class="grid" data-search-results="">
+  <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline="">
+    <div class="col-start-1 row-start-1 flow-root min-w-0 self-start">
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article>
+          <h2>Item 1</h2><a href="/items/1">Abrir</a>
+        </article>
+        <article>
+          <h2>Item 2</h2><a href="/items/2">Abrir</a>
+        </article>
+        <article>
+          <h2>Item 3</h2><a href="/items/3">Abrir</a>
+        </article>
+      </div>
+      <p role="status"></p>
+    </div>
+  </div>
+  <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <article>
+        <h2 id="item-2">Item 2</h2><a href="/items/2">Abrir</a>
+      </article>
+    </div>
+    <p role="status"></p>
+  </div>
+</div>"
+`;
+
+exports[`StableSearchResults > retains the pre-filter layout for partial and empty results, then releases it on clear 2`] = `
+"<div class="grid" data-search-results="">
+  <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline="">
+    <div class="col-start-1 row-start-1 flow-root min-w-0 self-start">
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article>
+          <h2>Item 1</h2><a href="/items/1">Abrir</a>
+        </article>
+        <article>
+          <h2>Item 2</h2><a href="/items/2">Abrir</a>
+        </article>
+        <article>
+          <h2>Item 3</h2><a href="/items/3">Abrir</a>
+        </article>
+      </div>
+      <p role="status"></p>
+    </div>
+  </div>
+  <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p role="status">Nenhum resultado</p>
+  </div>
+</div>"
+`;

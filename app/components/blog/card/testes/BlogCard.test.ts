@@ -9,6 +9,7 @@ const article: BlogArticle = {
   title: 'Interfaces acessiveis com Vue',
   date: 'Artigo',
   publishedAt: '13 de agosto de 2026',
+  publishedAtIso: '2026-08-13',
   description: 'Boas escolhas semanticas deixam a leitura e a navegacao mais previsiveis.',
   image: '/images/blog/interfaces-acessiveis-com-vue/cover.png',
   content: 'Conteudo do artigo.',

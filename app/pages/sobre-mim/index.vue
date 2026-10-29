@@ -30,11 +30,13 @@ import AboutStorySection from '~/components/about/sections/AboutStorySection.vue
 import AboutWorkSection from '~/components/about/sections/AboutWorkSection.vue'
 import AppFooter from '~/components/layout/AppFooter.vue'
 import AppNavbar from '~/components/layout/AppNavbar.vue'
+import { frontEndSkills, backEndSkills, toolSkills } from '~/data/aboutSkills'
+import { identityId, socialImagePath } from '~/data/constants'
 import { portfolio } from '~/data/portfolio'
 
 const site = useSiteConfig()
 const aboutUrl = `${site.url}/sobre-mim`
-const socialImage = `${site.url}/images/social-cover.jpg`
+const socialImage = `${site.url}${socialImagePath}`
 const description = 'Conheça Gabriel Vitebo, desenvolvedor Full Stack com experiência em front-end, back-end e produtos web.'
 
 interface TimelineItem {
@@ -51,11 +53,6 @@ interface WorkPrinciple {
   icon: string
 }
 
-interface SkillItem {
-  name: string
-  icon: string
-}
-
 interface EducationItem {
   title: string
   institution?: string
@@ -63,30 +60,7 @@ interface EducationItem {
   icon: string
 }
 
-interface ContactLink {
-  label: string
-  url: string
-  icon: string
-}
-
-const getSocialIcon = (label: string) => {
-  const normalizedLabel = label.toLowerCase()
-
-  if (normalizedLabel.includes('github')) {
-    return 'simple-icons:github'
-  }
-
-  if (normalizedLabel.includes('linkedin')) {
-    return 'simple-icons:linkedin'
-  }
-
-  return 'lucide:mail'
-}
-
-const contactLinks: ContactLink[] = portfolio.socials.map(social => ({
-  ...social,
-  icon: getSocialIcon(social.label),
-}))
+const contactLinks = portfolio.socials
 
 const milestones: TimelineItem[] = [
   {
@@ -139,34 +113,6 @@ const workPrinciples: WorkPrinciple[] = [
   },
 ]
 
-const frontEndSkills: SkillItem[] = [
-  { name: 'Vue.js', icon: 'simple-icons:vuedotjs' },
-  { name: 'Nuxt', icon: 'simple-icons:nuxt' },
-  { name: 'TypeScript', icon: 'simple-icons:typescript' },
-  { name: 'React', icon: 'simple-icons:react' },
-  { name: 'JavaScript', icon: 'simple-icons:javascript' },
-  { name: 'Tailwind', icon: 'simple-icons:tailwindcss' },
-  { name: 'HTML', icon: 'simple-icons:html5' },
-  { name: 'CSS', icon: 'simple-icons:css' },
-]
-
-const backEndSkills: SkillItem[] = [
-  { name: 'Ruby on Rails', icon: 'simple-icons:rubyonrails' },
-  { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
-  { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
-  { name: 'Prisma', icon: 'simple-icons:prisma' },
-  { name: 'REST APIs', icon: 'lucide:route' },
-]
-
-const toolSkills: SkillItem[] = [
-  { name: 'Git', icon: 'simple-icons:git' },
-  { name: 'GitHub', icon: 'simple-icons:github' },
-  { name: 'Docker', icon: 'simple-icons:docker' },
-  { name: 'Jest', icon: 'simple-icons:jest' },
-  { name: 'Storybook', icon: 'simple-icons:storybook' },
-  { name: 'Figma', icon: 'simple-icons:figma' },
-]
-
 const educationItems: EducationItem[] = [
   {
     title: 'Design Gráfico',
@@ -204,7 +150,7 @@ useSchemaOrg([
   {
     '@type': 'ProfilePage',
     mainEntity: {
-      '@id': 'https://gabrielvitebo.dev/#identity'
+      '@id': identityId
     }
   }
 ])

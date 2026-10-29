@@ -4,6 +4,18 @@ import { socials } from '~/data/profile'
 import { mountForSnapshot } from '../../../../tests/support/mount'
 
 describe('HeroPortrait', () => {
+  it('keeps the registered icon when the display label changes', () => {
+    const wrapper = mountForSnapshot(HeroPortrait, {
+      props: {
+        src: '/images/profile/my-photo.png',
+        alt: 'Gabriel Vitebo',
+        socials: [{ ...socials[0]!, label: 'Código' }],
+      },
+    })
+    expect(wrapper.get('nav a').attributes('aria-label')).toBe('Código')
+    expect(wrapper.get('[data-icon]').attributes('data-icon')).toBe('simple-icons:github')
+  })
+
   it('matches the snapshot', () => {
     const wrapper = mountForSnapshot(HeroPortrait, {
       props: {

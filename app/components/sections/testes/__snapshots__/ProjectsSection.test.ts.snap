@@ -7,46 +7,110 @@ exports[`ProjectsSection > matches the snapshot 1`] = `
       <h2 tabindex="-1" class="scroll-mt-24 text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
       <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Projetos em destaque</p>
     </div>
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
-          </div>
-        </a></article>
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
-          </div>
-        </a></article>
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
-          </div>
-        </a></article>
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
-          </div>
-        </a></article>
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
-          </div>
-        </a></article>
-      <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
-          <div class="flex flex-1 flex-col p-4">
-            <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
-            <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
-          </div>
-        </a></article>
+    <div class="w-full sm:max-w-md mt-8"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar projetos</label>
+      <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Título, descrição ou tecnologia" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary">
+        <!--v-if-->
+      </div>
     </div>
-    <!--v-if-->
-    <!--v-if-->
+    <div class="grid mt-8" data-search-results="">
+      <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline=""></div>
+      <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+        <p role="status" aria-live="polite" class="text-sm text-muted">
+          <!--v-if-->
+        </p>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Food Explorer" href="/projetos/food-explorer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Food Explorer">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Food Explorer</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Currículo AI" href="/projetos/curriculo-ai"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/curriculo-ai/cover.png" alt="Currículo AI">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Currículo AI</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que avalia currículos e sugere melhorias com ajuda de IA.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Rocket Pay" href="/projetos/rocket-pay"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/rocket-pay/cover.png" alt="Rocket Pay">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Rocket Pay</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que identifica a bandeira do cartão em tempo real utilizando expressões regulares</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Quest Log" href="/projetos/quest-log"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/quest-log/cover.png" alt="Quest Log">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Quest Log</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação que transforma a gestão de tarefas em uma jornada de evolução inspirada em RPGs.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Focus Timer" href="/projetos/desafio-focus-timer"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/focus-timer/cover.png" alt="Focus Timer">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Focus Timer</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma aplicação de foco e produtividade inspirada na técnica Pomodoro com sons ambientes e tema escuro.</p>
+              </div>
+            </a></article>
+          <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Check Numbers" href="/projetos/check-numbers"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/check-numbers/cover.png" alt="Check Numbers">
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-base font-semibold text-foreground">Check Numbers</h3>
+                <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma ferramenta que organiza apostas e confere automaticamente os resultados de sorteios.</p>
+              </div>
+            </a></article>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+  </div>
+</section>"
+`;
+
+exports[`filters all pages, resets on every query change and restores the list on clear 1`] = `
+"<section id="projects" class="grid min-h-screen place-items-center bg-background px-4 py-14 sm:px-6 sm:py-20 md:py-24 lg:min-h-0 lg:py-16">
+  <div class="mx-auto w-full max-w-6xl">
+    <div class="max-w-2xl">
+      <h2 tabindex="-1" class="scroll-mt-24 text-3xl font-bold text-foreground sm:text-4xl">Projetos</h2>
+      <p class="mt-4 text-sm leading-6 text-muted sm:text-base">Seleção</p>
+    </div>
+    <div class="w-full sm:max-w-md mt-8"><label for="v-0" class="mb-2 block text-sm font-medium text-foreground">Pesquisar projetos</label>
+      <div class="flex items-center gap-2"><input id="v-0" type="search" placeholder="Título, descrição ou tecnologia" class="min-h-11 w-full min-w-0 rounded-sm border border-border bg-surface px-3 py-2 text-foreground placeholder:text-muted focus-visible:border-primary"><button type="button" class="min-h-11 shrink-0 rounded-sm border border-border px-3 py-2 text-sm text-muted hover:border-primary hover:text-foreground" aria-label="Limpar pesquisa"> Limpar </button></div>
+    </div>
+    <div class="grid mt-8" data-search-results="">
+      <div class="invisible pointer-events-none col-start-1 row-start-1 min-w-0 self-start" aria-hidden="true" inert="" data-search-results-baseline="">
+        <div class="col-start-1 row-start-1 flow-root min-w-0 self-start">
+          <p role="status" aria-live="polite" class="text-sm text-muted">
+            <!--v-if-->
+          </p>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Projeto 13" href="/projetos/project-12"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Projeto 13">
+                <div class="flex flex-1 flex-col p-4">
+                  <h3 class="text-base font-semibold text-foreground">Projeto 13</h3>
+                  <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+                </div>
+              </a></article>
+            <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Projeto 14" href="/projetos/project-13"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Projeto 14">
+                <div class="flex flex-1 flex-col p-4">
+                  <h3 class="text-base font-semibold text-foreground">Projeto 14</h3>
+                  <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+                </div>
+              </a></article>
+            <article class="h-full overflow-hidden rounded-2xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-primary/50" ui="[object Object]"><a class="flex h-full flex-col" aria-label="Abrir projeto Projeto 15" href="/projetos/project-14"><img class="aspect-[16/9] w-full bg-surface object-cover" width="768" height="432" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 384px" densities="x1" format="webp" quality="70" loading="lazy" decoding="async" src="/images/projects/food-explorer/cover.png" alt="Projeto 15">
+                <div class="flex flex-1 flex-col p-4">
+                  <h3 class="text-base font-semibold text-foreground">Projeto 15</h3>
+                  <p class="mt-2 line-clamp-3 text-sm leading-6 text-muted">Uma plataforma de pedidos de comida com experiência completa para clientes e administradores.</p>
+                </div>
+              </a></article>
+          </div>
+          <nav aria-label="Paginação dos projetos" class="flex flex-wrap items-center justify-center gap-1 sm:gap-2 mt-8"><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página anterior"><span aria-hidden="true">←</span></button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 1">1</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 2">2</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Página 3" aria-current="page">3</button><button type="button" class="min-w-9 min-h-11 rounded-sm border border-border p-2 text-muted enabled:hover:bg-primary! enabled:hover:border-primary enabled:hover:text-foreground aria-[current=page]:bg-primary! aria-[current=page]:border-primary aria-[current=page]:text-foreground disabled:cursor-not-allowed! disabled:opacity-40" aria-label="Próxima página" disabled=""><span aria-hidden="true">→</span></button></nav>
+          <p class="sr-only" role="status">Página 3 de 3</p>
+        </div>
+      </div>
+      <div class="col-start-1 row-start-1 flow-root min-w-0 self-start" data-search-results-content="">
+        <p role="status" aria-live="polite" class="text-sm text-muted"><span class="block px-4 py-8 text-center">Nenhum resultado encontrado para “inexistente”.</span></p>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
   </div>
 </section>"
 `;

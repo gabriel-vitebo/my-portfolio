@@ -8,27 +8,43 @@
         </p>
       </div>
 
-      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <ProjectCard
-          v-for="project in paginatedItems"
-          :key="project.slug"
-          :project="project"
-        />
-      </div>
-      <Pagination
+      <SearchInput
+        v-model="query"
         class="mt-8"
-        :page="currentPage"
-        :total-pages="totalPages"
-        label="Paginação dos projetos"
-        @update:page="changePage"
+        label="Pesquisar projetos"
+        placeholder="Título, descrição ou tecnologia"
       />
-      <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
+      <StableSearchResults :active="Boolean(query.trim())" class="mt-8">
+        <p role="status" aria-live="polite" class="text-sm text-muted">
+          <span v-if="projects.length && !filteredItems.length" class="block px-4 py-8 text-center">Nenhum resultado encontrado para “{{ query.trim() }}”.</span>
+        </p>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ProjectCard
+            v-for="project in paginatedItems"
+            :key="project.slug"
+            :project="project"
+          />
+        </div>
+        <Pagination
+          class="mt-8"
+          :page="currentPage"
+          :total-pages="totalPages"
+          label="Paginação dos projetos"
+          @update:page="changePage"
+        />
+        <p v-if="totalPages > 1" class="sr-only" role="status">Página {{ currentPage }} de {{ totalPages }}</p>
+      </StableSearchResults>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { nextTick, ref } from 'vue'
+import { nextTick, ref, watch } from 'vue'
+import SearchInput from '~/components/ui/SearchInput.vue'
+import StableSearchResults from '~/components/ui/StableSearchResults.vue'
+import { useSearch } from '~/composables/useSearch'
+import { getProjectSearchFields } from '~/utils/searchFields'
 import Pagination from '~/components/ui/Pagination.vue'
 import { usePagination } from '~/composables/usePagination'
 import ProjectCard from '~/components/projects/ProjectCard.vue'
@@ -41,7 +57,9 @@ const props = defineProps<{
 }>()
 
 const heading = ref<HTMLElement | null>(null)
-const { currentPage, totalPages, paginatedItems, setPage } = usePagination(() => props.projects, 6)
+const { query, filteredItems } = useSearch(() => props.projects, getProjectSearchFields)
+const { currentPage, totalPages, paginatedItems, setPage } = usePagination(filteredItems, 6)
+watch(query, () => setPage(1), { flush: 'sync' })
 
 const changePage = async (page: number) => {
   setPage(page)
