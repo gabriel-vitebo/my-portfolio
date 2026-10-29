@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.0
+
+### Minor Changes
+
+- [#49](https://github.com/gabriel-vitebo/my-portfolio/pull/49) [`44d0c51`](https://github.com/gabriel-vitebo/my-portfolio/commit/44d0c51e7a35e1074524245bb5b4d4a9bbdd0f8a) Thanks [@gabriel-vitebo](https://github.com/gabriel-vitebo)! - ✨ Feature: adiciona paginação à listagem de projetos e às galerias de mídia.
+
 ## 2.2.0
 
 ### Minor Changes
