@@ -1,4 +1,5 @@
 import type { BlogArticle } from '~/types/blog'
+import MyFirstHacktoberfest from '~/content/blog/meu-primeiro-hacktoberfest.md?raw'
 import ReverseEngineeringWithAI from '~/content/blog/engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea.md?raw'
 import HowIBuiltMyPortfolio from '~/content/blog/como-eu-construi-meu-portifolio.md?raw'
 import HTMLSemantico from '~/content/blog/html-semantico.md?raw'
@@ -21,6 +22,10 @@ const getBlogArticleMetadata = (slug: string) => {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    ...getBlogArticleMetadata('meu-primeiro-hacktoberfest'),
+    content: MyFirstHacktoberfest,
+  },
   {
     ...getBlogArticleMetadata('engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea'),
     content: ReverseEngineeringWithAI,

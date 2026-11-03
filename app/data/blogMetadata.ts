@@ -4,6 +4,18 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'meu-primeiro-hacktoberfest',
+    shortSlug: 'meu-primeiro-hacktoberfest',
+    title: 'Meu primeiro Hacktoberfest: código, IA e uma experiência que valeu a pena',
+    date: 'Artigo',
+    publishedAtIso: '2026-11-03',
+    publishedAt: '3 de novembro de 2026',
+    description: 'Um sábado de palestras, open source e um hackathon de inteligência artificial que resultou no AccessAI, uma ferramenta para apoiar a análise de acessibilidade na web.',
+    image: blogImage('meu-primeiro-hacktoberfest', 'cover.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'engenharia-reversa-com-ia-descobrindo-como-softwares-funcionam-com-rea',
     shortSlug: 'engenharia-reversa-com-ia',
     title: 'Engenharia reversa com IA: descobrindo como softwares funcionam com REA',
