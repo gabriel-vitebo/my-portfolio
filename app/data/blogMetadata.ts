@@ -4,6 +4,18 @@ const blogImage = (article: string, file: string) => `/images/blog/${article}/${
 
 export const blogArticlesMetadata: BlogArticleMetadata[] = [
   {
+    slug: 'da-issue-ao-merge-omnikey-ai',
+    shortSlug: 'omnikey-ai',
+    title: 'Da issue ao merge: minha contribuição com ESLint no OmniKey AI',
+    date: 'Artigo',
+    publishedAtIso: '2026-11-10',
+    publishedAt: '10 de novembro de 2026',
+    description: 'Acompanhe minha contribuição para adicionar ESLint aos workspaces TypeScript do OmniKey AI, desde a issue e as decisões de compatibilidade até o review e o merge.',
+    image: blogImage('da-issue-ao-merge-omnikey-ai', 'From issue to merge.png'),
+    imageWidth: 1672,
+    imageHeight: 941,
+  },
+  {
     slug: 'meu-primeiro-hacktoberfest',
     shortSlug: 'meu-primeiro-hacktoberfest',
     title: 'Meu primeiro Hacktoberfest: código, IA e uma experiência que valeu a pena',

@@ -10,6 +10,7 @@ import JevDecisions from '~/content/blog/jev-e-se-a-ia-ajudasse-o-seu-codigo-a-t
 import McpAndRag from '~/content/blog/mcp-e-rag-como-conectar-a-ia-aos-dados-que-ela-precisa.md?raw'
 
 import ObjectOrientedProgramming from '~/content/blog/programacao-orientada-a-objetos-poo-entendendo-os-conceitos-alem-da-linguagem.md?raw'
+import FromIssueToMergeOmniKeyAI from '~/content/blog/da-issue-ao-merge-omnikey-ai.md?raw'
 
 const getBlogArticleMetadata = (slug: string) => {
   const article = blogArticlesMetadata.find((item) => item.slug === slug)
@@ -22,6 +23,10 @@ const getBlogArticleMetadata = (slug: string) => {
 }
 
 export const blogArticles: BlogArticle[] = [
+  {
+    ...getBlogArticleMetadata('da-issue-ao-merge-omnikey-ai'),
+    content: FromIssueToMergeOmniKeyAI,
+  },
   {
     ...getBlogArticleMetadata('meu-primeiro-hacktoberfest'),
     content: MyFirstHacktoberfest,
